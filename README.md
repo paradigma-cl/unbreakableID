@@ -2,46 +2,46 @@
 ## Peers looking for trust in the digitalverse 
 ### prepared by Phillip Roe - Paradigma SpA
 ## Vision
-In the absence of trust . . . opportunities for mutually beneficial cooperation would have to be foregone . . . norms of social behavior, including ethical and moral codes [may be] . . . reactions of society to compensate for market failures. (Kenneth Arrow wrote in 1971  p. 22) Thus, social preferences such as a concern for the well-being of others and for fair procedures remain essential to sustaining society and enhancing the quality of life. In a world increasingly connected not just by trade in goods but also by the exchange of violence, information, viruses, and emissions, the importance of social preferences in underwriting human cooperation, even survival, may now be greater even than it was among that small group of foragers that began the exodus from Africa 55,000 years ago to spread this particular cooperative species to the far corners of the world.
-Bowles, Samuel; Gintis, Herbert. A Cooperative Species (p. 200). Princeton University Press. Kindle Edition.
+In the absence of trust . . . opportunities for mutually beneficial cooperation would have to be foregone . . . norms of social behavior, including ethical and moral codes [may be] . . . reactions of society to compensate for market failures. [1] Thus, social preferences such as a concern for the well-being of others and for fair procedures remain essential to sustaining society and enhancing the quality of life. In a world increasingly connected not just by trade in goods but also by the exchange of violence, information, viruses, and emissions, the importance of social preferences in underwriting human cooperation, even survival, may now be greater even than it was among that small group of foragers that began the exodus from Africa 55,000 years ago to spread this particular cooperative species to the far corners of the world. [2]
+
 
 Human beings have become more conscious of a growing interdependence between all parts of the world with the growth of a world economy which followed the Great Transformation, the Services Transformation, the ICT revolution, the adoption of free trade policies, named as the New Globalization by most of the countries of the world.
 
-A beginning to understand, though dimly, that no country is an island unto itself, but as Bahá’u’lláh said: “The earth is but one country, and mankind its citizens.”
+A beginning to understand, though dimly, that no country is an island unto itself, but as Bahá’u’lláh said: “The earth is but one country, and mankind its citizens.” [3]
 
 Without a strong guiding moral philosophy men struggled on as best they could to respond to the new needs of the world.  It is accepted that the times called for a more just dignified station for a much wider spectrum of the society.
 
-The world is nowadays dominated by a growing divide, a term that reflects the availability or unavailability of Information Technology and Communications (ICT) resources, analysed in terms of its economic accessibility. This is called the digital divide.
+The world is nowadays dominated by a growing divide, a term that reflects the availability or unavailability of Information Technology and Communications (ICT) resources, analysed in terms of economic accessibility. This is called the digital divide.
 
-Questions arise how human beings can address this look for trust, worldwide, increasing the digital inclusion.
+Questions arise on how human beings can address this look for trust, worldwide, increasing digital inclusion.
 
 ## The problem
 The world - is still- dominated by two extreme visions: one that denies the radical changes in patterns of communication that the ICT revolution entails and the other that denies the persistence of an economy based on the physical constraints imposed by location and the material nature of most goods and products.
 
-The problems and opportunities detected are the advent and use of ICT to transform patterns of communications and that businesses are not fully aware on how these technologies should be used to create appropriate communication in order to be more productive. Communication that is acceptable for people both being a customer and a human being.
+The problems and opportunities detected are the advent and use of ICT to transform patterns of communication and that businesses are not fully aware on how these technologies should be used to create appropriate communication in order to be more productive. Communication that is acceptable for people both being a customer and a human being.
 
 ## Solution
-Victor Frankl, facing the purpose of life, is best cured by going outside, extending the self rather than contracting it, in service to others, in upholding a value, in embracing suffering positively rather than negatively.
+Victor Frankl, facing the purpose of life, is best cured by going outside, extending the self rather than contracting it, in service to others, in upholding a value, in embracing suffering positively rather than negatively. [4]
 
 Such service can be made more effective the more skills a person has.  
-Knowledge is as wings to man’s life, and a ladder for his ascent. Its acquisition is incumbent upon everyone.  To encourage education as much as possible in sciences which will increase the capacity for service, as well as the moral teachings.
+Knowledge is as wings to man’s life, and a ladder for his ascent. Its acquisition is incumbent upon everyone.  To encourage education as much as possible in sciences which will increase the capacity for service, as well as moral teachings. [5]
 
-ICT when used properly, it can increase productivity, reduce risk, and increase accessibility, specially when people are faced with distance.
+ICT when used properly, can increase productivity, reduce risk, and increase accessibility, specifically when people are faced with distance.
 
-An electronic payment system based on cryptographic proof instead of trust could help when there is distance, allowing any two willing parties to transact directly with each other without the need for a trusted third party. Transactions that are computationally impractical to reverse would protect sellers from fraud, and routine escrow mechanisms could easily be implemented to protect buyers.
+An electronic payment system based on cryptographic proof instead of trust could help when there is distance, allowing any two willing parties to transact directly with each other without the need for a trusted third party. Transactions that are computationally impractical to reverse would protect sellers from fraud, and routine escrow mechanisms could easily be implemented to protect buyers. [6]
 
 Commerce on the Internet has come to rely almost exclusively on financial institutions serving as trusted third parties to process electronic 
 payments. While the system works well enough for most transactions, it still suffers from the inherent weaknesses of the trust-based model. With the possibility of reversal, the need for trust spreads. Merchants must be wary of their customers, hassling them for more information than they would otherwise need. A certain percentage of fraud is accepted as unavoidable. These costs and payment uncertainties can be avoided in person by using physical currency, but no mechanism exists to make payments over a communications channel without a trusted party.
 
-Cryptographic proof. Here is the mathematical “magic” of the initial Bitcoin Blockchain: the ability to assess the integrity of records and verify new data, instead of relying on the bank, the state, the law or the authority of any other institution.
+Cryptographic proof. Here is the mathematical “magic” of the initial Bitcoin Blockchain: the ability to assess the integrity of records and verify new data, instead of relying on the trust of a bank, the state, the law or the authority of any other institution.
 
-How? Cryptographic hashing is a mathematical phenomenon whereby some data is run through a hashing algorithm, which will then output a string of characters. Only this particular data run through this particular hashing algorithm will produce that specific string of characters. What this means is that if the data is tampered with in any way, this can be proven by running it through the hashing algorithm again and checking if the output is the same.  Here is a cryptographic proof.
+How? Cryptographic hashing is a mathematical phenomenon whereby some data is run through a hashing algorithm, which will then output a string of characters. Only this particular data run through this particular hashing algorithm will produce that specific string of characters. What this means is that if the data is tampered with in any way, this can be proven by running it through the hashing algorithm again and checking if the output is the same.  Here is a cryptographic proof. [6]
 
 Replacing “trust” with cryptographic proof promised to replace the uncertainty of humans and institutions with the certainty of mathematics, and yet cryptographic hashing is itself an area of human endeavour.
 
-Hashing is a discovery of universal principle that all else can be anchored to; for others, it is an area of research and invention, but is also an area of creativity, knowledge sharing and collaboration amongst peers experimenting and working with the phenomena of this curious universe we live in.
+Hashing is a discovery of universal principle that all else can be anchored to; for others, it is an area of research and invention, but is also an area of creativity, knowledge sharing and collaboration amongst peers experimenting and working with the phenomena of this curious universe we live in. [7]
 
-The Double spending Problem.  How does a decentralised network reach consensus on which transactions are true? The solution to the double spending problem using peer-to-peer distributed time stamp server to generate computational proof of the chronological order of transactions.  
+The Double spending Problem.  How does a decentralised network reach consensus on which transactions are true? The solution to the double spending problem using peer-to-peer distributed time stamp server to generate computational proof of the chronological order of transactions.   [6]
 
 The blockchain and the internet could be applied to different needs of human beings. The first need is for the individual, agreement between peers, and things.
 
@@ -49,14 +49,14 @@ The blockchain and the internet could be applied to different needs of human bei
 Your Personal Digital ID or the Digital ID or name of your organization must be irreplaceable. We must assure a secure world, peaceful, and without setbacks produced by hackers or identity theft.
 
 #### 1.1 Domain Name System (DNS)
-The Domain Name System (DNS) turns domain names into IP addresses, which browsers use to load internet pages for example.
+The Domain Name System (DNS) is a hierarchical and distributed name service that provides a naming system for computers, services, and other resources on the Internet or other Internet Protocol (IP) networks. It associates various information with domain names (identification strings) assigned to each of the associated entities. Most prominently, it translates readily memorized domain names to the numerical IP addresses needed for locating and identifying computer services and devices with the underlying network protocols. [8]
 
-Names are globally unique and human-readable, but not strongly owned. The system operator has the final say as to what each name resolves to. This requires that client must trust the system, and trust that the administrators are the only ones that can make these changes.
+Names are globally unique and human-readable, but not strongly owned. The system operator has the final say as to what each name resolves to. This requires that client must trust the system, including their administrators as the only ones that can make these changes.
 
 #### 1.2 Domain Name System Zone File
-A Domain Name System (DNS) zone file is a text file that describes a DNS zone. A DNS zone is a subset, often a single domain, of the hierarchical domain name structure of the DNS. The zone file contains mappings between domain names and IP addresses and other resources, organized in the form of text representations of resource records (RR). (https://en.wikipedia.org/wiki/Zone_file)
+A Domain Name System (DNS) zone file is a text file that describes a DNS zone. A DNS zone is a subset, often a single domain, of the hierarchical domain name structure of the DNS. The zone file contains mappings between domain names, IP addresses, and other resources, organized in the form of text representations of resource records (RR). [9] 
 
-The zone file has to follow an agreed format (https://datatracker.ietf.org/doc/html/rfc1035)
+The zone file has to follow an agreed format [10] 
 
 An example of a zone file for the domain example.com is the following:
 
@@ -86,7 +86,7 @@ Several attempts to use cryptographic names have been tested, from the keys they
 Several types of cryptographic infrastructures are operating on the internet.  
 
 ##### 2.1.1 Public Key Infrastructure (PKI)
-This is a framework used to create, manage, distribute, use, store, and revoke digital certificates and manage public-key encryption. It's widely used for secure electronic communication, such as e-commerce and internet banking. (https://en.wikipedia.org/wiki/Public_key_infrastructure)
+This is a framework used to create, manage, distribute, use, store, and revoke digital certificates and manage public-key encryption. It's widely used for secure electronic communication, such as e-commerce and internet banking. [11]
 
 ##### 2.1.2 Blockchain
 Technologies like Bitcoin and Ethereum are well-known examples. Blockchain provides a decentralized and secure way to record transactions and manage data.
@@ -479,3 +479,17 @@ Instead of using the Stacks or Bitcoin addresses, the users can use the DID as t
 6.	Users could own a Single Sign On (SSO) technology to access any application.
 7.	Users can use their did:web definitions as a web presentation landing page presenting their profile information.  Individual web presence.
 8.	Web marketplaces that recognize the use of did:web specification could facilitate the capture of user domain or subdomain names. These users will not require to re-enter profile information, as the did:web specification can be accessed through a .json file and entered to the application.  This functionality increases the level of digital capital of the person or the organization.
+
+### References
+
+[1] Kenneth Arrow wrote in 1971  p. 22
+[2] Bowles, Samuel; Gintis, Herbert. A Cooperative Species (p. 200). Princeton University Press. Kindle Edition.
+[3] Bahá'u'lláh,
+[4] Frankl, Victor
+[5] 'Abdu'l-Bahá  Wings..
+[6] Nakamoto, Satoshi
+[7] Hashing
+[8] (https://en.wikipedia.org/wiki/Domain_Name_System)
+[9] (https://en.wikipedia.org/wiki/Zone_file)
+[10] (https://datatracker.ietf.org/doc/html/rfc1035)
+[11] (https://en.wikipedia.org/wiki/Public_key_infrastructure)
