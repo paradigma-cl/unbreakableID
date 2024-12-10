@@ -59,7 +59,7 @@ A Domain Name System (DNS) zone file is a text file that describes a DNS zone. A
 The zone file has to follow an agreed format [10] 
 
 An example of a zone file for the domain example.com is the following:
-
+```
 $ORIGIN example.com.     ; designates the start of this zone file in the namespace
 $TTL 3600                ; default expiration time (in seconds) of all RRs without their own TTL value
 example.com.  IN  SOA   ns.example.com. username.example.com. ( 2020091025 7200 3600 1209600 3600 )
@@ -77,25 +77,28 @@ wwwtest       IN  CNAME www                   ; wwwtest.example.com is another a
 mail          IN  A     192.0.2.3             ; IPv4 address for mail.example.com
 mail2         IN  A     192.0.2.4             ; IPv4 address for mail2.example.com
 mail3         IN  A     192.0.2.5             ; IPv4 address for mail3.example.com
+```
+The Internet Corporation for Assigned Names and Numbers (ICANN) [11] requires the registry operators to provide bulk access to the zone files of the Generic Top Level Domain (gTLD) at least on a daily basis. For gTLDs, a zone file contains information about domain names that are active in that gTLD. In general, Internet users may be able to access and download zone file data at no cost for certain purposes.
+[12]
 
-### 2. The use of Cryptographic Keys to Represent Names
-Several attempts to use cryptographic names have been tested, from the keys they reference. But these names are difficult for most users to remember since they do not carry semantic information relating to their use in the system.
+### 2. The Use of Cryptographic Keys to Represent Names
+Several attempts to use cryptographic names have been tested, from the keys they reference. These names are difficult for most users to remember since they do not carry semantic information relating to their use in the system.
 
 #### 2.1 Cryptographic Infrastructure on the Internet
 
 Several types of cryptographic infrastructures are operating on the internet.  
 
 ##### 2.1.1 Public Key Infrastructure (PKI)
-This is a framework used to create, manage, distribute, use, store, and revoke digital certificates and manage public-key encryption. It's widely used for secure electronic communication, such as e-commerce and internet banking. [11]
+This is a framework used to create, manage, distribute, use, store, and revoke digital certificates and manage public-key encryption. It's widely used for secure electronic communication, such as e-commerce and internet banking. [13]
 
 ##### 2.1.2 Blockchain
-Technologies like Bitcoin and Ethereum are well-known examples. Blockchain provides a decentralized and secure way to record transactions and manage data.
+Technologies like Bitcoin and Ethereum are well-known examples. [14] Blockchain provides a decentralized and secure way to record transactions and manage data. 
 
 ##### 2.1.3 Secure Cryptography Infrastructures in the Cloud
 Solutions like SECRIN are designed to protect cryptographic keys in virtualized environments, ensuring secure communication and data protection.
 
 ##### 2.1.4 Hardware Security Modules (HSMs)
-These are physical devices that manage digital keys and provide cryptographic operations. They are often used to meet regulatory requirements and provide high levels of security.[12]
+These are physical devices that manage digital keys and provide cryptographic operations. They are often used to meet regulatory requirements and provide high levels of security.[15]
 
 #### 2.2 Experience Implementing a Naming System on the Blockchain
 
@@ -107,7 +110,7 @@ Users can register human meaningful names and securely associate data with them,
 
 ##### 2.2.1 Bitcoin Name Service (BNS)
 
-The first name registered in a Bitcoin Blockchain transaction was in 2014, called Namecoin service on the Bitcoin Blockchain. [13]  This service evolved as the Bitcoin Name Service (BNS) on the Blockstack Blockchain. Later, Blockstack Blockchain and rebranded as the Stacks Blockchain [14], a Bitcoin L2 Blockchain.
+The first name registered in a Bitcoin Blockchain transaction was in 2014, called Namecoin service on the Bitcoin Blockchain. [16]  This service evolved as the Bitcoin Name Service (BNS) on the Blockstack Blockchain. Later, Blockstack Blockchain and rebranded as the Stacks Blockchain [17], a Bitcoin L2 Blockchain.
 This BNS naming system means that (a) names are human-readable and can be picked by humans, (b) name-value pairs have a strong sense of ownership— that is, they can be owned by cryptographic keypairs, and c) there is no central trusted party or point of failure.
 
 This makes it a powerful tool for building all kinds of network applications. Using the BNS, the following can be achieved:
@@ -130,7 +133,7 @@ This kind of name can be called Decentralized ID or Decentralized Name.  It uses
 Decentralized ID systems create a trust triangle that links issuers, holders, and verifiers: 
 ###### issuers are entities that digitally sign attestations and provide them to holders;
 ###### holders, such as individuals, manage their credentials and use them to prove claims about their data;
-###### verifiers assess these attestations to determine whether they satisfy requirements. This process, which is facilitated by a verifiable data registry.
+###### verifiers assess these attestations to determine whether they satisfy requirements. This process is facilitated by a verifiable data registry.
 
 The Stacks blockchain addresses performance problems using a layered approach. The base layer consists of the Stacks blockchain, and the Blockchain Naming System (BNS). The blockchain governs ownership of identities in the Stacks network. Identities can be names such as namespaces, domain, and subdomain names. These identities can refer to persons, applications, or things.  
 
@@ -138,7 +141,7 @@ Names in BNS have four properties:
 •	Names are globally unique. The protocol does not allow name collisions, and all well-behaved nodes resolve a given name to the same state.
 •	Names are human-meaningful. Each name is chosen by its creator.
 •	Names are strongly owned. Only the name's owner can change the state it resolves to. A name is owned because the owner of its private key can generate valid transactions that update its zone file hash and ownership. The name zone file can only have a valid verification using the owner’s private key.
-•	Names using its associated public and private key can sign transactions. Only the owner of the name and the associated keys can sign in a verifiable way transactions, and the execution of the smart contracts in a decentralized way. This action represents the unique action of a user, that has access to those keys.
+•	Names using their associated public and private keys can sign transactions. Only the owner of the name and the associated keys can sign in a verifiable way transactions, and the execution of the smart contracts in a decentralized way. This action represents the unique action of a user, that has access to those keys.
 
 ##### 2.2.3 Challenges of a Naming System on Blockchain
 Building systems with blockchains presents challenges:
@@ -157,7 +160,7 @@ The control plane defines the protocol for registering human-readable names, cre
 ##### 2.2.5 Architecture for a Naming System on Blockchain
 
 
-##### Decentralized Applications (Dapp’s) also called Web3 Apps is the New App that integrates these main functions, authentication, transaction signing, and data storage. All users can run their applications under their own private decentralized space. Web3 users own their data as they are the only one has access to and/or shares with other users its own private data through the decentralized application. These domain or subdomain names can also use the decentralized names or decentralized IDs, and they are registered to the public key associated to its private key or address, and the IP address location of the Dapp.
+Decentralized Applications (Dapp’s) also called Web3 Apps is the New App that integrates these main functions, authentication, transaction signing, and data storage. All users can run their applications under their own private decentralized space. Web3 users own their data as they are the only one has access to and/or shares with other users its own private data through the decentralized application. These domain or subdomain names can also use the decentralized names or decentralized IDs, and they are registered to the public key associated to its private key or address, and the IP address location of the Dapp.
 
 ##### 2.2.6 Decentralized Identifiers
 
@@ -502,7 +505,10 @@ Instead of using the Stacks or Bitcoin addresses, the users can use the DID as t
 [8] (https://en.wikipedia.org/wiki/Domain_Name_System)
 [9] (https://en.wikipedia.org/wiki/Zone_file)
 [10] (https://datatracker.ietf.org/doc/html/rfc1035)
-[11] (https://en.wikipedia.org/wiki/Public_key_infrastructure)
-[12] (https://www.isaca.org/resources/news-and-trends/industry-news/2020/why-cryptographic-infrastructures-require-high-availability)
-[13] (https://www.usenix.org/system/files/conference/atc16/atc16_paper-ali.pdf)
-[14] (https://stacks.co)
+[11] (https://www.icann.org/resources/pages/welcome-2012-02-25-en)
+[12] (https://www.icann.org/resources/pages/zfa-2013-06-28-en)
+[13] (https://en.wikipedia.org/wiki/Public_key_infrastructure)
+[14] (https://bitcoin.org/bitcoin.pdf)
+[15] (https://www.isaca.org/resources/news-and-trends/industry-news/2020/why-cryptographic-infrastructures-require-high-availability)
+[16] (https://www.usenix.org/system/files/conference/atc16/atc16_paper-ali.pdf)
+[17] (https://stacks.co)
