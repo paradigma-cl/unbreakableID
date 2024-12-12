@@ -141,22 +141,33 @@ Decentralized ID systems create a trust triangle that links issuers, holders, an
 The Stacks blockchain addresses performance problems using a layered approach. The base layer consists of the Stacks blockchain, and the Blockchain Naming System (BNS) [20]. The blockchain governs ownership of identities in the Stacks network. Identities can be names such as namespaces, domain, and subdomain names. These identities can refer to persons, applications, or things.  
 
 Names in BNS have four properties:
+
 •	Names are globally unique. The protocol does not allow name collisions, and all well-behaved nodes resolve a given name to the same state.
+
 •	Names are human-meaningful. Each name is chosen by its creator.
+
 •	Names are strongly owned. Only the name's owner can change the state it resolves to. A name is owned because the owner of its private key can generate valid transactions that update its zone file hash and ownership. The name zone file can only have a valid verification using the owner’s private key.
+
 •	Names using their associated public and private keys can sign transactions. Only the owner of the name and the associated keys can sign in a verifiable way transactions, and the execution of the smart contracts in a decentralized way. This action represents the unique action of a user, that has access to those keys.
 
 ##### 2.2.3 Challenges of a Naming System on Blockchain
 Building systems with blockchains presents challenges:
+
 • Limits on Data Storage: Individual blockchain records are typically on the order of kilobytes and cannot hold much data. Moreover, the blockchain’s log structure implies that all state changes are recorded in the blockchain. All nodes participating in the network need to maintain a full copy of the blockchain, limiting the total size of blockchains to what current commodity hardware can support. 
+
 • Slow Writes: The transaction processing rate is capped by the blockchain’s write propagation and leader election protocol, and it is pegged to the rate at which new blocks are announced by leader nodes, called miners in many blockchain networks. New transactions can take minutes to a few hours to be accepted.
+
 • Limited Bandwidth: The total number of transactions per block is limited by the block size of blockchains.
 To maintain fairness and to give all nodes a chance to become a leader in the next round, all nodes should receive a newly announced block at roughly the same time. Therefore, the block size is typically limited by an average uplink bandwidth of nodes. 
+
 • Endless Ledger: The integrity of blockchains depends on the ability of anyone to audit them back to the first block. As the system makes forward progress and issues new blocks, the cost of an audit grows linearly with time, which makes booting up new nodes progressively more time consuming. This is an endless ledger problem. 
 
 ##### 2.2.4 Using the Immutability of the Blockchain to Build a Naming System
+
 Relying on the consensus protocol of the underlying blockchain, there is an opportunity to provide a total ordering for all operations supported by the naming system, like name registrations, updates, and transfers.
+
 This can be done with the separation of the Control and the Data.
+
 Decoupling the security of name registration and name ownership from the availability of data associated with names by separating the control and data planes.
 The control plane defines the protocol for registering human-readable names, creating (name, hash) bindings, and creating bindings to owning cryptographic keypairs
 
@@ -174,7 +185,6 @@ Whereas public transactional metadata is best stored on the Stacks blockchain, u
 
 Storing data off of the blockchain ensures that these applications (decentralized) can provide users with high performance and high availability for data reads and writes without introducing central trust parties.
 
-
 ###### 2.2.5.1 Stacks Architecture is Based on the Identity
 
 The Stacks blockchain addresses performance problems using a layered approach. The base layer consists of the Stacks blockchain and the Blockchain Naming System (BNS). The blockchain governs ownership of identities in the Stacks network. Identities can be names such as domain names, usernames, or application names.  [21]
@@ -187,6 +197,17 @@ Gaia stores data as a simple key-value store. When an identity is created, a cor
 
 The Stacks blockchain stores only identity data. Data created by the actions of an identity is stored in a Gaia Storage System. Each user has profile data. When a user interacts with a decentralized dApp that application stores application data on behalf of the user. Because Gaia stores user and application data off the blockchain, a Stacks DApp is typically more performant than DApps created on other blockchains.
 
+###### 2.2.5.2 Example of a Name Registration in the Stacks Architecture
+
+The domain name phillip.stx was registered in the BNS at tra
+´´´
+{"address":"SP17Z5ZD89DVJHDB2SBZAST41PTS3BS50YY3XBVJY","blockchain":"stacks","last_txid":"0x102d73f2ce7906649715764a78d9b75dc3f188ff60128f61dc9d713790906f29","status":"name-register","zonefile_hash":"c74108af50c099a211e35eb22456812a1a61230e","expire_block":36708}
+´´´
+´´´
+{"zonefile":"$ORIGIN phillip.stx.\n$TTL 3600\n_http._tcp\tIN\tURI\t10\t1\t\"https://gaia.blockstack.org/hub/17tqGoM8xDjLTpy2rFZ1yj9BPmVeC3zjDi/profile.json\"\n\n"}
+´´´
+
+
 ##### 2.2.6 Decentralized Applications (Dapp's)
 
 Decentralized Applications (Dapp’s) also called Web3 Apps or Stacks applications is the New App that integrates these main functions, authentication, transaction signing, and data storage. All users can run their applications under their own private decentralized space. Web3 users own their data as they are the only one has access to and/or shares with other users its own private data through the decentralized application. These domain or subdomain names can also use the decentralized names or decentralized IDs, and they are registered to the public key associated to its private key or address, and the IP address location of the Dapp.
@@ -198,6 +219,7 @@ The W3C (https://www.w3.org/TR/did-core/) recommends Decentralized identifiers (
 The DIDs for a person for example, are expressed through a name and an image, sometimes a description, background image, url, email, password signature, etc. The visual and textual representation of an account, helps users to better recognize their own accounts, from the accounts of other users. Stacks has a long history of Decentralized Identifiers (DIDs) as they introduced human readable names for bitcoin addresses when the project started as “One Name” back in 2014.
 
 The Stacks public DIDs is a profile that is registered with a username on-chain using the BNS (Blockchain Naming System) smart contract. These profiles are defined using the JSON web token, and its contents using the appropriate objects of the Schema standard (https://schema.org), like the person object (https://schema.org/Person).
+
 #### 3.1 BNS and TLDs
 
 
