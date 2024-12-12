@@ -95,10 +95,10 @@ This is a framework used to create, manage, distribute, use, store, and revoke d
 Technologies like Bitcoin and Ethereum are well-known examples. [14] Blockchain provides a decentralized and secure way to record transactions and manage data. 
 
 ##### 2.1.3 Secure Cryptography Infrastructures in the Cloud
-Solutions like SECRIN are designed to protect cryptographic keys in virtualized environments, ensuring secure communication and data protection.
+Solutions like SECRIN [15] are designed to protect cryptographic keys in virtualized environments, ensuring secure communication and data protection.
 
 ##### 2.1.4 Hardware Security Modules (HSMs)
-These are physical devices that manage digital keys and provide cryptographic operations. They are often used to meet regulatory requirements and provide high levels of security.[15]
+These are physical devices that manage digital keys and provide cryptographic operations. They are often used to meet regulatory requirements and provide high levels of security.[16]
 
 #### 2.2 Experience Implementing a Naming System on the Blockchain
 
@@ -110,7 +110,7 @@ Users can register human meaningful names and securely associate data with them,
 
 ##### 2.2.1 Bitcoin Name Service (BNS)
 
-The first name registered in a Bitcoin Blockchain transaction was in 2014, called Namecoin service on the Bitcoin Blockchain. [16]  This service evolved as the Bitcoin Name Service (BNS) on the Blockstack Blockchain. Later, Blockstack Blockchain and rebranded as the Stacks Blockchain [17], a Bitcoin L2 Blockchain.
+The first name registered in a Bitcoin Blockchain transaction was in 2014, called Namecoin service on the Bitcoin Blockchain. [17]  This service evolved as the Bitcoin Name Service (BNS) on the Blockstack Blockchain. Later, Blockstack Blockchain and rebranded as the Stacks Blockchain [18], a Bitcoin L2 Blockchain.
 This BNS naming system means that (a) names are human-readable and can be picked by humans, (b) name-value pairs have a strong sense of ownership— that is, they can be owned by cryptographic keypairs, and c) there is no central trusted party or point of failure.
 
 This makes it a powerful tool for building all kinds of network applications. Using the BNS, the following can be achieved:
@@ -125,7 +125,7 @@ This makes it a powerful tool for building all kinds of network applications. Us
 
 Software applications built with the Stacks blockchain (Bitcoin L2) integrated, give users control over their digital identities, assets, and data. Unlike most cloud-based apps, they are "decentralized" since they do not depend on any centralized platform, server, or database to function. Rather, they use the Stacks blockchain to authenticate users and facilitate read and write requests for them without any single point of failure or trust.
 
-The name registry is built with a smart contract that was deployed and runs on the Stacks Blockchain, a Bitcoin L2 Blockchain. The provable smart contract is written in Clarity [18], a safe, decidable language. The contract links the STX address and the name, domain, and namespace according to the rules about fees and expiry.
+The name registry is built with a smart contract that was deployed and runs on the Stacks Blockchain, a Bitcoin L2 Blockchain. The provable smart contract is written in Clarity [19], a safe, decidable language. The contract links the STX address and the name, domain, and namespace according to the rules about fees and expiry.
 
 ##### 2.2.2 Decentralized Name or ID
 This kind of name can be called Decentralized ID or Decentralized Name.  It uses cryptography, digital wallets, and related technologies to enable multiple entities to produce credentials and empower individuals to manage their data. 
@@ -138,7 +138,7 @@ Decentralized ID systems create a trust triangle that links issuers, holders, an
 ###### Verifiers
        assess these attestations to determine whether they satisfy requirements. This process is facilitated by a verifiable data registry.
 
-The Stacks blockchain addresses performance problems using a layered approach. The base layer consists of the Stacks blockchain, and the Blockchain Naming System (BNS) [19]. The blockchain governs ownership of identities in the Stacks network. Identities can be names such as namespaces, domain, and subdomain names. These identities can refer to persons, applications, or things.  
+The Stacks blockchain addresses performance problems using a layered approach. The base layer consists of the Stacks blockchain, and the Blockchain Naming System (BNS) [20]. The blockchain governs ownership of identities in the Stacks network. Identities can be names such as namespaces, domain, and subdomain names. These identities can refer to persons, applications, or things.  
 
 Names in BNS have four properties:
 •	Names are globally unique. The protocol does not allow name collisions, and all well-behaved nodes resolve a given name to the same state.
@@ -164,7 +164,7 @@ The control plane defines the protocol for registering human-readable names, cre
 
 While on-chain storage solutions like IPFS and Arweave are designed for immutable, censorship-resistant permanent storage, they cannot be deemed as providing user control of the data since the user cannot modify or remove the data once it has been deployed. 
 
-Apps built with the Stacks blockchain can store off-chain data using a storage system called Gaia. [20]
+Apps built with the Stacks blockchain can store off-chain data using a storage system called Gaia. [21]
 
 Gaia is a unique approach to decentralized storage that focuses primarily on user-ownership of data, rather than immutable on-chain storage. The emphasis here is on user control.
 
@@ -175,12 +175,11 @@ Whereas public transactional metadata is best stored on the Stacks blockchain, u
 Storing data off of the blockchain ensures that these applications (decentralized) can provide users with high performance and high availability for data reads and writes without introducing central trust parties.
 
 
-
 ###### 2.2.5.1 Stacks Architecture is Based on the Identity
 
-The Stacks blockchain addresses performance problems using a layered approach. The base layer consists of the Stacks blockchain and the Blockchain Naming System (BNS). The blockchain governs ownership of identities in the Stacks network. Identities can be names such as domain names, usernames, or application names.  [20]
+The Stacks blockchain addresses performance problems using a layered approach. The base layer consists of the Stacks blockchain and the Blockchain Naming System (BNS). The blockchain governs ownership of identities in the Stacks network. Identities can be names such as domain names, usernames, or application names.  [21]
 
-When an identity is created, its creation is recorded in the Stacks blockchain. Identities make up the primary data stored into the Stacks blockchain. These identities correspond to routing data in the OSI stack. The routing data is stored in the Atlas Peer Network, the second layer. Every core node that joins the Stacks Network is able to obtain an entire copy of this routing data. Stacks uses the routing data to associate identities (domain names, user names, and application names) with a particular storage location in the final layer, the Gaia Storage System.
+When an identity is created, its creation is recorded in the Stacks blockchain. Identities make up the primary data stored into the Stacks blockchain. These identities correspond to routing data in the OSI stack [22]. The routing data is stored in the Atlas Peer Network [23], the second layer. Every core node that joins the Stacks Network is able to obtain an entire copy of this routing data. Stacks uses the routing data to associate identities (domain names, user names, and application names) with a particular storage location in the final layer, the Gaia Storage System.
 
 A Gaia Storage System consists of a hub service and storage resource on a cloud software provider. The storage provider can be any commercial provider such as Azure, DigitalOcean, Amazon EC2, and so forth. Typically the compute resource and the storage resource reside same cloud vendor, though this is not a requirement. Gaia currently has driver support for S3, Azure Blob Storage, Google Cloud Platform and local disk, but the driver model allows for other backend support as well.
 
@@ -539,9 +538,12 @@ Instead of using the Stacks or Bitcoin addresses, the users can use the DID as t
 [12] (https://www.icann.org/resources/pages/zfa-2013-06-28-en)
 [13] (https://en.wikipedia.org/wiki/Public_key_infrastructure)
 [14] (https://bitcoin.org/bitcoin.pdf)
-[15] (https://www.isaca.org/resources/news-and-trends/industry-news/2020/why-cryptographic-infrastructures-require-high-availability)
-[16] (https://www.usenix.org/system/files/conference/atc16/atc16_paper-ali.pdf)
-[17] (https://stacks.co)
-[18] Clarity
-[19] BNS
-[20] (https://docs.stacks.co/concepts/gaia)
+[15] (https://www.ittc.ku.edu/~fli/papers/2020_globecom_Secure_Cryptography_Infrastructures.pdf)
+[16] (https://www.isaca.org/resources/news-and-trends/industry-news/2020/why-cryptographic-infrastructures-require-high-availability)
+[17] (https://www.usenix.org/system/files/conference/atc16/atc16_paper-ali.pdf)
+[18] (https://stacks.co)
+[19] Clarity
+[20] BNS
+[21] (https://docs.stacks.co/concepts/gaia)
+[22] OSI Stack (https://en.wikipedia.org/wiki/OSI_model)
+[23] The original Atlas Network (https://github.com/stacks-archive/atlas?tab=readme-ov-file)
