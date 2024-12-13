@@ -199,16 +199,15 @@ The Stacks blockchain stores only identity data. Data created by the actions of 
 
 ###### 2.2.5.2 Example of a Name Registration in the Stacks Architecture
 
-The domain name phillip.stx was registered in the base layer of the Stacks blockchain and the BNS at the transaction last_txid":"0x102d73f2ce7906649715764a78d9b75dc3f188ff60128f61dc9d713790906f29".  The ownership of the domain name is represented with the "address":"SP17Z5ZD89DVJHDB2SBZAST41PTS3BS50YY3XBVJY", and it was executed using the BNS smartcontract function "name-register" [20].
+The domain name phillip.stx was registered in the base layer of the Stacks blockchain and the BNS at the transaction last_txid":"0x102d73f2ce7906649715764a78d9b75dc3f188ff60128f61dc9d713790906f29".  The ownership of the domain name is represented with the "address":"SP17Z5ZD89DVJHDB2SBZAST41PTS3BS50YY3XBVJY", and it was executed using the BNS smartcontract function "name-register" [20]. A hash of the routing information is included in the base layer.
 
 ```
 {"address":"SP17Z5ZD89DVJHDB2SBZAST41PTS3BS50YY3XBVJY","blockchain":"stacks","last_txid":"0x102d73f2ce7906649715764a78d9b75dc3f188ff60128f61dc9d713790906f29","status":"name-register","zonefile_hash":"c74108af50c099a211e35eb22456812a1a61230e","expire_block":36708}
 ```
-A zone file is used to describe the routing data similarly to a Domain Name System (DNS) zone file. In this example, the zone file text associated to the phillip.stx name is the following>:
+A zone file is used to describe the routing data similarly to a Domain Name System (DNS) zone file. In this example, the zone file text associated to the phillip.stx name is the following:
 ```
 {"zonefile":"$ORIGIN phillip.stx.\n$TTL 3600\n_http._tcp\tIN\tURI\t10\t1\t\"https://gaia.blockstack.org/hub/17tqGoM8xDjLTpy2rFZ1yj9BPmVeC3zjDi/profile.json\"\n\n"}
 ```
-
 
 ##### 2.2.6 Decentralized Applications (Dapp's)
 
