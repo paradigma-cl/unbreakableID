@@ -125,7 +125,7 @@ This makes it a powerful tool for building all kinds of network applications. Us
 
 Software applications built with the Stacks blockchain (Bitcoin L2) integrated, give users control over their digital identities, assets, and data. Unlike most cloud-based apps, they are "decentralized" since they do not depend on any centralized platform, server, or database to function. Rather, they use the Stacks blockchain to authenticate users and facilitate read and write requests for them without any single point of failure or trust.
 
-The name registry is built with a smart contract that was deployed and runs on the Stacks Blockchain, a Bitcoin L2 Blockchain. The provable smart contract is written in Clarity [19], a safe, decidable language. The contract links the STX address and the name, domain, and namespace according to the rules about fees and expiry.
+The name registry is built with a smart contract that was deployed and runs on the Stacks Blockchain, a Bitcoin L2 Blockchain. The provable smart contract is written in Clarity [19], a safe, decidable language. The contract links the STX address and the name, domain, and namespace according to the rules about fees and expiry.  The BNS contract was deployed at a Stacks Blockchain transaction. [20] 
 
 ##### 2.2.2 Decentralized Name or ID
 This kind of name can be called Decentralized ID or Decentralized Name.  It uses cryptography, digital wallets, and related technologies to enable multiple entities to produce credentials and empower individuals to manage their data. 
@@ -138,7 +138,7 @@ Decentralized ID systems create a trust triangle that links issuers, holders, an
 ###### Verifiers
        assess these attestations to determine whether they satisfy requirements. This process is facilitated by a verifiable data registry.
 
-The Stacks blockchain addresses performance problems using a layered approach. The base layer consists of the Stacks blockchain, and the Blockchain Naming System (BNS) [20]. The blockchain governs ownership of identities in the Stacks network. Identities can be names such as namespaces, domain, and subdomain names. These identities can refer to persons, applications, or things.  
+The Stacks blockchain addresses performance problems using a layered approach. The base layer consists of the Stacks blockchain, and the Blockchain Naming System (BNS) [21]. The blockchain governs ownership of identities in the Stacks network. Identities can be names such as namespaces, domain, and subdomain names. These identities can refer to persons, applications, or things.  
 
 Names in BNS have four properties:
 
@@ -175,7 +175,7 @@ The control plane defines the protocol for registering human-readable names, cre
 
 While on-chain storage solutions like IPFS and Arweave are designed for immutable, censorship-resistant permanent storage, they cannot be deemed as providing user control of the data since the user cannot modify or remove the data once it has been deployed. 
 
-Apps built with the Stacks blockchain can store off-chain data using a storage system called Gaia. [21]
+Apps built with the Stacks blockchain can store off-chain data using a storage system called Gaia. [22]
 
 Gaia is a unique approach to decentralized storage that focuses primarily on user-ownership of data, rather than immutable on-chain storage. The emphasis here is on user control.
 
@@ -187,9 +187,9 @@ Storing data off of the blockchain ensures that these applications (decentralize
 
 ###### 2.2.5.1 Stacks Architecture is Based on the Identity
 
-The Stacks blockchain addresses performance problems using a layered approach. The base layer consists of the Stacks blockchain and the Blockchain Naming System (BNS). The blockchain governs ownership of identities in the Stacks network. Identities can be names such as domain names, usernames, or application names.  [21]
+The Stacks blockchain addresses performance problems using a layered approach. The base layer consists of the Stacks blockchain and the Blockchain Naming System (BNS). The blockchain governs ownership of identities in the Stacks network. Identities can be names such as domain names, usernames, or application names.  [22]
 
-When an identity is created, its creation is recorded in the Stacks blockchain. Identities make up the primary data stored into the Stacks blockchain. These identities correspond to routing data in the OSI stack [22]. The routing data is stored in the Atlas Peer Network [23], the second layer. Every core node that joins the Stacks Network is able to obtain an entire copy of this routing data. Stacks uses the routing data to associate identities (domain names, user names, and application names) with a particular storage location in the final layer, the Gaia Storage System.
+When an identity is created, its creation is recorded in the Stacks blockchain. Identities make up the primary data stored into the Stacks blockchain. These identities correspond to routing data in the OSI stack [23]. The routing data is stored in the Atlas Peer Network [24], the second layer. Every core node that joins the Stacks Network is able to obtain an entire copy of this routing data. Stacks uses the routing data to associate identities (domain names, user names, and application names) with a particular storage location in the final layer, the Gaia Storage System.
 
 A Gaia Storage System consists of a hub service and storage resource on a cloud software provider. The storage provider can be any commercial provider such as Azure, DigitalOcean, Amazon EC2, and so forth. Typically the compute resource and the storage resource reside same cloud vendor, though this is not a requirement. Gaia currently has driver support for S3, Azure Blob Storage, Google Cloud Platform and local disk, but the driver model allows for other backend support as well.
 
@@ -199,13 +199,15 @@ The Stacks blockchain stores only identity data. Data created by the actions of 
 
 ###### 2.2.5.2 Example of a Name Registration in the Stacks Architecture
 
-The domain name phillip.stx was registered in the BNS at tra
-´´´
+The domain name phillip.stx was registered in the base layer of the Stacks blockchain and the BNS at the transaction last_txid":"0x102d73f2ce7906649715764a78d9b75dc3f188ff60128f61dc9d713790906f29".  The ownership of the domain name is represented with the "address":"SP17Z5ZD89DVJHDB2SBZAST41PTS3BS50YY3XBVJY", and it was executed using the BNS smartcontract function "name-register" [20].
+
+```
 {"address":"SP17Z5ZD89DVJHDB2SBZAST41PTS3BS50YY3XBVJY","blockchain":"stacks","last_txid":"0x102d73f2ce7906649715764a78d9b75dc3f188ff60128f61dc9d713790906f29","status":"name-register","zonefile_hash":"c74108af50c099a211e35eb22456812a1a61230e","expire_block":36708}
-´´´
-´´´
+```
+A zone file is used to describe the routing data similarly to a Domain Name System (DNS) zone file. In this example, the zone file text associated to the phillip.stx name is the following>:
+```
 {"zonefile":"$ORIGIN phillip.stx.\n$TTL 3600\n_http._tcp\tIN\tURI\t10\t1\t\"https://gaia.blockstack.org/hub/17tqGoM8xDjLTpy2rFZ1yj9BPmVeC3zjDi/profile.json\"\n\n"}
-´´´
+```
 
 
 ##### 2.2.6 Decentralized Applications (Dapp's)
@@ -565,7 +567,8 @@ Instead of using the Stacks or Bitcoin addresses, the users can use the DID as t
 [17] (https://www.usenix.org/system/files/conference/atc16/atc16_paper-ali.pdf)
 [18] (https://stacks.co)
 [19] Clarity
-[20] BNS
-[21] (https://docs.stacks.co/concepts/gaia)
-[22] OSI Stack (https://en.wikipedia.org/wiki/OSI_model)
-[23] The original Atlas Network (https://github.com/stacks-archive/atlas?tab=readme-ov-file)
+[20] BNS Smartcontract blockchain deployment (https://explorer.hiro.so/txid/SP000000000000000000002Q6VF78.bns?chain=mainnet)
+[21] BNS
+[22] (https://docs.stacks.co/concepts/gaia)
+[23] OSI Stack (https://en.wikipedia.org/wiki/OSI_model)
+[24] The original Atlas Network that later was merged wiht Stacks Core (https://github.com/stacks-archive/atlas?tab=readme-ov-file)
