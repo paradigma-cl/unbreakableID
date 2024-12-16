@@ -46,17 +46,62 @@ The Double spending Problem.  How does a decentralised network reach consensus o
 The blockchain and the internet could be applied to different needs of human beings. The first need is for the individual, agreement between peers, and things.
 
 ### 1.	The use of Internet Identification System
-Your Personal Digital ID or the Digital ID or name of your organization must be irreplaceable. We must assure a secure world, peaceful, and without setbacks produced by hackers or identity theft.
+We must assure that the use of digital technology maintains a secure world, peaceful, and without setbacks produced by hackers or identity theft. The evolution of digital identification has been fast progressing from traditional methods to more advanced and secure methods. [8]
 
-#### 1.1 Domain Name System (DNS)
-The Domain Name System (DNS) is a hierarchical and distributed name service that provides a naming system for computers, services, and other resources on the Internet or other Internet Protocol (IP) networks. It associates various information with domain names (identification strings) assigned to each of the associated entities. Most prominently, it translates readily memorized domain names to the numerical IP addresses needed for locating and identifying computer services and devices with the underlying network protocols. [8]
+### 1.1 Evolution
+
+#### Early Days
+Initial Authentication: In the early days of the Internet, identification was primarily based on username and password systems. This method was simple but had significant security vulnerabilities1.
+
+#### Advancements in Security
+Two-Factor Authentication (2FA): To address security concerns, two-factor authentication emerged, requiring users to provide a second form of verification, such as a code sent to their mobile phone.
+
+Biometric Authentication: The introduction of biometric authentication (e.g., fingerprint, facial recognition) provided a more secure and convenient way to verify identities.
+
+#### Mobile and Digital Identity Platforms
+Mobile Authentication: With the rise of smartphones, mobile-based authentication methods became prevalent, allowing users to authenticate themselves using mobile apps and push notifications.
+
+Digital Identity Platforms: These platforms centralized identity verification processes, streamlining identity checks across multiple online services.
+
+#### Decentralized Identity Solutions
+Blockchain Technology: Blockchain introduced decentralized identity solutions, giving individuals control over their digital identities and leveraging the distributed nature of blockchain for security.
+
+#### Current Trends
+Enhanced Security: Continuous improvements in security measures, including advanced encryption and continuous authentication, are being implemented to protect user identities.
+
+Seamless User Experience: Efforts are ongoing to balance security with a seamless user experience, ensuring that identity verification processes are both secure and user-friendly.
+
+The evolution of digital identification has transformed how individuals prove their identities online, making it more secure, efficient, and convenient.
+
+### 1.2 The Internet Infrastructure Integral to the Management, Security, and Credibility of Digital Identities
+The Internet infrastructure is integral to the management, security, and credibility of digital identities.
+
+#### 1.2.1 Domain Ownership
+A domain name is a critical part of an organization's digital identity. It serves as the unique address on the internet, much like a business's storefront [9]. Ensuring that the domain is properly registered and managed is essential for maintaining control over the digital identity [9].
+
+#### 1.2.2 Authentication
+DNS plays a role in the authentication process. When a user tries to access a website, the DNS system resolves the domain name to an IP address [9]. This step is crucial for verifying that the user is connecting to the correct server, which is part of the broader digital identity verification process.
+
+#### 1.2.3 Security
+Protecting the DNS infrastructure is vital for safeguarding digital identities. DNS attacks, such as DNS spoofing or hijacking, can lead to unauthorized access to sensitive information and compromise digital identities1.
+
+#### 1.2.4 Trust and Credibility
+A well-maintained DNS infrastructure enhances the trustworthiness and credibility of a digital identity [9]. For example, businesses that use consistent and secure domain names are more likely to be trusted by users and customers [9].
+
+#### 1.2.5 Decentralized Identity Solutions
+Some digital identity solutions leverage blockchain technology to create decentralized identities [10]. These solutions often use DNS-like systems to manage and verify digital identities in a secure and transparent manner.
+
+In summary, DNS infrastructure is integral to the management, security, and credibility of digital identities. Properly managing DNS can help ensure that digital identities are protected and trusted by users and organizations alike.
+
+#### 1.3 Domain Name System (DNS)
+The Domain Name System (DNS) is a hierarchical and distributed name service that provides a naming system for computers, services, and other resources on the Internet or other Internet Protocol (IP) networks. It associates various information with domain names (identification strings) assigned to each of the associated entities. Most prominently, it translates readily memorized domain names to the numerical IP addresses needed for locating and identifying computer services and devices with the underlying network protocols. [11]
 
 Names are globally unique and human-readable, but not strongly owned. The system operator has the final say as to what each name resolves to. This requires that client must trust the system, including their administrators as the only ones that can make these changes.
 
-#### 1.2 Domain Name System Zone File
-A Domain Name System (DNS) zone file is a text file that describes a DNS zone. A DNS zone is a subset, often a single domain, of the hierarchical domain name structure of the DNS. The zone file contains mappings between domain names, IP addresses, and other resources, organized in the form of text representations of resource records (RR). [9] 
+#### 1.3.1 Domain Name System Zone File
+A Domain Name System (DNS) zone file is a text file that describes a DNS zone. A DNS zone is a subset, often a single domain, of the hierarchical domain name structure of the DNS. The zone file contains mappings between domain names, IP addresses, and other resources, organized in the form of text representations of resource records (RR). [12] 
 
-The zone file has to follow an agreed format [10] 
+The zone file has to follow an agreed format [13] 
 
 An example of a zone file for the domain example.com is the following:
 ```
@@ -78,8 +123,52 @@ mail          IN  A     192.0.2.3             ; IPv4 address for mail.example.co
 mail2         IN  A     192.0.2.4             ; IPv4 address for mail2.example.com
 mail3         IN  A     192.0.2.5             ; IPv4 address for mail3.example.com
 ```
-The Internet Corporation for Assigned Names and Numbers (ICANN) [11] requires the registry operators to provide bulk access to the zone files of the Generic Top Level Domain (gTLD) at least on a daily basis. For gTLDs, a zone file contains information about domain names that are active in that gTLD. In general, Internet users may be able to access and download zone file data at no cost for certain purposes.
-[12]
+The Internet Corporation for Assigned Names and Numbers (ICANN) [14] requires the registry operators to provide bulk access to the zone files of the Generic Top Level Domain (gTLD) at least on a daily basis. For gTLDs, a zone file contains information about domain names that are active in that gTLD. In general, Internet users may be able to access and download zone file data at no cost for certain purposes.
+[15]
+
+#### 1.3.2 Performance Issues to be Considered in DNS
+The response time of a DNS (Domain Name System) query is quite relevant for several reasons:
+
+User Experience: A faster DNS response time means quicker resolution of domain names to IP addresses, leading to faster website loading times. This can significantly enhance user experience, particularly for users on slow connections or accessing content-rich websites.
+
+Website Performance: Websites with faster DNS response times often have better overall performance. Slow DNS queries can lead to delays in loading web pages, affecting user satisfaction and engagement.
+
+SEO Ranking: Search engines like Google consider page load times as one of the factors in their ranking algorithms. Faster DNS resolution can contribute to better page load times and potentially improve a website's SEO ranking.
+
+Network Efficiency: Efficient DNS queries reduce the amount of time and resources required for network communications, making the overall network more efficient.
+
+Reliability: Faster DNS responses can indicate a more reliable DNS infrastructure, reducing the likelihood of timeouts or failures during the domain resolution process.
+
+Security: Faster DNS responses can also help in mitigating certain types of cyber-attacks, such as DNS amplification attacks, by reducing the time an attacker has to exploit DNS queries.
+
+Overall, the response time of a DNS query is an important aspect of web performance, user experience, and network efficiency.
+
+#### 1.3.3 Recommendations and Best Practices to Ensure Effective DNS Routing
+There are several recommendations and best practices to ensure effective DNS routing and zone file management:
+
+#### DNS Routing Policies
+Weighted Round Robin (WRR): Distribute traffic among multiple servers based on assigned weights.[16]
+
+Geolocation Routing: Direct traffic based on the geographic location of the user.[16]
+
+Failover Routing: Set up backup servers to take over in case the primary server fails.[16]
+
+Health Checks: Regularly monitor the health of your servers and automatically reroute traffic if a server fails.[16]
+
+#### DNS Zone File Management
+Regular Updates: Keep DNS records up to date to ensure accurate domain resolution.[17]
+
+Redundancy: Use secondary (slave) DNS zones to provide redundancy and improve reliability.[17]
+
+Security: Secure zone transfers to prevent unauthorized access and implement DNSSEC to protect against DNS spoofing.[17]
+
+Monitoring: Regularly monitor DNS zone health to detect and resolve issues promptly.[17]
+
+TTL Management: Set appropriate Time to Live (TTL) values to control how long DNS records are cached.[18]
+
+Access Control: Limit access to DNS zone management to authorized personnel only.[17]
+
+Backup: Regularly back up DNS zone files and store them securely.[18]
 
 ### 2. The Use of Cryptographic Keys to Represent Names
 Several attempts to use cryptographic names have been tested, from the keys they reference. These names are difficult for most users to remember since they do not carry semantic information relating to their use in the system.
@@ -89,16 +178,16 @@ Several attempts to use cryptographic names have been tested, from the keys they
 Several types of cryptographic infrastructures are operating on the internet.  
 
 ##### 2.1.1 Public Key Infrastructure (PKI)
-This is a framework used to create, manage, distribute, use, store, and revoke digital certificates and manage public-key encryption. It's widely used for secure electronic communication, such as e-commerce and internet banking. [13]
+This is a framework used to create, manage, distribute, use, store, and revoke digital certificates and manage public-key encryption. It's widely used for secure electronic communication, such as e-commerce and internet banking. [19]
 
 ##### 2.1.2 Blockchain
-Technologies like Bitcoin and Ethereum are well-known examples. [14] Blockchain provides a decentralized and secure way to record transactions and manage data. 
+Technologies like Bitcoin and Ethereum are well-known examples. [20] Blockchain provides a decentralized and secure way to record transactions and manage data. 
 
 ##### 2.1.3 Secure Cryptography Infrastructures in the Cloud
-Solutions like SECRIN [15] are designed to protect cryptographic keys in virtualized environments, ensuring secure communication and data protection.
+Solutions like SECRIN [21] are designed to protect cryptographic keys in virtualized environments, ensuring secure communication and data protection.
 
 ##### 2.1.4 Hardware Security Modules (HSMs)
-These are physical devices that manage digital keys and provide cryptographic operations. They are often used to meet regulatory requirements and provide high levels of security.[16]
+These are physical devices that manage digital keys and provide cryptographic operations. They are often used to meet regulatory requirements and provide high levels of security.[22]
 
 #### 2.2 Experience Implementing a Naming System on the Blockchain
 
@@ -110,7 +199,7 @@ Users can register human meaningful names and securely associate data with them,
 
 ##### 2.2.1 Bitcoin Name Service (BNS)
 
-The first name registered in a Bitcoin Blockchain transaction was in 2014, called Namecoin service on the Bitcoin Blockchain. [17]  This service evolved as the Bitcoin Name Service (BNS) on the Blockstack Blockchain. Later, Blockstack Blockchain and rebranded as the Stacks Blockchain [18], a Bitcoin L2 Blockchain.
+The first name registered in a Bitcoin Blockchain transaction was in 2014, called Namecoin service on the Bitcoin Blockchain. [20]  This service evolved as the Bitcoin Name Service (BNS) on the Blockstack Blockchain. Later, Blockstack Blockchain and rebranded as the Stacks Blockchain [21], a Bitcoin L2 Blockchain.
 This BNS naming system means that (a) names are human-readable and can be picked by humans, (b) name-value pairs have a strong sense of ownership— that is, they can be owned by cryptographic keypairs, and c) there is no central trusted party or point of failure.
 
 This makes it a powerful tool for building all kinds of network applications. Using the BNS, the following can be achieved:
@@ -125,7 +214,7 @@ This makes it a powerful tool for building all kinds of network applications. Us
 
 Software applications built with the Stacks blockchain (Bitcoin L2) integrated, give users control over their digital identities, assets, and data. Unlike most cloud-based apps, they are "decentralized" since they do not depend on any centralized platform, server, or database to function. Rather, they use the Stacks blockchain to authenticate users and facilitate read and write requests for them without any single point of failure or trust.
 
-The name registry is built with a smart contract that was deployed and runs on the Stacks Blockchain, a Bitcoin L2 Blockchain. The provable smart contract is written in Clarity [19], a safe, decidable language. The contract links the STX address and the name, domain, and namespace according to the rules about fees and expiry.  The BNS contract was deployed at a Stacks Blockchain transaction. [20] 
+The name registry is built with a smart contract that was deployed and runs on the Stacks Blockchain, a Bitcoin L2 Blockchain. The provable smart contract is written in Clarity [23], a safe, decidable language. The contract links the STX address and the name, domain, and namespace according to the rules about fees and expiry.  The BNS contract was deployed at a Stacks Blockchain transaction. [24] 
 
 ##### 2.2.2 Decentralized Name or ID
 This kind of name can be called Decentralized ID or Decentralized Name.  It uses cryptography, digital wallets, and related technologies to enable multiple entities to produce credentials and empower individuals to manage their data. 
@@ -138,7 +227,7 @@ Decentralized ID systems create a trust triangle that links issuers, holders, an
 ###### Verifiers
        assess these attestations to determine whether they satisfy requirements. This process is facilitated by a verifiable data registry.
 
-The Stacks blockchain addresses performance problems using a layered approach. The base layer consists of the Stacks blockchain, and the Blockchain Naming System (BNS) [21]. The blockchain governs ownership of identities in the Stacks network. Identities can be names such as namespaces, domain, and subdomain names. These identities can refer to persons, applications, or things.  
+The Stacks blockchain addresses performance problems using a layered approach. The base layer consists of the Stacks blockchain, and the Blockchain Naming System (BNS) [25]. The blockchain governs ownership of identities in the Stacks network. Identities can be names such as namespaces, domain, and subdomain names. These identities can refer to persons, applications, or things.  
 
 Names in BNS have four properties:
 
@@ -175,7 +264,7 @@ The control plane defines the protocol for registering human-readable names, cre
 
 While on-chain storage solutions like IPFS and Arweave are designed for immutable, censorship-resistant permanent storage, they cannot be deemed as providing user control of the data since the user cannot modify or remove the data once it has been deployed. 
 
-Apps built with the Stacks blockchain can store off-chain data using a storage system called Gaia. [22]
+Apps built with the Stacks blockchain can store off-chain data using a storage system called Gaia. [26]
 
 Gaia is a unique approach to decentralized storage that focuses primarily on user-ownership of data, rather than immutable on-chain storage. The emphasis here is on user control.
 
@@ -187,9 +276,9 @@ Storing data off of the blockchain ensures that these applications (decentralize
 
 ###### 2.2.5.1 Stacks Architecture is Based on the Identity
 
-The Stacks blockchain addresses performance problems using a layered approach. The base layer consists of the Stacks blockchain and the Blockchain Naming System (BNS). The blockchain governs ownership of identities in the Stacks network. Identities can be names such as domain names, usernames, or application names.  [22]
+The Stacks blockchain addresses performance problems using a layered approach. The base layer consists of the Stacks blockchain and the Blockchain Naming System (BNS). The blockchain governs ownership of identities in the Stacks network. Identities can be names such as domain names, usernames, or application names.  [27]
 
-When an identity is created, its creation is recorded in the Stacks blockchain. Identities make up the primary data stored into the Stacks blockchain. These identities correspond to routing data in the OSI stack [23]. The routing data is stored in the Atlas Peer Network [24], the second layer. Every core node that joins the Stacks Network is able to obtain an entire copy of this routing data. Stacks uses the routing data to associate identities (domain names, user names, and application names) with a particular storage location in the final layer, the Gaia Storage System.
+When an identity is created, its creation is recorded in the Stacks blockchain. Identities make up the primary data stored into the Stacks blockchain. These identities correspond to routing data in the OSI stack [28]. The routing data is stored in the Atlas Peer Network [29], the second layer. Every core node that joins the Stacks Network is able to obtain an entire copy of this routing data. Stacks uses the routing data to associate identities (domain names, user names, and application names) with a particular storage location in the final layer, the Gaia Storage System.
 
 A Gaia Storage System consists of a hub service and storage resource on a cloud software provider. The storage provider can be any commercial provider such as Azure, DigitalOcean, Amazon EC2, and so forth. Typically the compute resource and the storage resource reside same cloud vendor, though this is not a requirement. Gaia currently has driver support for S3, Azure Blob Storage, Google Cloud Platform and local disk, but the driver model allows for other backend support as well.
 
@@ -199,7 +288,7 @@ The Stacks blockchain stores only identity data. Data created by the actions of 
 
 ###### 2.2.5.2 Example of a Name Registration in the Stacks Architecture
 
-The domain name phillip.stx was registered in the base layer of the Stacks blockchain and the BNS at the transaction last_txid":"0x102d73f2ce7906649715764a78d9b75dc3f188ff60128f61dc9d713790906f29".  The ownership of the domain name is represented with the "address":"SP17Z5ZD89DVJHDB2SBZAST41PTS3BS50YY3XBVJY", and it was executed using the BNS smartcontract function "name-register" [20]. A hash of the routing information is included in the base layer.
+The domain name phillip.stx was registered in the base layer of the Stacks blockchain and the BNS at the transaction last_txid":"0x102d73f2ce7906649715764a78d9b75dc3f188ff60128f61dc9d713790906f29".  The ownership of the domain name is represented with the "address":"SP17Z5ZD89DVJHDB2SBZAST41PTS3BS50YY3XBVJY", and it was executed using the BNS smartcontract function "name-register" [30]. A hash of the routing information is included in the base layer.
 
 ```
 {"address":"SP17Z5ZD89DVJHDB2SBZAST41PTS3BS50YY3XBVJY","blockchain":"stacks","last_txid":"0x102d73f2ce7906649715764a78d9b75dc3f188ff60128f61dc9d713790906f29","status":"name-register","zonefile_hash":"c74108af50c099a211e35eb22456812a1a61230e","expire_block":36708}
@@ -554,20 +643,26 @@ Instead of using the Stacks or Bitcoin addresses, the users can use the DID as t
 [5] 'Abdu'l-Bahá  Wings..
 [6] Nakamoto, Satoshi
 [7] Hashing
-[8] (https://en.wikipedia.org/wiki/Domain_Name_System)
-[9] (https://en.wikipedia.org/wiki/Zone_file)
-[10] (https://datatracker.ietf.org/doc/html/rfc1035)
-[11] (https://www.icann.org/resources/pages/welcome-2012-02-25-en)
-[12] (https://www.icann.org/resources/pages/zfa-2013-06-28-en)
-[13] (https://en.wikipedia.org/wiki/Public_key_infrastructure)
-[14] (https://bitcoin.org/bitcoin.pdf)
-[15] (https://www.ittc.ku.edu/~fli/papers/2020_globecom_Secure_Cryptography_Infrastructures.pdf)
-[16] (https://www.isaca.org/resources/news-and-trends/industry-news/2020/why-cryptographic-infrastructures-require-high-availability)
-[17] (https://www.usenix.org/system/files/conference/atc16/atc16_paper-ali.pdf)
-[18] (https://stacks.co)
-[19] Clarity
-[20] BNS Smartcontract blockchain deployment (https://explorer.hiro.so/txid/SP000000000000000000002Q6VF78.bns?chain=mainnet)
-[21] BNS
-[22] (https://docs.stacks.co/concepts/gaia)
-[23] OSI Stack (https://en.wikipedia.org/wiki/OSI_model)
-[24] The original Atlas Network that later was merged wiht Stacks Core (https://github.com/stacks-archive/atlas?tab=readme-ov-file)
+[8] (https://identitymanagementinstitute.org/evolution-of-digital-identification/)
+[9] (https://joinclicki.com/blog-full/understanding-dns-and-domain-key-to-digital-identity-and-trust)
+[10] (https://link.springer.com/article/10.1007/s44206-023-00049-z)
+[11] (https://en.wikipedia.org/wiki/Domain_Name_System)
+[12] (https://en.wikipedia.org/wiki/Zone_file)
+[13] (https://datatracker.ietf.org/doc/html/rfc1035)
+[14] (https://www.icann.org/resources/pages/welcome-2012-02-25-en)
+[15] (https://www.icann.org/resources/pages/zfa-2013-06-28-en)
+[16] https://cloud.google.com/dns/docs/routing-policies-overview
+[17] https://www.ioriver.io/terms/dns-zone
+[18] https://www.lectron.net/docs/dns/dns-configuration-and-management/managing-dns-zones/
+[19] (https://en.wikipedia.org/wiki/Public_key_infrastructure)
+[20] (https://bitcoin.org/bitcoin.pdf)
+[21] (https://www.ittc.ku.edu/~fli/papers/2020_globecom_Secure_Cryptography_Infrastructures.pdf)
+[22] (https://www.isaca.org/resources/news-and-trends/industry-news/2020/why-cryptographic-infrastructures-require-high-availability)
+[23] (https://www.usenix.org/system/files/conference/atc16/atc16_paper-ali.pdf)
+[24] (https://stacks.co)
+[25] Clarity
+[26] BNS Smartcontract blockchain deployment (https://explorer.hiro.so/txid/SP000000000000000000002Q6VF78.bns?chain=mainnet)
+[27] BNS
+[28] (https://docs.stacks.co/concepts/gaia)
+[29] OSI Stack (https://en.wikipedia.org/wiki/OSI_model)
+[30] The original Atlas Network that later was merged wiht Stacks Core (https://github.com/stacks-archive/atlas?tab=readme-ov-file)
