@@ -45,13 +45,13 @@ The Double spending Problem.  How does a decentralised network reach consensus o
 
 The blockchain and the internet could be applied to different needs of human beings. The first need is for the individual, agreement between peers, and things.
 
-### 1.	The use of Internet Identification System
+### 1.	The Experience of Internet as an Identification System
 We must assure that the use of digital technology maintains a secure world, peaceful, and without setbacks produced by hackers or identity theft. The evolution of digital identification has been fast progressing from traditional methods to more advanced and secure methods. [8]
 
 ### 1.1 Evolution
 
 #### Early Days
-Initial Authentication: In the early days of the Internet, identification was primarily based on username and password systems. This method was simple but had significant security vulnerabilities1.
+Initial Authentication: In the early days of the Internet, identification was primarily based on username and password systems. This method was simple but had significant security vulnerabilities.
 
 #### Advancements in Security
 Two-Factor Authentication (2FA): To address security concerns, two-factor authentication emerged, requiring users to provide a second form of verification, such as a code sent to their mobile phone.
@@ -637,32 +637,61 @@ Instead of using the Stacks or Bitcoin addresses, the users can use the DID as t
 ### References
 
 [1] Kenneth Arrow wrote in 1971  p. 22
+
 [2] Bowles, Samuel; Gintis, Herbert. A Cooperative Species (p. 200). Princeton University Press. Kindle Edition.
+
 [3] Bahá'u'lláh,
+
 [4] Frankl, Victor
+
 [5] 'Abdu'l-Bahá  Wings..
+
 [6] Nakamoto, Satoshi
+
 [7] Hashing
+
 [8] (https://identitymanagementinstitute.org/evolution-of-digital-identification/)
+
 [9] (https://joinclicki.com/blog-full/understanding-dns-and-domain-key-to-digital-identity-and-trust)
+
 [10] (https://link.springer.com/article/10.1007/s44206-023-00049-z)
+
 [11] (https://en.wikipedia.org/wiki/Domain_Name_System)
+
 [12] (https://en.wikipedia.org/wiki/Zone_file)
+
 [13] (https://datatracker.ietf.org/doc/html/rfc1035)
+
 [14] (https://www.icann.org/resources/pages/welcome-2012-02-25-en)
+
 [15] (https://www.icann.org/resources/pages/zfa-2013-06-28-en)
+
 [16] https://cloud.google.com/dns/docs/routing-policies-overview
+
 [17] https://www.ioriver.io/terms/dns-zone
+
 [18] https://www.lectron.net/docs/dns/dns-configuration-and-management/managing-dns-zones/
+
 [19] (https://en.wikipedia.org/wiki/Public_key_infrastructure)
+
 [20] (https://bitcoin.org/bitcoin.pdf)
+
 [21] (https://www.ittc.ku.edu/~fli/papers/2020_globecom_Secure_Cryptography_Infrastructures.pdf)
+
 [22] (https://www.isaca.org/resources/news-and-trends/industry-news/2020/why-cryptographic-infrastructures-require-high-availability)
+
 [23] (https://www.usenix.org/system/files/conference/atc16/atc16_paper-ali.pdf)
+
 [24] (https://stacks.co)
+
 [25] Clarity
+
 [26] BNS Smartcontract blockchain deployment (https://explorer.hiro.so/txid/SP000000000000000000002Q6VF78.bns?chain=mainnet)
+
 [27] BNS
+
 [28] (https://docs.stacks.co/concepts/gaia)
+
 [29] OSI Stack (https://en.wikipedia.org/wiki/OSI_model)
+
 [30] The original Atlas Network that later was merged wiht Stacks Core (https://github.com/stacks-archive/atlas?tab=readme-ov-file)
