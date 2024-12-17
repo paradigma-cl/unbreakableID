@@ -1,6 +1,6 @@
 # unbreakableID
 ## Peers looking for trust in the digitalverse 
-### prepared by Phillip Roe - Paradigma SpA
+#### prepared by Phillip Roe - Paradigma SpA - did:web:phillip.xck.app
 ## Vision
 In the absence of trust . . . opportunities for mutually beneficial cooperation would have to be foregone . . . norms of social behavior, including ethical and moral codes [may be] . . . reactions of society to compensate for market failures. [1] Thus, social preferences such as a concern for the well-being of others and for fair procedures remain essential to sustaining society and enhancing the quality of life. 
 
@@ -46,7 +46,7 @@ The Double spending Problem.  How does a decentralised network reach consensus o
 
 The blockchain and the internet could be applied to different needs of human beings. The first need is for the individual, agreement between peers, and things.
 
-### 1.	The Experience of Internet as an Identification System
+## 1.	The Experience of Internet as an Identification System
 We must assure that the use of digital technology maintains a secure world, peaceful, and without setbacks produced by hackers or identity theft. The evolution of digital identification has been fast progressing from traditional methods to more advanced and secure methods. [8]
 
 ### 1.1 Evolution
@@ -77,29 +77,29 @@ The evolution of digital identification has transformed how individuals prove th
 ### 1.2 The Internet Infrastructure Integral to the Management, Security, and Credibility of Digital Identities
 The Internet infrastructure is integral to the management, security, and credibility of digital identities.
 
-#### 1.2.1 Domain Ownership
+#### Domain Ownership
 A domain name is a critical part of an organization's digital identity. It serves as the unique address on the internet, much like a business's storefront [9]. Ensuring that the domain is properly registered and managed is essential for maintaining control over the digital identity [9].
 
-#### 1.2.2 Authentication
+#### Authentication
 DNS plays a role in the authentication process. When a user tries to access a website, the DNS system resolves the domain name to an IP address [9]. This step is crucial for verifying that the user is connecting to the correct server, which is part of the broader digital identity verification process.
 
-#### 1.2.3 Security
+#### Security
 Protecting the DNS infrastructure is vital for safeguarding digital identities. DNS attacks, such as DNS spoofing or hijacking, can lead to unauthorized access to sensitive information and compromise digital identities1.
 
-#### 1.2.4 Trust and Credibility
+#### Trust and Credibility
 A well-maintained DNS infrastructure enhances the trustworthiness and credibility of a digital identity [9]. For example, businesses that use consistent and secure domain names are more likely to be trusted by users and customers [9].
 
-#### 1.2.5 Decentralized Identity Solutions
+#### Decentralized Identity Solutions
 Some digital identity solutions leverage blockchain technology to create decentralized identities [10]. These solutions often use DNS-like systems to manage and verify digital identities in a secure and transparent manner.
 
 In summary, DNS infrastructure is integral to the management, security, and credibility of digital identities. Properly managing DNS can help ensure that digital identities are protected and trusted by users and organizations alike.
 
-#### 1.3 Domain Name System (DNS)
+#### 1.2.1 Domain Name System (DNS)
 The Domain Name System (DNS) is a hierarchical and distributed name service that provides a naming system for computers, services, and other resources on the Internet or other Internet Protocol (IP) networks. It associates various information with domain names (identification strings) assigned to each of the associated entities. Most prominently, it translates readily memorized domain names to the numerical IP addresses needed for locating and identifying computer services and devices with the underlying network protocols. [11]
 
 Names are globally unique and human-readable, but not strongly owned. The system operator has the final say as to what each name resolves to. This requires that client must trust the system, including their administrators as the only ones that can make these changes.
 
-#### 1.3.1 Domain Name System Zone File
+#### 1.2.2 Domain Name System Zone File
 A Domain Name System (DNS) zone file is a text file that describes a DNS zone. A DNS zone is a subset, often a single domain, of the hierarchical domain name structure of the DNS. The zone file contains mappings between domain names, IP addresses, and other resources, organized in the form of text representations of resource records (RR). [12] 
 
 The zone file has to follow an agreed format [13] 
@@ -126,7 +126,7 @@ mail3         IN  A     192.0.2.5             ; IPv4 address for mail3.example.c
 ```
 The Internet Corporation for Assigned Names and Numbers (ICANN) [14] requires the registry operators to provide bulk access to the zone files of the Generic Top Level Domain (gTLD) at least on a daily basis. For gTLDs, a zone file contains information about domain names that are active in that gTLD. In general, Internet users may be able to access and download zone file data at no cost for certain purposes.[15]
 
-#### 1.3.2 Performance Issues Considered in DNS
+#### 1.2.3 Performance Issues Considered in DNS
 The response time of a DNS (Domain Name System) query is quite relevant for several reasons:
 
 User Experience: A faster DNS response time means quicker resolution of domain names to IP addresses, leading to faster website loading times. This can significantly enhance user experience, particularly for users on slow connections or accessing content-rich websites.
@@ -143,7 +143,7 @@ Security: Faster DNS responses can also help in mitigating certain types of cybe
 
 Overall, the response time of a DNS query is an important aspect of web performance, user experience, and network efficiency.
 
-#### 1.3.3 Recommendations and Best Practices to Ensure Effective DNS Routing
+#### 1.2.4 Recommendations and Best Practices to Ensure Effective DNS Routing
 There are several recommendations and best practices to ensure effective DNS routing and zone file management:
 
 #### DNS Routing Policies
