@@ -676,20 +676,20 @@ Instead of using the Stacks or Bitcoin addresses, the users can use the DID as t
 
 [20] (https://www.ittc.ku.edu/~fli/papers/2020_globecom_Secure_Cryptography_Infrastructures.pdf)
 
-[22] (https://www.isaca.org/resources/news-and-trends/industry-news/2020/why-cryptographic-infrastructures-require-high-availability)
+[21] (https://www.isaca.org/resources/news-and-trends/industry-news/2020/why-cryptographic-infrastructures-require-high-availability)
 
-[23] (https://www.usenix.org/system/files/conference/atc16/atc16_paper-ali.pdf)
+[22] (https://www.usenix.org/system/files/conference/atc16/atc16_paper-ali.pdf)
 
-[24] (https://stacks.co)
+[23] (https://stacks.co)
 
-[25] Clarity
+[24] Clarity
 
-[26] BNS Smartcontract blockchain deployment (https://explorer.hiro.so/txid/SP000000000000000000002Q6VF78.bns?chain=mainnet)
+[25] BNS Smartcontract blockchain deployment (https://explorer.hiro.so/txid/SP000000000000000000002Q6VF78.bns?chain=mainnet)
 
-[27] BNS
+[26] BNS
 
-[28] (https://docs.stacks.co/concepts/gaia)
+[27] (https://docs.stacks.co/concepts/gaia)
 
-[29] OSI Stack (https://en.wikipedia.org/wiki/OSI_model)
+[28] OSI Stack (https://en.wikipedia.org/wiki/OSI_model)
 
-[30] The original Atlas Network that later was merged wiht Stacks Core (https://github.com/stacks-archive/atlas?tab=readme-ov-file)
+[29] The original Atlas Network that later was merged wiht Stacks Core (https://github.com/stacks-archive/atlas?tab=readme-ov-file)
