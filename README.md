@@ -170,26 +170,26 @@ Access Control: Limit access to DNS zone management to authorized personnel only
 
 Backup: Regularly back up DNS zone files and store them securely.[18]
 
-### 2. The Use of Cryptographic Keys to Represent Names
+## 2. The Use of Cryptographic Keys to Represent Names
 Several attempts to use cryptographic names have been tested, from the keys they reference. These names are difficult for most users to remember since they do not carry semantic information relating to their use in the system.
 
-#### 2.1 Cryptographic Infrastructure on the Internet
+### 2.1 Cryptographic Infrastructure on the Internet
 
 Several types of cryptographic infrastructures are operating on the internet.  
 
-##### 2.1.1 Public Key Infrastructure (PKI)
+##### Public Key Infrastructure (PKI)
 This is a framework used to create, manage, distribute, use, store, and revoke digital certificates and manage public-key encryption. It's widely used for secure electronic communication, such as e-commerce and internet banking. [19]
 
-##### 2.1.2 Blockchain
+##### Blockchain
 Technologies like Bitcoin and Ethereum are well-known examples. [7] Blockchain provides a decentralized and secure way to record transactions and manage data. 
 
-##### 2.1.3 Secure Cryptography Infrastructures in the Cloud
+##### Secure Cryptography Infrastructures in the Cloud
 Solutions like SECRIN [20] are designed to protect cryptographic keys in virtualized environments, ensuring secure communication and data protection.
 
-##### 2.1.4 Hardware Security Modules (HSMs)
+##### Hardware Security Modules (HSMs)
 These are physical devices that manage digital keys and provide cryptographic operations. They are often used to meet regulatory requirements and provide high levels of security.[21]
 
-#### 2.2 Experience Implementing a Naming System on the Blockchain
+### 2.2 Experience Implementing a Naming System on the Blockchain
 
 The emergence of Blockchain became the candidate to implement the association between names and cryptographic keys. Blockchains provide a global append-only log that is publicly writeable. Writes to the global log, called transactions, are organized as blocks and each block packages multiple transactions into a single atomic write. Writing to the global log requires a payment in the form of a transaction fee. 
 
