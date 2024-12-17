@@ -177,16 +177,16 @@ Several attempts to use cryptographic names have been tested, from the keys they
 
 Several types of cryptographic infrastructures are operating on the internet.  
 
-##### Public Key Infrastructure (PKI)
+#### Public Key Infrastructure (PKI)
 This is a framework used to create, manage, distribute, use, store, and revoke digital certificates and manage public-key encryption. It's widely used for secure electronic communication, such as e-commerce and internet banking. [19]
 
-##### Blockchain
+#### Blockchain
 Technologies like Bitcoin and Ethereum are well-known examples. [7] Blockchain provides a decentralized and secure way to record transactions and manage data. 
 
-##### Secure Cryptography Infrastructures in the Cloud
+#### Secure Cryptography Infrastructures in the Cloud
 Solutions like SECRIN [20] are designed to protect cryptographic keys in virtualized environments, ensuring secure communication and data protection.
 
-##### Hardware Security Modules (HSMs)
+#### Hardware Security Modules (HSMs)
 These are physical devices that manage digital keys and provide cryptographic operations. They are often used to meet regulatory requirements and provide high levels of security.[21]
 
 ### 2.2 Experience Implementing a Naming System on the Blockchain
