@@ -2,8 +2,9 @@
 ## Peers looking for trust in the digitalverse 
 ### prepared by Phillip Roe - Paradigma SpA
 ## Vision
-In the absence of trust . . . opportunities for mutually beneficial cooperation would have to be foregone . . . norms of social behavior, including ethical and moral codes [may be] . . . reactions of society to compensate for market failures. [1] Thus, social preferences such as a concern for the well-being of others and for fair procedures remain essential to sustaining society and enhancing the quality of life. In a world increasingly connected not just by trade in goods but also by the exchange of violence, information, viruses, and emissions, the importance of social preferences in underwriting human cooperation, even survival, may now be greater even than it was among that small group of foragers that began the exodus from Africa 55,000 years ago to spread this particular cooperative species to the far corners of the world. [2]
+In the absence of trust . . . opportunities for mutually beneficial cooperation would have to be foregone . . . norms of social behavior, including ethical and moral codes [may be] . . . reactions of society to compensate for market failures. [1] Thus, social preferences such as a concern for the well-being of others and for fair procedures remain essential to sustaining society and enhancing the quality of life. 
 
+In a world increasingly connected not just by trade in goods but also by the exchange of violence, information, viruses, and emissions, the importance of social preferences in underwriting human cooperation, even survival, may now be greater even than it was among that small group of foragers that began the exodus from Africa 55,000 years ago to spread this particular cooperative species to the far corners of the world. [2]
 
 Human beings have become more conscious of a growing interdependence between all parts of the world with the growth of a world economy which followed the Great Transformation, the Services Transformation, the ICT revolution, the adoption of free trade policies, named as the New Globalization by most of the countries of the world.
 
@@ -35,13 +36,13 @@ payments. While the system works well enough for most transactions, it still suf
 
 Cryptographic proof. Here is the mathematical “magic” of the initial Bitcoin Blockchain: the ability to assess the integrity of records and verify new data, instead of relying on the trust of a bank, the state, the law or the authority of any other institution.
 
-How? Cryptographic hashing is a mathematical phenomenon whereby some data is run through a hashing algorithm, which will then output a string of characters. Only this particular data run through this particular hashing algorithm will produce that specific string of characters. What this means is that if the data is tampered with in any way, this can be proven by running it through the hashing algorithm again and checking if the output is the same.  Here is a cryptographic proof. [6]
+How? Cryptographic hashing is a mathematical phenomenon whereby some data is run through a hashing algorithm, which will then output a string of characters. Only this particular data run through this particular hashing algorithm will produce that specific string of characters. What this means is that if the data is tampered with in any way, this can be proven by running it through the hashing algorithm again and checking if the output is the same.  Here is a cryptographic proof. [7]
 
 Replacing “trust” with cryptographic proof promised to replace the uncertainty of humans and institutions with the certainty of mathematics, and yet cryptographic hashing is itself an area of human endeavour.
 
-Hashing is a discovery of universal principle that all else can be anchored to; for others, it is an area of research and invention, but is also an area of creativity, knowledge sharing and collaboration amongst peers experimenting and working with the phenomena of this curious universe we live in. [7]
+Hashing is a discovery of universal principle that all else can be anchored to; for others, it is an area of research and invention, but is also an area of creativity, knowledge sharing and collaboration amongst peers experimenting and working with the phenomena of this curious universe we live in. [6]
 
-The Double spending Problem.  How does a decentralised network reach consensus on which transactions are true? The solution to the double spending problem using peer-to-peer distributed time stamp server to generate computational proof of the chronological order of transactions.   [6]
+The Double spending Problem.  How does a decentralised network reach consensus on which transactions are true? The solution to the double spending problem using peer-to-peer distributed time stamp server to generate computational proof of the chronological order of transactions.   [7]
 
 The blockchain and the internet could be applied to different needs of human beings. The first need is for the individual, agreement between peers, and things.
 
@@ -123,10 +124,9 @@ mail          IN  A     192.0.2.3             ; IPv4 address for mail.example.co
 mail2         IN  A     192.0.2.4             ; IPv4 address for mail2.example.com
 mail3         IN  A     192.0.2.5             ; IPv4 address for mail3.example.com
 ```
-The Internet Corporation for Assigned Names and Numbers (ICANN) [14] requires the registry operators to provide bulk access to the zone files of the Generic Top Level Domain (gTLD) at least on a daily basis. For gTLDs, a zone file contains information about domain names that are active in that gTLD. In general, Internet users may be able to access and download zone file data at no cost for certain purposes.
-[15]
+The Internet Corporation for Assigned Names and Numbers (ICANN) [14] requires the registry operators to provide bulk access to the zone files of the Generic Top Level Domain (gTLD) at least on a daily basis. For gTLDs, a zone file contains information about domain names that are active in that gTLD. In general, Internet users may be able to access and download zone file data at no cost for certain purposes.[15]
 
-#### 1.3.2 Performance Issues to be Considered in DNS
+#### 1.3.2 Performance Issues Considered in DNS
 The response time of a DNS (Domain Name System) query is quite relevant for several reasons:
 
 User Experience: A faster DNS response time means quicker resolution of domain names to IP addresses, leading to faster website loading times. This can significantly enhance user experience, particularly for users on slow connections or accessing content-rich websites.
@@ -181,7 +181,7 @@ Several types of cryptographic infrastructures are operating on the internet.
 This is a framework used to create, manage, distribute, use, store, and revoke digital certificates and manage public-key encryption. It's widely used for secure electronic communication, such as e-commerce and internet banking. [19]
 
 ##### 2.1.2 Blockchain
-Technologies like Bitcoin and Ethereum are well-known examples. [20] Blockchain provides a decentralized and secure way to record transactions and manage data. 
+Technologies like Bitcoin and Ethereum are well-known examples. [7] Blockchain provides a decentralized and secure way to record transactions and manage data. 
 
 ##### 2.1.3 Secure Cryptography Infrastructures in the Cloud
 Solutions like SECRIN [21] are designed to protect cryptographic keys in virtualized environments, ensuring secure communication and data protection.
@@ -646,9 +646,9 @@ Instead of using the Stacks or Bitcoin addresses, the users can use the DID as t
 
 [5] 'Abdu'l-Bahá  Wings..
 
-[6] Nakamoto, Satoshi
+[6] Hashing (https://computersciencewiki.org/index.php/Hashing)
 
-[7] Hashing
+[7] Nakamoto, Satoshi (https://bitcoin.org/bitcoin.pdf)
 
 [8] (https://identitymanagementinstitute.org/evolution-of-digital-identification/)
 
@@ -674,9 +674,7 @@ Instead of using the Stacks or Bitcoin addresses, the users can use the DID as t
 
 [19] (https://en.wikipedia.org/wiki/Public_key_infrastructure)
 
-[20] (https://bitcoin.org/bitcoin.pdf)
-
-[21] (https://www.ittc.ku.edu/~fli/papers/2020_globecom_Secure_Cryptography_Infrastructures.pdf)
+[20] (https://www.ittc.ku.edu/~fli/papers/2020_globecom_Secure_Cryptography_Infrastructures.pdf)
 
 [22] (https://www.isaca.org/resources/news-and-trends/industry-news/2020/why-cryptographic-infrastructures-require-high-availability)
 
