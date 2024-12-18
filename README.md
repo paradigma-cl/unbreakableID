@@ -224,7 +224,19 @@ Blockchain is a large deployment of a decentralized PKI service.
 
 Users can register human meaningful names and securely associate data with them, and only the owner of the particular private keys that registered them can write or update the name-value pair. Many decentralized systems have been and can be built using these blockchain networks, such as new, decentralized versions of DNS and PKI.
 
-#### 2.2.1 Bitcoin Name Service (BNS)
+#### 2.2.1	Blockchain network interoperability
+A user private and public keys are based from the mathematical, and cryptographical algorithm, and they are to base to use it in the Stacks or Bitcoin blockchain.
+
+##### 2.2.1.1 Stacks address
+From a private key the user can derive a decidable public key in a Stacks address format, and in several Bitcoin addresses format. Actual Stacks 2.1 have methods accepting more BTC address formats (P2PKH, P2SH, P2WPKH, P2WSH, P2TR). A Stacks address starts with a “SP”. 
+
+##### 2.2.1.2 Bitcoin address
+Initially, the Bitcoin address was based on the legacy address P2PKH starting with a “1”, the actual ones are based on SegWit address P2WPKH starting with a “bc1”, and Taproot address when massively available starting with a “bc1p”. 
+
+##### 2.2.1.3 Both Stacks and Bitcoin addresses are linked together
+These addresses are mathematically or cryptographically linked together as one or the same, but they are used in the Stacks or Bitcoin blockchain ecosystem respectively.
+
+#### 2.2.2 Bitcoin Name Service (BNS)
 
 The first name registered in a Bitcoin Blockchain transaction was in 2014, called Namecoin service on the Bitcoin Blockchain. [22]  This service evolved as the Bitcoin Name Service (BNS) on the Blockstack Blockchain. Later, Blockstack Blockchain and rebranded as the Stacks Blockchain [23], a Bitcoin L2 Blockchain.
 
@@ -245,7 +257,7 @@ Software applications built with the Stacks blockchain (Bitcoin L2) integrated, 
 The name registry is built with a smart contract that was deployed and runs on the Stacks Blockchain, a Bitcoin L2 Blockchain. The provable smart contract is written in Clarity-smart contract language [24], a safe, decidable language. The contract links the STX address and the name, domain, and namespace according to the rules about fees and expiry.  The BNS contract version 1 was deployed at a Stacks Blockchain transaction. [25] 
 A BNS contract version 2 was deployed on September 2024 [26]. Additionaly to the basic functionality, it offers features for decentralized name management, marketplace integration, and supports both open and managed namespaces [27].
 
-#### 2.2.2 Decentralized Name or ID
+#### 2.2.3 Decentralized Name or ID
 This kind of name can be called Decentralized ID or Decentralized Name.  It uses cryptography, digital wallets, and related technologies to enable multiple entities to produce credentials and empower individuals to manage their data. 
 
 Decentralized ID systems create a trust triangle that links issuers, holders, and verifiers: 
@@ -268,7 +280,7 @@ Names in BNS have four properties:
 
 •	Names using their associated public and private keys can sign transactions. Only the owner of the name and the associated keys can sign in a verifiable way transactions, and the execution of the smart contracts in a decentralized way. This action represents the unique action of a user, that has access to those keys.
 
-#### 2.2.3 Challenges of a Naming System on Blockchain
+#### 2.2.4 Challenges of a Naming System on Blockchain
 Building systems with blockchains presents challenges:
 
 • Limits on Data Storage: Individual blockchain records are typically on the order of kilobytes and cannot hold much data. Moreover, the blockchain’s log structure implies that all state changes are recorded in the blockchain. All nodes participating in the network need to maintain a full copy of the blockchain, limiting the total size of blockchains to what current commodity hardware can support. 
@@ -280,7 +292,7 @@ To maintain fairness and to give all nodes a chance to become a leader in the ne
 
 • Endless Ledger: The integrity of blockchains depends on the ability of anyone to audit them back to the first block. As the system makes forward progress and issues new blocks, the cost of an audit grows linearly with time, which makes booting up new nodes progressively more time consuming. This is an endless ledger problem. 
 
-#### 2.2.4 Using the Immutability of the Blockchain to Build a Naming System
+#### 2.2.5 Using the Immutability of the Blockchain to Build a Naming System
 
 Relying on the consensus protocol of the underlying blockchain, there is an opportunity to provide a total ordering for all operations supported by the naming system, like name registrations, updates, and transfers.
 
@@ -289,7 +301,7 @@ This can be done with the separation of the Control and the Data.
 Decoupling the security of name registration and name ownership from the availability of data associated with names by separating the control and data planes.
 The control plane defines the protocol for registering human-readable names, creating (name, hash) bindings, and creating bindings to owning cryptographic keypairs
 
-#### 2.2.5 Storing Naming Data Associated to the Blockchain
+#### 2.2.6 Storing Naming Data Associated to the Blockchain
 
 While on-chain storage solutions like IPFS and Arweave are designed for immutable, censorship-resistant permanent storage, they cannot be deemed as providing user control of the data since the user cannot modify or remove the data once it has been deployed. 
 
@@ -303,7 +315,7 @@ Whereas public transactional metadata is best stored on the Stacks blockchain, u
 
 Storing data off of the blockchain ensures that these applications (decentralized) can provide users with high performance and high availability for data reads and writes without introducing central trust parties.
 
-##### 2.2.5.1 Stacks Architecture is Based on the Identity
+##### 2.2.6.1 Stacks Architecture is Based on the Identity
 
 When an identity is created, its creation is recorded in the Stacks blockchain. Identities make up the primary data stored into the Stacks blockchain. These identities correspond to routing data in the OSI stack [29]. The routing data is stored in the Atlas Peer Network [30], the second layer. Every core node that joins the Stacks Network is able to obtain an entire copy of this routing data. Stacks uses the routing data to associate identities (domain names, user names, and application names) with a particular storage location in the final layer, the Gaia Storage System.
 
@@ -326,7 +338,7 @@ The Apps objectives could suggest to use alternative solution to store data asso
 
 A proposal of extending Stacks component was proposed by @Paradigma-cl in this study [31] .
 
-##### 2.2.5.2 Example of a Name Registration in the Stacks Architecture
+##### 2.2.6.2 Example of a Name Registration in the Stacks Architecture
 
 The domain name phillip.stx was registered in the base layer of the Stacks blockchain and the BNS at the transaction last_txid":"0x102d73f2ce7906649715764a78d9b75dc3f188ff60128f61dc9d713790906f29".  The ownership of the domain name is represented with the "address":"SP17Z5ZD89DVJHDB2SBZAST41PTS3BS50YY3XBVJY", and it was executed using the BNS smartcontract function "name-register" [25]. A hash of the routing information is included in the base layer.
 
@@ -338,23 +350,23 @@ A zone file is used to describe the routing data similarly to a Domain Name Syst
 {"zonefile":"$ORIGIN phillip.stx.\n$TTL 3600\n_http._tcp\tIN\tURI\t10\t1\t\"https://gaia.blockstack.org/hub/17tqGoM8xDjLTpy2rFZ1yj9BPmVeC3zjDi/profile.json\"\n\n"}
 ```
 
-#### 2.2.6 Decentralized Applications (Dapp's)
+#### 2.2.7 Decentralized Applications (Dapp's)
 
 Decentralized Applications (Dapp’s) also called Web3 Apps [32] or Stacks applications is the New App that integrates these main functions, authentication, transaction signing, and data storage. All users can run their applications under their own private decentralized space. Web3 users own their data as they are the only one has access to and/or shares with other users its own private data through the decentralized application. These domain or subdomain names can also use the decentralized names or decentralized IDs, and they are registered to the public key associated to its private key or address, and the IP address location of the Dapp.
 
-#### 2.2.7 Decentralized Identifiers
+#### 2.2.8 Decentralized Identifiers
 
-The W3C [32] recommends Decentralized identifiers (DIDs), as a new type of identifier that enables verifiable, decentralized digital identity. A DID identifies any subject (e.g., a person, organization, thing, data model, abstract entity, etc.) that the controller of the DID decides to identify. In contrast to typical, federated identifiers, DIDs have been designed so that they may be decoupled from centralized registries, identity providers, and certificate authorities. DIDs are URIs that associate a DID subject with a DID document allowing trustable interactions associated with that subject. Each DID document can express cryptographic material, verification methods, or services, which provide a set of mechanisms enabling a DID controller to prove control of the DID.
+The World Wide Web Consortium - (W3C) recommends Decentralized identifiers (DIDs) [33], as a new type of identifier that enables verifiable, decentralized digital identity. A DID [34] refers to any subject (e.g., a person, organization, thing, data model, abstract entity, etc.) as determined by the controller of the DID. In contrast to typical, federated identifiers, DIDs have been designed so that they may be decoupled from centralized registries, identity providers, and certificate authorities. Specifically, while other parties might be used to help enable the discovery of information related to a DID, the design enables the controller of a DID to prove control over it without requiring permission from any other party. DIDs are URIs that associate a DID subject with a DID document allowing trustable interactions associated with that subject. 
+
+Each DID document can express cryptographic material, verification methods, or services, which provide a set of mechanisms enabling a DID controller to prove control of the DID. Services enable trusted interactions associated with the DID subject. A DID might provide the means to return the DID subject itself, if the DID subject is an information resource such as a data model.
 
 The DIDs for a person for example, are expressed through a name and an image, sometimes a description, background image, url, email, password signature, etc. The visual and textual representation of an account, helps users to better recognize their own accounts, from the accounts of other users. Stacks has a long history of Decentralized Identifiers (DIDs) as they introduced human readable names for bitcoin addresses when the project started as “One Name” back in 2014.
 
-The Stacks public DIDs is a profile that is registered with a username on-chain using the BNS (Blockchain Naming System) smart contract. These profiles are defined using the JSON web token, and its contents using the appropriate objects of the Schema standard [31], like the person object [32].
+The Stacks public DIDs is a profile that is registered with a username on-chain using the BNS (Blockchain Naming System) smart contract. These profiles are defined using the JSON web token, and its contents using the appropriate objects of the Schema standard [35], like the person object [36].
 
-#### 3.1 BNS and TLDs
+#### 2.2.8.1 Matching BNS and DID Standards
 
-
-#### 3.2 BNS and DID Standards
-BNS names can be compliant with the emerging Decentralized Identity Foundation (identity.foundation) protocol specification for decentralized identifiers (DIDs), and the W3C foundation. These initiatives define mechanisms by which an End-User can leverage an open provider to release identity information (such as authentication and claims) to a Relying Party which can act on that information.
+BNS names can be compliant with the emerging Decentralized Identity Foundation [37](identity.foundation) protocol specification for decentralized identifiers (DIDs), and the W3C. These initiatives define mechanisms by which an End-User can leverage an open provider to release identity information (such as authentication and claims) to a Relying Party which can act on that information.
 
 Each name in BNS has an associated DID. The DID format for BNS is:
 •	did:stack:v2:{address}-{index}
@@ -364,17 +376,7 @@ Where:
 •	{address} is an on-chain public key hash (for example a Stacks or Bitcoin address).
 •	{index} refers to the nth name this address created.
 
-### 3.	Blockchain network interoperability
-A user private and public keys are based from the mathematical, and cryptographical algorithm, and they are to base to use it in the Stacks or Bitcoin blockchain.
 
-#### 3.1 Stacks address
-From a private key the user can derive a decidable public key in a Stacks address format, and in several Bitcoin addresses format. Actual Stacks 2.1 have methods accepting more BTC address formats (P2PKH, P2SH, P2WPKH, P2WSH, P2TR). A Stacks address starts with a “SP”. 
-
-#### 3.2 Bitcoin address
-Initially, the Bitcoin address was based on the legacy address P2PKH starting with a “1”, the actual ones are based on SegWit address P2WPKH starting with a “bc1”, and Taproot address when massively available starting with a “bc1p”. 
-
-#### 3.3 Both Stacks and Bitcoin addresses are linked together
-These addresses are mathematically or cryptographically linked together as one or the same, but they are used in the Stacks or Bitcoin blockchain ecosystem respectively.
 
 #### 3.4 Domain and subdomain names can be associated to a Stacks and Bitcoin address
 The Stacks blockchain ensures that each node's BNS view is synchronized to all the other nodes in the world, so queries on one node will be the same on other nodes. Stacks blockchain nodes allow a name's owner to bind up to 40Kb of off-chain state to their name, which will be replicated to all other Stacks blockchain nodes via a P2P network.
@@ -715,6 +717,10 @@ Instead of using the Stacks or Bitcoin addresses, the users can use the DID as t
 
 [33] Decentralized Identifiers-DID (https://www.w3.org/TR/did-core/)
 
-[34] Schema (https://schema.org)
+[34] Decentralized Identifier (DID) (https://www.w3.org/TR/did-core/#dfn-decentralized-identifiers)
 
-[35] Schema Person Object (https://schema.org/person)
+[35] Schema (https://schema.org)
+
+[36] Schema Person Object (https://schema.org/person)
+
+[37] Identity Foundation (https://identity.foundation)
