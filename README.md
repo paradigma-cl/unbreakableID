@@ -100,8 +100,35 @@ The Domain Name System (DNS) is a hierarchical and distributed name service that
 Names are globally unique and human-readable, but not strongly owned. The system operator has the final say as to what each name resolves to. This requires that client must trust the system, including their administrators as the only ones that can make these changes.
 
 #### 1.2.2 Domain Name System Zone File
-A Domain Name System (DNS) zone file is a text file that describes a DNS zone. A DNS zone is a subset, often a single domain, of the hierarchical domain name structure of the DNS. The zone file contains mappings between domain names, IP addresses, and other resources, organized in the form of text representations of resource records (RR). [12] 
+A Domain Name System (DNS) zone file serves several essential purposes within the DNS infrastructure:
 
+Mapping Domain Names to IP Addresses: The primary function of a DNS zone file is to map domain names to their corresponding IP addresses. This allows users to access websites using human-readable names instead of numeric IP addresses.
+
+Defining DNS Records: A zone file contains various DNS records that define different aspects of the domain, such as:
+
+A Records: Map domain names to IPv4 addresses.
+
+AAAA Records: Map domain names to IPv6 addresses.
+
+CNAME Records: Create aliases for domain names.
+
+MX Records: Specify mail servers for email handling.
+
+TXT Records: Provide text information for various purposes, such as verification and security.
+
+NS Records: Indicate the authoritative name servers for the domain.
+
+The zone file contains mappings between domain names, IP addresses, and other resources, organized in the form of text representations of resource records (RR). [12] 
+
+Establishing Authority: The zone file designates the authoritative name servers for the domain, which are responsible for answering queries about the domain.
+
+Configuration and Management: The zone file allows administrators to configure and manage the DNS settings for the domain, including setting Time to Live (TTL) values and handling subdomains.
+
+Supporting Redundancy and Load Balancing: By defining multiple DNS records, a zone file can support redundancy and load balancing, distributing traffic across multiple servers to ensure availability and reliability.
+
+In essence, a DNS zone file is a crucial component for managing the relationship between domain names and their associated resources, ensuring that users can reliably and efficiently access websites and services on the internet.
+
+### Zone File Format
 The zone file has to follow an agreed format [13] 
 
 An example of a zone file for the domain example.com is the following:
