@@ -317,8 +317,17 @@ Storing data off of the blockchain ensures that these applications (decentralize
 
 ##### 2.2.6.1 Stacks Architecture is Based on the Identity
 
-When an identity is created, its creation is recorded in the Stacks blockchain. Identities make up the primary data stored into the Stacks blockchain. These identities correspond to routing data in the OSI stack [29]. The routing data is stored in the Atlas Peer Network [30], the second layer. Every core node that joins the Stacks Network is able to obtain an entire copy of this routing data. Stacks uses the routing data to associate identities (domain names, user names, and application names) with a particular storage location in the final layer, the Gaia Storage System.
+When an identity is created, its creation is recorded in the Stacks blockchain. Identities make up the primary data stored into the Stacks blockchain. These identities correspond to routing data in the OSI stack [29]. The routing data is stored in the Atlas Peer Network [30], the second layer. 
 
+###### Primary Data Stored into the Stacks Blockchain
+The Namespaces and Domain Names and user ownership is registered and stored using the BNS Smartcontract in the Stacks Blockchain. This registration considers a reference hash of the contents of the text file that describe the services associated to them.  This reference hash serves to verify if the contents have been modified.
+
+###### Secondary Data Stored in the Atlas Peer Network
+The routing data describing the services associated to ownership of the Namespace and Domain Name is stored as a text file in the Atlas Peer Network.  Similar functionality and file format used in the DNS Zone File management.
+
+Every core node that joins the Stacks Network is able to obtain an entire copy of this routing data. Stacks uses the routing data to associate identities (domain names, user names, or application names) with a particular storage location in the final layer, the Gaia Storage System.
+
+###### Terciary Data Stored in the Gaia Storage System
 A Gaia Storage System consists of a hub service and storage resource on a cloud software provider. The storage provider can be any commercial provider such as Azure, DigitalOcean, Amazon EC2, and so forth. Typically the compute resource and the storage resource reside same cloud vendor, though this is not a requirement. Gaia currently has driver support for S3, Azure Blob Storage, Google Cloud Platform, but the driver model allows for other backend support as well.
 
 Gaia stores data as a simple key-value store. When an identity is created, a corresponding data store is associated with that identity on Gaia. When a user logs into a dApp, the authentication process gives the application the URL of a Gaia hub, which then writes to storage on behalf of that user. 
@@ -366,7 +375,7 @@ The Stacks public DIDs is a profile that is registered with a username on-chain 
 
 #### 2.2.8.1 Matching BNS and DID Standards
 
-BNS names can be compliant with the emerging Decentralized Identity Foundation [37](identity.foundation) protocol specification for decentralized identifiers (DIDs), and the W3C. These initiatives define mechanisms by which an End-User can leverage an open provider to release identity information (such as authentication and claims) to a Relying Party which can act on that information.
+BNS names can be compliant with the emerging Decentralized Identity Foundation [37] protocol specification for decentralized identifiers (DIDs), and the W3C. These initiatives define mechanisms by which an End-User can leverage an open provider to release identity information (such as authentication and claims) to a Relying Party which can act on that information.
 
 Each name in BNS has an associated DID. The DID format for BNS is:
 •	did:stack:v2:{address}-{index}
