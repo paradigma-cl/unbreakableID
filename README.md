@@ -242,7 +242,7 @@ This makes it a powerful tool for building all kinds of network applications. Us
 
 Software applications built with the Stacks blockchain (Bitcoin L2) integrated, give users control over their digital identities, assets, and data. Unlike most cloud-based apps, they are "decentralized" since they do not depend on any centralized platform, server, or database to function. Rather, they use the Stacks blockchain to authenticate users and facilitate read and write requests for them without any single point of failure or trust.
 
-The name registry is built with a smart contract that was deployed and runs on the Stacks Blockchain, a Bitcoin L2 Blockchain. The provable smart contract is written in Clarity [24], a safe, decidable language. The contract links the STX address and the name, domain, and namespace according to the rules about fees and expiry.  The BNS contract version 1 was deployed at a Stacks Blockchain transaction. [25] 
+The name registry is built with a smart contract that was deployed and runs on the Stacks Blockchain, a Bitcoin L2 Blockchain. The provable smart contract is written in Clarity-smart contract language [24], a safe, decidable language. The contract links the STX address and the name, domain, and namespace according to the rules about fees and expiry.  The BNS contract version 1 was deployed at a Stacks Blockchain transaction. [25] 
 A BNS contract version 2 was deployed on September 2024 [26]. Additionaly to the basic functionality, it offers features for decentralized name management, marketplace integration, and supports both open and managed namespaces [27].
 
 #### 2.2.2 Decentralized Name or ID
@@ -305,11 +305,9 @@ Storing data off of the blockchain ensures that these applications (decentralize
 
 ##### 2.2.5.1 Stacks Architecture is Based on the Identity
 
-The Stacks blockchain addresses performance problems using a layered approach. The base layer consists of the Stacks blockchain and the Blockchain Naming System (BNS). The blockchain governs ownership of identities in the Stacks network. Identities can be names such as domain names, usernames, or application names.  [29]
+When an identity is created, its creation is recorded in the Stacks blockchain. Identities make up the primary data stored into the Stacks blockchain. These identities correspond to routing data in the OSI stack [29]. The routing data is stored in the Atlas Peer Network [30], the second layer. Every core node that joins the Stacks Network is able to obtain an entire copy of this routing data. Stacks uses the routing data to associate identities (domain names, user names, and application names) with a particular storage location in the final layer, the Gaia Storage System.
 
-When an identity is created, its creation is recorded in the Stacks blockchain. Identities make up the primary data stored into the Stacks blockchain. These identities correspond to routing data in the OSI stack [30]. The routing data is stored in the Atlas Peer Network [31], the second layer. Every core node that joins the Stacks Network is able to obtain an entire copy of this routing data. Stacks uses the routing data to associate identities (domain names, user names, and application names) with a particular storage location in the final layer, the Gaia Storage System.
-
-A Gaia Storage System consists of a hub service and storage resource on a cloud software provider. The storage provider can be any commercial provider such as Azure, DigitalOcean, Amazon EC2, and so forth. Typically the compute resource and the storage resource reside same cloud vendor, though this is not a requirement. Gaia currently has driver support for S3, Azure Blob Storage, Google Cloud Platform and local disk, but the driver model allows for other backend support as well.
+A Gaia Storage System consists of a hub service and storage resource on a cloud software provider. The storage provider can be any commercial provider such as Azure, DigitalOcean, Amazon EC2, and so forth. Typically the compute resource and the storage resource reside same cloud vendor, though this is not a requirement. Gaia currently has driver support for S3, Azure Blob Storage, Google Cloud Platform, but the driver model allows for other backend support as well.
 
 Gaia stores data as a simple key-value store. When an identity is created, a corresponding data store is associated with that identity on Gaia. When a user logs into a dApp, the authentication process gives the application the URL of a Gaia hub, which then writes to storage on behalf of that user. 
 
@@ -326,11 +324,11 @@ The Apps objectives could suggest to use alternative solution to store data asso
 
 #### c) Essentially, these technologies will try bring to market the capacities of the design of Distributed Databases.   
 
-A proposal of extending Stacks component was proposed by us in this study [31] .
+A proposal of extending Stacks component was proposed by @Paradigma-cl in this study [31] .
 
 ##### 2.2.5.2 Example of a Name Registration in the Stacks Architecture
 
-The domain name phillip.stx was registered in the base layer of the Stacks blockchain and the BNS at the transaction last_txid":"0x102d73f2ce7906649715764a78d9b75dc3f188ff60128f61dc9d713790906f29".  The ownership of the domain name is represented with the "address":"SP17Z5ZD89DVJHDB2SBZAST41PTS3BS50YY3XBVJY", and it was executed using the BNS smartcontract function "name-register" [30]. A hash of the routing information is included in the base layer.
+The domain name phillip.stx was registered in the base layer of the Stacks blockchain and the BNS at the transaction last_txid":"0x102d73f2ce7906649715764a78d9b75dc3f188ff60128f61dc9d713790906f29".  The ownership of the domain name is represented with the "address":"SP17Z5ZD89DVJHDB2SBZAST41PTS3BS50YY3XBVJY", and it was executed using the BNS smartcontract function "name-register" [25]. A hash of the routing information is included in the base layer.
 
 ```
 {"address":"SP17Z5ZD89DVJHDB2SBZAST41PTS3BS50YY3XBVJY","blockchain":"stacks","last_txid":"0x102d73f2ce7906649715764a78d9b75dc3f188ff60128f61dc9d713790906f29","status":"name-register","zonefile_hash":"c74108af50c099a211e35eb22456812a1a61230e","expire_block":36708}
@@ -342,11 +340,11 @@ A zone file is used to describe the routing data similarly to a Domain Name Syst
 
 #### 2.2.6 Decentralized Applications (Dapp's)
 
-Decentralized Applications (Dapp’s) also called Web3 Apps or Stacks applications is the New App that integrates these main functions, authentication, transaction signing, and data storage. All users can run their applications under their own private decentralized space. Web3 users own their data as they are the only one has access to and/or shares with other users its own private data through the decentralized application. These domain or subdomain names can also use the decentralized names or decentralized IDs, and they are registered to the public key associated to its private key or address, and the IP address location of the Dapp.
+Decentralized Applications (Dapp’s) also called Web3 Apps [32] or Stacks applications is the New App that integrates these main functions, authentication, transaction signing, and data storage. All users can run their applications under their own private decentralized space. Web3 users own their data as they are the only one has access to and/or shares with other users its own private data through the decentralized application. These domain or subdomain names can also use the decentralized names or decentralized IDs, and they are registered to the public key associated to its private key or address, and the IP address location of the Dapp.
 
 #### 2.2.7 Decentralized Identifiers
 
-The W3C [30] recommends Decentralized identifiers (DIDs), as a new type of identifier that enables verifiable, decentralized digital identity. A DID identifies any subject (e.g., a person, organization, thing, data model, abstract entity, etc.) that the controller of the DID decides to identify. In contrast to typical, federated identifiers, DIDs have been designed so that they may be decoupled from centralized registries, identity providers, and certificate authorities. DIDs are URIs that associate a DID subject with a DID document allowing trustable interactions associated with that subject. Each DID document can express cryptographic material, verification methods, or services, which provide a set of mechanisms enabling a DID controller to prove control of the DID.
+The W3C [32] recommends Decentralized identifiers (DIDs), as a new type of identifier that enables verifiable, decentralized digital identity. A DID identifies any subject (e.g., a person, organization, thing, data model, abstract entity, etc.) that the controller of the DID decides to identify. In contrast to typical, federated identifiers, DIDs have been designed so that they may be decoupled from centralized registries, identity providers, and certificate authorities. DIDs are URIs that associate a DID subject with a DID document allowing trustable interactions associated with that subject. Each DID document can express cryptographic material, verification methods, or services, which provide a set of mechanisms enabling a DID controller to prove control of the DID.
 
 The DIDs for a person for example, are expressed through a name and an image, sometimes a description, background image, url, email, password signature, etc. The visual and textual representation of an account, helps users to better recognize their own accounts, from the accounts of other users. Stacks has a long history of Decentralized Identifiers (DIDs) as they introduced human readable names for bitcoin addresses when the project started as “One Name” back in 2014.
 
@@ -697,7 +695,7 @@ Instead of using the Stacks or Bitcoin addresses, the users can use the DID as t
 
 [23] Stacks Blockchain - Bitcoin L2 (https://stacks.co)
 
-[24] Clarity (https://docs.stacks.co/concepts/clarity)
+[24] Clarity-smart contract language (https://docs.stacks.co/concepts/clarity)
 
 [25] BNS Smartcontract blockchain deployment version 1 (https://explorer.hiro.so/txid/SP000000000000000000002Q6VF78.bns?chain=mainnet)
 
@@ -713,8 +711,10 @@ Instead of using the Stacks or Bitcoin addresses, the users can use the DID as t
 
 [31] Distributed Databases Stacks Components Proposal (https://github.com/paradigma-cl/stackscomponents)
 
-[31] Decentralized Identifiers-DID (https://www.w3.org/TR/did-core/)
+[32] Web3 definition (https://en.wikipedia.org/wiki/Web3)
 
-[32] Schema (https://schema.org)
+[33] Decentralized Identifiers-DID (https://www.w3.org/TR/did-core/)
 
-[33] Schema Person Object (https://schema.org/person)
+[34] Schema (https://schema.org)
+
+[35] Schema Person Object (https://schema.org/person)
