@@ -162,11 +162,11 @@ Website Performance: Websites with faster DNS response times often have better o
 
 SEO Ranking: Search engines like Google consider page load times as one of the factors in their ranking algorithms. Faster DNS resolution can contribute to better page load times and potentially improve a website's SEO ranking.
 
-Network Efficiency: Efficient DNS queries reduce the amount of time and resources required for network communications, making the overall network more efficient.
+Network Efficiency: Efficient DNS queries reduce the time and resources required for network communications, making the overall network more efficient.
 
 Reliability: Faster DNS responses can indicate a more reliable DNS infrastructure, reducing the likelihood of timeouts or failures during the domain resolution process.
 
-Security: Faster DNS responses can also help in mitigating certain types of cyber-attacks, such as DNS amplification attacks, by reducing the time an attacker has to exploit DNS queries.
+Security: Faster DNS responses can also help mitigate certain types of cyber-attacks, such as DNS amplification attacks, by reducing the time an attacker has to exploit DNS queries.
 
 Overall, the response time of a DNS query is an important aspect of web performance, user experience, and network efficiency.
 
@@ -183,7 +183,7 @@ Failover Routing: Set up backup servers to take over in case the primary server 
 Health Checks: Regularly monitor the health of your servers and automatically reroute traffic if a server fails.[16]
 
 #### DNS Zone File Management
-Regular Updates: Keep DNS records up to date to ensure accurate domain resolution.[17]
+Regular Updates: Keep DNS records current to ensure accurate domain resolution.[17]
 
 Redundancy: Use secondary (slave) DNS zones to provide redundancy and improve reliability.[17]
 
@@ -238,7 +238,7 @@ These addresses are mathematically or cryptographically linked together as one o
 
 #### 2.2.2 Bitcoin Name Service (BNS)
 
-The first name registered in a Bitcoin Blockchain transaction was in 2014, called Namecoin service on the Bitcoin Blockchain. [22]  This service evolved as the Bitcoin Name Service (BNS) on the Blockstack Blockchain. Later, Blockstack Blockchain and rebranded as the Stacks Blockchain [23], a Bitcoin L2 Blockchain.
+The first name registered in a Bitcoin Blockchain transaction was in 2014, called Namecoin service on the Bitcoin Blockchain. [22]  This service evolved as the Bitcoin Name Service (BNS) on the Blockstack Blockchain. Later, Blockstack Blockchain was rebranded as the Stacks Blockchain [23], a Bitcoin L2 Blockchain.
 
 This BNS naming system means that (a) names are human-readable and can be picked by humans, (b) name-value pairs have a strong sense of ownership— that is, they can be owned by cryptographic keypairs, and c) there is no central trusted party or point of failure.
 
@@ -252,19 +252,23 @@ This makes it a powerful tool for building all kinds of network applications. Us
 
 •	Build public-key infrastructure where it is easy for users to discover and remember each other's keys.
 
-Software applications built with the Stacks blockchain (Bitcoin L2) integrated, give users control over their digital identities, assets, and data. Unlike most cloud-based apps, they are "decentralized" since they do not depend on any centralized platform, server, or database to function. Rather, they use the Stacks blockchain to authenticate users and facilitate read and write requests for them without any single point of failure or trust.
+Software applications built with the Stacks blockchain (Bitcoin L2) integrated, give users control over their digital identities, assets, and data. Unlike most cloud-based apps, they are "decentralized" since they do not depend on any centralized platform, server, or database to operate. Rather, they use the Stacks blockchain to authenticate users and facilitate read and write requests for them without any single point of failure or trust.
 
-The name registry is built with a smart contract that was deployed and runs on the Stacks Blockchain, a Bitcoin L2 Blockchain. The provable smart contract is written in Clarity-smart contract language [24], a safe, decidable language. The contract links the STX address and the name, domain, and namespace according to the rules about fees and expiry.  The BNS contract version 1 was deployed at a Stacks Blockchain transaction. [25] 
-A BNS contract version 2 was deployed on September 2024 [26]. Additionally to the basic functionality, it offers features for decentralized name management, and marketplace integration, and supports both open and managed namespaces [27].
+The name registry is built with a deployed smart contract running on the Stacks Blockchain, a Bitcoin L2 Blockchain. The provable smart contract is written in Clarity-smart contract language [24], a safe, decidable language. The contract links the STX address and the name, domain, and namespace according to the rules about fees and expiry.  
+
+The BNS contract version 1 was deployed at a Stacks Blockchain transaction. [25] 
+A BNS contract version 2 was deployed on September 2024 [26]. 
+
+Additionally to the basic functionality, it offers features for decentralized name management, and marketplace integration supporting both open and managed namespaces [27].
 
 #### 2.2.3 Decentralized Name or ID
 This kind of name can be called Decentralized ID or Decentralized Name.  It uses cryptography, digital wallets, and related technologies to enable multiple entities to produce credentials and empower individuals to manage their data. 
 
 Decentralized ID systems create a trust triangle that links issuers, holders, and verifiers: 
 ##### Issuers
-       are entities that digitally sign attestations and provide them to holders;
+       are entities that digitally sign attestations and provide them to holders.
 ##### Holders
-       such as individuals, manage their credentials and use them to prove claims about their data;
+       such as individuals, manage their credentials, and use them to prove claims about their data.
 ##### Verifiers
        assess these attestations to determine whether they satisfy requirements. This process is facilitated by a verifiable data registry.
 
@@ -303,7 +307,7 @@ The control plane defines the protocol for registering human-readable names, cre
 
 #### 2.2.6 Storing Naming Data Associated to the Blockchain
 
-While on-chain storage solutions like IPFS and Arweave are designed for immutable, censorship-resistant permanent storage, they cannot be deemed as providing user control of the data since the user cannot modify or remove the data once it has been deployed. 
+While on-chain storage solutions and applications like IPFS and Arweave are designed for immutable, censorship-resistant permanent storage, they cannot be deemed as providing user control of the data since the user cannot modify or remove the data once it has been deployed. 
 
 Apps built with the Stacks blockchain can store off-chain data using a storage system called Gaia. [28]
 
@@ -315,21 +319,24 @@ Whereas public transactional metadata is best stored on the Stacks blockchain, u
 
 Storing data off of the blockchain ensures that these applications (decentralized) can provide users with high performance and high availability for data reads and writes without introducing central trust parties.
 
-##### 2.2.6.1 Stacks Architecture is Based on the Identity
+##### 2.2.6.1 Stacks Architecture is Based on the Digital Identity
 
-When an identity is created, its creation is recorded in the Stacks blockchain. Identities make up the primary data stored in the Stacks blockchain. These identities correspond to routing data in the OSI stack [29]. The routing data is stored in the Atlas Peer Network [30], the second layer. 
+When a digital identity is created, using a transaction, its creation is recorded in the Stacks blockchain. This is the primary data stored in the Stacks blockchain. These identities correspond to routing data in the OSI stack [29]. The routing data is stored in the Atlas Peer Network [30], the second layer. 
 
 ###### Primary Data Stored into the Stacks Blockchain
-The Namespaces Domain Names and user ownership are registered and stored using the BNS Smartcontract in the Stacks Blockchain. This registration considers a reference hash of the contents of the text file that describes the services associated with them.  This reference hash serves to verify if the contents have been modified.
+The Namespaces Domain Names and user ownership are registered and stored using the BNS Smartcontract in the Stacks Blockchain. This registration considers a reference hash of the contents of a text file describing the services associated.  This reference hash serves to verify if the contents have been modified.
 
 ###### Secondary Data Stored in the Atlas Peer Network
-The routing data describing the services associated with ownership of the Namespace and Domain Name is stored as a text file in the Atlas Peer Network.  Similar functionality and file format are used in the DNS Zone File management.
+The routing data describing the services associated with ownership of the Namespace and Domain Name is stored as a text file in the Atlas Peer Network.  Similar functionality and file format that is used in the DNS Zone File management.
 
-Every core node that joins the Stacks Network can obtain an entire copy of this routing data. Stacks use the routing data to associate identities (domain names, user names, or application names) with a particular storage location in the final layer, the Gaia Storage System.
+This decentralized zone file can specify the user's desire for the type of service that should be considered when using their Identity.  For i.e., a reference to a personal website, and a reference to your identity profile data, among other services. TLD format.
+
+Every core node that joins the Stacks Network can obtain an entire copy of this routing data. Stacks use the routing data to associate identities (domain names, user names, or application names) with a particular storage location in the final layer, the Tertiary Data Storage like Gaia Storage System.
 
 ###### Tertiary Data Stored in the Gaia Storage System
 A Gaia Storage System consists of a hub service and storage resource on a cloud software provider. The storage provider can be any commercial provider such as Azure, DigitalOcean, Amazon EC2, and so forth. Typically the compute resource and the storage resource reside same cloud vendor, though this is not a requirement. Gaia currently has driver support for S3, Azure Blob Storage, and Google Cloud Platform, but the driver model allows for other backend support as well.
 
+##### A Simple Key-value Store
 Gaia stores data as a simple key-value store. When an identity is created, a corresponding data store is associated with that identity on Gaia. When a user logs into a dApp, the authentication process gives the application the URL of a Gaia hub, which then writes to storage on behalf of that user. 
 
 The Stacks blockchain stores only identity data. Data created by the actions of an identity is stored in a Gaia Storage System. Each user has profile data. When a user interacts with a decentralized dApp that application stores application data on behalf of the user. Because Gaia stores user and application data off the blockchain, a Stacks DApp is typically more performant than DApps created on other blockchains.
@@ -349,19 +356,19 @@ A proposal of extending the Stacks component was proposed by @Paradigma-cl in th
 
 ##### 2.2.6.2 Example of a Name Registration in the Stacks Architecture
 
-The domain name phillip.stx was registered in the base layer of the Stacks blockchain and the BNS at the transaction last_txid":"0x102d73f2ce7906649715764a78d9b75dc3f188ff60128f61dc9d713790906f29".  The ownership of the domain name is represented with the "address":"SP17Z5ZD89DVJHDB2SBZAST41PTS3BS50YY3XBVJY", and it was executed using the BNS smartcontract function "name-register" [25]. A hash of the routing information is included in the base layer.
+The domain name phillip.stx was registered as primary data into the Stacks Blockchain and the BNS at the transaction last_txid":"0x102d73f2ce7906649715764a78d9b75dc3f188ff60128f61dc9d713790906f29".  The ownership of the domain name is represented with the "address":"SP17Z5ZD89DVJHDB2SBZAST41PTS3BS50YY3XBVJY", and it was executed using the BNS smart-contract function called "name-register" [25]. A hash of the routing information is included in the primary data layer.
 
 ```
 {"address":"SP17Z5ZD89DVJHDB2SBZAST41PTS3BS50YY3XBVJY","blockchain":"stacks","last_txid":"0x102d73f2ce7906649715764a78d9b75dc3f188ff60128f61dc9d713790906f29","status":"name-register","zonefile_hash":"c74108af50c099a211e35eb22456812a1a61230e","expire_block":36708}
 ```
-A zone file is used to describe the routing data similarly to a Domain Name System (DNS) zone file. In this example, the zone file text is associated with the phillip.stx name is the following:
+Additionally, data is registered as a Secondary Data Layer associated with the "address":"SP17Z5ZD89DVJHDB2SBZAST41PTS3BS50YY3XBVJY". A text file is used to describe the routing data similarly to a Domain Name System (DNS) zone file. In this example, the zone file text is associated with the phillip.stx name:
 ```
 {"zonefile":"$ORIGIN phillip.stx.\n$TTL 3600\n_http._tcp\tIN\tURI\t10\t1\t\"https://gaia.blockstack.org/hub/17tqGoM8xDjLTpy2rFZ1yj9BPmVeC3zjDi/profile.json\"\n\n"}
 ```
 
 #### 2.2.7 Decentralized Applications (Dapp's)
 
-Decentralized Applications (Dapp’s) also called Web3 Apps [32] or Stacks applications is the New App that integrates these main functions, authentication, transaction signing, and data storage. All users can run their applications under their own private decentralized space. Web3 users own their data as they are the only ones has access to and/or share with other users their own private data through the decentralized application. These domain or subdomain names can also use the decentralized names or decentralized IDs, and they are registered to the public key associated with its private key or address, and the IP address location of the Dapp.
+Decentralized Applications (Dapp’s) also called Web3 Apps [32] or Stacks applications is the New App that integrates these main functions, authentication, transaction signing, and data storage. All users can run their applications under their own private decentralized space. Web3 users own their data as they are the only ones has access to and/or share with other users their private data through the decentralized application. These domain or subdomain names can also use the decentralized names or decentralized IDs, and they are registered to the public key associated with its private key or address, and the IP address location of the Dapp.
 
 #### 2.2.8 Decentralized Identifiers
 
@@ -373,9 +380,9 @@ The DIDs for a person, for example, are expressed through a name and an image, s
 
 The Stacks public DID is a profile that is registered with a username on-chain using the BNS (Blockchain Naming System) smart contract. These profiles are defined using the JSON web token, and its contents using the appropriate objects of the Schema standard [35], like the person object [36].
 
-#### 2.2.8.1 Matching BNS and DID Standards
+#### 2.2.8.1 Securing the DNS, BNS, and DID's
 
-BNS names can be compliant with the emerging Decentralized Identity Foundation [37] protocol specification for decentralized identifiers (DIDs), and the W3C. These initiatives define mechanisms by which an End-User can leverage an open provider to release identity information (such as authentication and claims) to a Relying Party which can act on that information.
+BNS names can be compliant with the emerging Decentralized Identity Foundation [37] protocol specification for decentralized identifiers (DIDs), and the W3C. These initiatives define mechanisms by which an end user can leverage an open provider to release identity information (such as authentication and claims) to a Relying Party that can act on that information.
 
 Each name in BNS has an associated DID. The DID format for BNS is:
 •	did:stack:v2:{address}-{index}
@@ -387,10 +394,10 @@ Where:
 
 
 
-#### 3.4 Domain and subdomain names can be associated to a Stacks and Bitcoin address
+#### 3.4 Domain and subdomain names can be associated with a Stacks and Bitcoin address
 The Stacks blockchain ensures that each node's BNS view is synchronized to all the other nodes in the world, so queries on one node will be the same on other nodes. Stacks blockchain nodes allow a name's owner to bind up to 40Kb of off-chain state to their name, which will be replicated to all other Stacks blockchain nodes via a P2P network.
 
-The biggest consequence for developers is that in BNS, reading name state is fast and cheap but writing name state is slow and expensive. This is because registering and modifying names requires one or more transactions to be sent to the underlying blockchain, and BNS nodes will not process them until they are sufficiently confirmed. Users and developers need to acquire and spend the requisite cryptocurrency (STX) to send BNS transactions. At another level, the different applications could interact among them exchanging information. In order to use these capabilities, a set of standard verifiable digital identities should be used integrated into the web to have a secure and private interaction.
+The biggest consequence for developers is that in BNS, reading name state is fast and cheap but writing name state is slow and expensive. This is because registering and modifying names requires one or more transactions to be sent to the underlying blockchain, and BNS nodes will not process them until they are sufficiently confirmed. Users and developers need to acquire and spend the requisite cryptocurrency (STX) to send BNS transactions. At another level, the different applications could interact among them exchanging information. To use these capabilities, a set of standard verifiable digital identities should be used and integrated into the web to have a secure and private interaction.
 
 #### 3.5 To commit changes in the Blockchain requires the use of a Stacks Wallet Applications
 A request for a transaction or change of state of the Blockchain requires the use of the private key to sign, and funds as gas to materialize the order.  To improve security, and reduce the risk of losing control of the private key of an account, different methods have been developed, trying to avoid entering it directly to the application.
