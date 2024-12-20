@@ -6,11 +6,11 @@ In the absence of trust . . . opportunities for mutually beneficial cooperation 
 
 In a world increasingly connected not just by trade in goods but also by the exchange of violence, information, viruses, and emissions, the importance of social preferences in underwriting human cooperation, even survival, may now be greater even than it was among that small group of foragers that began the exodus from Africa 55,000 years ago to spread this particular cooperative species to the far corners of the world. [2]
 
-Human beings have become more conscious of a growing interdependence between all parts of the world with the growth of a world economy which followed the Great Transformation, the Services Transformation, the ICT revolution, the adoption of free trade policies, named as the New Globalization by most of the countries of the world.
+Human beings have become more conscious of a growing interdependence between all parts of the world. The growth of the world economy followed the Great Transformation, the Services Transformation, the ICT revolution, and the adoption of free trade policies, which most countries have named the New Globalization.
 
 A beginning to understand, though dimly, that no country is an island unto itself, but as Bahá’u’lláh said: “The earth is but one country, and mankind its citizens.” [3]
 
-Without a strong guiding moral philosophy men struggled on as best they could to respond to the new needs of the world.  It is accepted that the times called for a more just dignified station for a much wider spectrum of the society.
+Without a strong guiding moral philosophy, men struggled on as best they could to respond to the world's new needs.  It is accepted that the times called for a more just and dignified station for a much wider spectrum of society.
 
 The world is nowadays dominated by a growing divide, a term that reflects the availability or unavailability of Information Technology and Communications (ICT) resources, analysed in terms of economic accessibility. This is called the digital divide.
 
@@ -19,13 +19,13 @@ Questions arise on how human beings can address this look for trust, worldwide, 
 ## The problem
 The world - is still- dominated by two extreme visions: one that denies the radical changes in patterns of communication that the ICT revolution entails and the other that denies the persistence of an economy based on the physical constraints imposed by location and the material nature of most goods and products.
 
-The problems and opportunities detected are the advent and use of ICT to transform patterns of communication and that businesses are not fully aware on how these technologies should be used to create appropriate communication in order to be more productive. Communication that is acceptable for people both being a customer and a human being.
+The problems and opportunities detected are the advent and use of ICT to transform patterns of communication and that businesses are not fully aware of how these technologies should be used to create appropriate communication in order to be more productive. Communication that is acceptable for people both being a customer and a human being.
 
 ## Solution
 Victor Frankl, facing the purpose of life, is best cured by going outside, extending the self rather than contracting it, in service to others, in upholding a value, in embracing suffering positively rather than negatively. [4]
 
 Such service can be made more effective the more skills a person has.  
-Knowledge is as wings to man’s life, and a ladder for his ascent. Its acquisition is incumbent upon everyone.  To encourage education as much as possible in sciences which will increase the capacity for service, as well as moral teachings. [5]
+Knowledge is as wings to man’s life and a ladder for his ascent. Its acquisition is incumbent upon everyone.  To encourage education as much as possible in sciences which will increase the service capacity, as well as moral teachings. [5]
 
 ICT when used properly, can increase productivity, reduce risk, and increase accessibility, specifically when people are faced with distance.
 
@@ -224,6 +224,8 @@ Blockchain is a large deployment of a decentralized PKI service.
 
 Users can register human meaningful names and securely associate data with them, and only the owner of the particular private keys that registered them can write or update the name-value pair. Many decentralized systems have been and can be built using these blockchain networks, such as new, decentralized versions of DNS and PKI.
 
+The experience presented is the Naming System built on the Stacks and Bitcoin Blockchain [22].
+
 #### 2.2.1	Blockchain network interoperability
 A user's private and public keys are based on mathematical, and cryptographical algorithms, and they are to be used in the Stacks or Bitcoin blockchain.
 
@@ -238,7 +240,7 @@ These addresses are mathematically or cryptographically linked together as one o
 
 #### 2.2.2 Bitcoin Name Service (BNS)
 
-The first name registered in a Bitcoin Blockchain transaction was in 2014, called Namecoin service on the Bitcoin Blockchain. [22]  This service evolved as the Bitcoin Name Service (BNS) on the Blockstack Blockchain. Later, Blockstack Blockchain was rebranded as the Stacks Blockchain [23], a Bitcoin L2 Blockchain.
+The first name registered in a Bitcoin Blockchain transaction was in 2014, called Namecoin service on the Bitcoin Blockchain. [23]  This service evolved as the Bitcoin Name Service (BNS) on the Blockstack Blockchain. Later, Blockstack Blockchain was rebranded as the Stacks Blockchain [22], a Bitcoin L2 Blockchain [24].
 
 This BNS naming system means that (a) names are human-readable and can be picked by humans, (b) name-value pairs have a strong sense of ownership— that is, they can be owned by cryptographic keypairs, and c) there is no central trusted party or point of failure.
 
@@ -254,12 +256,12 @@ This makes it a powerful tool for building all kinds of network applications. Us
 
 Software applications built with the Stacks blockchain (Bitcoin L2) integrated, give users control over their digital identities, assets, and data. Unlike most cloud-based apps, they are "decentralized" since they do not depend on any centralized platform, server, or database to operate. Rather, they use the Stacks blockchain to authenticate users and facilitate read and write requests for them without any single point of failure or trust.
 
-The name registry is built with a deployed smart contract running on the Stacks Blockchain, a Bitcoin L2 Blockchain. The provable smart contract is written in Clarity-smart contract language [24], a safe, decidable language. The contract links the STX address and the name, domain, and namespace according to the rules about fees and expiry.  
+The name registry is built with a deployed smart contract running on the Stacks Blockchain, a Bitcoin L2 Blockchain. The provable smart contract is written in Clarity-smart contract language [25], a safe, decidable language. The contract links the STX address and the name, domain, and namespace according to the rules about fees and expiry.  
 
-The BNS contract version 1 was deployed at a Stacks Blockchain transaction. [25] 
-A BNS contract version 2 was deployed on September 2024 [26]. 
+The BNS contract version 1 was deployed at a Stacks Blockchain transaction. [26] 
+A BNS contract version 2 was deployed on September 2024 [27]. 
 
-Additionally to the basic functionality, it offers features for decentralized name management, and marketplace integration supporting both open and managed namespaces [27].
+Additionally to the basic functionality, it offers features for decentralized name management, and marketplace integration supporting both open and managed namespaces [28].
 
 #### 2.2.3 Decentralized Name or ID
 This kind of name can be called Decentralized ID or Decentralized Name.  It uses cryptography, digital wallets, and related technologies to enable multiple entities to produce credentials and empower individuals to manage their data. 
@@ -272,7 +274,7 @@ Decentralized ID systems create a trust triangle that links issuers, holders, an
 ##### Verifiers
        assess these attestations to determine whether they satisfy requirements. This process is facilitated by a verifiable data registry.
 
-The Stacks blockchain addresses performance problems using a layered approach. The base layer consists of the Stacks blockchain, and the Blockchain Naming System (BNS) [28]. The blockchain governs ownership of identities in the Stacks network. Identities can be names such as namespaces, domain, and subdomain names. These identities can refer to persons, applications, or things.  
+The Stacks blockchain addresses performance problems using a layered approach. The base layer consists of the Stacks blockchain, and the Blockchain Naming System (BNS) [29]. The blockchain governs ownership of identities in the Stacks network. Identities can be names such as namespaces, domain, and subdomain names. These identities can refer to persons, applications, or things.  
 
 Names in BNS have four properties:
 
@@ -309,7 +311,7 @@ The control plane defines the protocol for registering human-readable names, cre
 
 While on-chain storage solutions and applications like IPFS and Arweave are designed for immutable, censorship-resistant permanent storage, they cannot be deemed as providing user control of the data since the user cannot modify or remove the data once it has been deployed. 
 
-Apps built with the Stacks blockchain can store off-chain data using a storage system called Gaia. [28]
+Apps built with the Stacks blockchain can store off-chain data using a storage system called Gaia. [30]
 
 Gaia is a unique approach to decentralized storage that focuses primarily on user-ownership of data, rather than immutable on-chain storage. The emphasis here is on user control.
 
@@ -321,7 +323,7 @@ Storing data off of the blockchain ensures that these applications (decentralize
 
 ##### 2.2.6.1 Stacks Architecture is Based on the Digital Identity
 
-When a digital identity is created, using a transaction, its creation is recorded in the Stacks blockchain. This is the primary data stored in the Stacks blockchain. These identities correspond to routing data in the OSI stack [29]. The routing data is stored in the Atlas Peer Network [30], the second layer. 
+When a digital identity is created, using a transaction, its creation is recorded in the Stacks blockchain. This is the primary data stored in the Stacks blockchain. These identities correspond to routing data in the OSI stack [31]. The routing data is stored in the Atlas Peer Network [30], the second layer. 
 
 ###### Primary Data Stored into the Stacks Blockchain
 The Namespaces Domain Names and user ownership are registered and stored using the BNS Smartcontract in the Stacks Blockchain. This registration considers a reference hash of the contents of a text file describing the services associated.  This reference hash serves to verify if the contents have been modified.
@@ -352,7 +354,7 @@ The App's objectives could suggest using an alternative solution to store data a
 
 #### c) Essentially, these technologies will try to bring to market the capacities of the design of Distributed Databases.   
 
-A proposal of extending the Stacks component was proposed by @Paradigma-cl in this study [31].
+A proposal of extending the Stacks component was proposed by @Paradigma-cl in this study [32].
 
 ##### 2.2.6.2 Example of a Name Registration in the Stacks Architecture
 
@@ -368,21 +370,21 @@ Additionally, data is registered as a Secondary Data Layer associated with the "
 
 #### 2.2.7 Decentralized Applications (Dapp's)
 
-Decentralized Applications (Dapp’s) also called Web3 Apps [32] or Stacks applications is the New App that integrates these main functions, authentication, transaction signing, and data storage. All users can run their applications under their own private decentralized space. Web3 users own their data as they are the only ones has access to and/or share with other users their private data through the decentralized application. These domain or subdomain names can also use the decentralized names or decentralized IDs, and they are registered to the public key associated with its private key or address, and the IP address location of the Dapp.
+Decentralized Applications (Dapp’s) also called Web3 Apps [33] or Stacks applications is the New App that integrates these main functions, authentication, transaction signing, and data storage. All users can run their applications under their own private decentralized space. Web3 users own their data as they are the only ones has access to and/or share with other users their private data through the decentralized application. These domain or subdomain names can also use the decentralized names or decentralized IDs, and they are registered to the public key associated with its private key or address, and the IP address location of the Dapp.
 
 #### 2.2.8 Decentralized Identifiers
 
-The World Wide Web Consortium - (W3C) recommends Decentralized identifiers (DIDs) [33], as a new type of identifier that enables verifiable, decentralized digital identity. A DID [34] refers to any subject (e.g., a person, organization, thing, data model, abstract entity, etc.) as determined by the controller of the DID. In contrast to typical, federated identifiers, DIDs have been designed so that they may be decoupled from centralized registries, identity providers, and certificate authorities. Specifically, while other parties might be used to help enable the discovery of information related to a DID, the design enables the controller of a DID to prove control over it without requiring permission from any other party. DIDs are URIs that associate a DID subject with a DID document allowing trustable interactions associated with that subject. 
+The World Wide Web Consortium - (W3C) recommends Decentralized identifiers (DIDs) [34], as a new type of identifier that enables verifiable, decentralized digital identity. A DID [35] refers to any subject (e.g., a person, organization, thing, data model, abstract entity, etc.) as determined by the controller of the DID. In contrast to typical, federated identifiers, DIDs have been designed so that they may be decoupled from centralized registries, identity providers, and certificate authorities. Specifically, while other parties might be used to help to discover information related to a DID, the design enables the controller of a DID to prove control over it without requiring permission from any other party. DIDs are URIs that associate a DID subject with a DID document allowing trustable interactions associated with that subject. 
 
 Each DID document can express cryptographic material, verification methods, or services, which provide a set of mechanisms enabling a DID controller to prove control of the DID. Services enable trusted interactions associated with the DID subject. A DID might provide the means to return the DID subject itself if the DID subject is an information resource such as a data model.
 
 The DIDs for a person, for example, are expressed through a name and an image, sometimes a description, background image, URL, email, password signature, etc. The visual and textual representation of an account, helps users to better recognize their accounts, from the accounts of other users. Stacks has a long history of Decentralized Identifiers (DIDs) as they introduced human-readable names for Bitcoin addresses when the project started as “One Name” back in 2014.
 
-The Stacks public DID is a profile that is registered with a username on-chain using the BNS (Blockchain Naming System) smart contract. These profiles are defined using the JSON web token, and its contents using the appropriate objects of the Schema standard [35], like the person object [36].
+The Stacks public DID is a profile that is registered with a username on-chain using the BNS (Blockchain Naming System) smart contract. These profiles are defined using the JSON web token, and its contents using the appropriate objects of the Schema standard [36], like the person object [37].
 
 #### 2.2.8.1 Securing the DNS, BNS, and DID's
 
-BNS names can be compliant with the emerging Decentralized Identity Foundation [37] protocol specification for decentralized identifiers (DIDs), and the W3C. These initiatives define mechanisms by which an end user can leverage an open provider to release identity information (such as authentication and claims) to a Relying Party that can act on that information.
+BNS names can be compliant with the emerging Decentralized Identity Foundation [38] protocol specification for decentralized identifiers (DIDs), and the W3C. These initiatives define mechanisms by which an end user can leverage an open provider to release identity information (such as authentication and claims) to a Relying Party that can act on that information.
 
 Each name in BNS has an associated DID. The DID format for BNS is:
 •	did:stack:v2:{address}-{index}
@@ -663,7 +665,7 @@ Instead of using the Stacks or Bitcoin addresses, the users can use the DID as t
 5.	Probably, some business process agreements and deliverables, require that the participant users be identified by legal national IDs. Then a national attribution identity technology can be used by each one of the users, authorizing and linking it to the DID, as a proof of identity. This utility of proof of identity conforms to the requirement of KYC (Know Your Customer) imposed by some country governments. In this case, regulation, executed in a decentralized way, controlled by each user.
 6.	Users could own a Single Sign On (SSO) technology to access any application.
 7.	Users can use their did:web definitions as a web presentation landing page presenting their profile information.  Individual web presence.
-8.	Web marketplaces that recognize the use of did:web specification could facilitate the capture of user domain or subdomain names. These users will not require to re-enter profile information, as the did:web specification can be accessed through a .json file and entered to the application.  This functionality increases the level of digital capital of the person or the organization.
+8.	Web marketplaces that recognize the use of did:web specification could facilitate the capture of user domain or subdomain names. These users will not be required to re-enter profile information, as the did:web specification can be accessed through a .json file and entered to the application.  This functionality increases the level of digital capital of the person or the organization.
 
 ### References
 
@@ -709,34 +711,37 @@ Instead of using the Stacks or Bitcoin addresses, the users can use the DID as t
 
 [21] (https://www.isaca.org/resources/news-and-trends/industry-news/2020/why-cryptographic-infrastructures-require-high-availability)
 
-[22] (https://www.usenix.org/system/files/conference/atc16/atc16_paper-ali.pdf)
 
-[23] Stacks Blockchain - Bitcoin L2 (https://stacks.co)
+[22] Stacks Blockchain - Bitcoin L2 (https://stacks.co)
 
-[24] Clarity-smart contract language (https://docs.stacks.co/concepts/clarity)
+[23] (https://www.usenix.org/system/files/conference/atc16/atc16_paper-ali.pdf)
 
-[25] BNS Smartcontract blockchain deployment version 1 (https://explorer.hiro.so/txid/SP000000000000000000002Q6VF78.bns?chain=mainnet)
+[24] Stacks Core (https://github.com/stacks-network/stacks-core)
 
-[26] BNS Smartcontract blockchain deployment version 2 (https://explorer.hiro.so/txid/SP2QEZ06AGJ3RKJPBV14SY1V5BBFNAW33D96YPGZF.BNS-V2?chain=mainnet)
+[25] Clarity-smart contract language (https://docs.stacks.co/concepts/clarity)
 
-[27] BNS-v2 Documentation (https://github.com/Trust-Machines/BNS-V2)
+[26] BNS Smart-contract blockchain deployment version 1 (https://explorer.hiro.so/txid/SP000000000000000000002Q6VF78.bns?chain=mainnet)
 
-[28] (https://docs.stacks.co/concepts/gaia)
+[27] BNS Smart-contract blockchain deployment version 2 (https://explorer.hiro.so/txid/SP2QEZ06AGJ3RKJPBV14SY1V5BBFNAW33D96YPGZF.BNS-V2?chain=mainnet)
 
-[29] OSI Stack (https://en.wikipedia.org/wiki/OSI_model)
+[28] BNS-v2 Documentation (https://github.com/Trust-Machines/BNS-V2)
 
-[30] The original Atlas Network that later was merged wiht Stacks Core (https://github.com/stacks-archive/atlas?tab=readme-ov-file)
+[29] (https://docs.stacks.co/concepts/gaia)
 
-[31] Distributed Databases Stacks Components Proposal (https://github.com/paradigma-cl/stackscomponents)
+[30] OSI Stack (https://en.wikipedia.org/wiki/OSI_model)
 
-[32] Web3 definition (https://en.wikipedia.org/wiki/Web3)
+[31] The original Atlas Network was later merged with Stacks Core (https://github.com/stacks-archive/atlas?tab=readme-ov-file)
 
-[33] Decentralized Identifiers-DID (https://www.w3.org/TR/did-core/)
+[32] Distributed Databases Stacks Components Proposal (https://github.com/paradigma-cl/stackscomponents)
 
-[34] Decentralized Identifier (DID) (https://www.w3.org/TR/did-core/#dfn-decentralized-identifiers)
+[33] Web3 definition (https://en.wikipedia.org/wiki/Web3)
 
-[35] Schema (https://schema.org)
+[34] Decentralized Identifiers-DID (https://www.w3.org/TR/did-core/)
 
-[36] Schema Person Object (https://schema.org/person)
+[35] Decentralized Identifier (DID) (https://www.w3.org/TR/did-core/#dfn-decentralized-identifiers)
 
-[37] Identity Foundation (https://identity.foundation)
+[36] Schema (https://schema.org)
+
+[37] Schema Person Object (https://schema.org/person)
+
+[38] Identity Foundation (https://identity.foundation)
