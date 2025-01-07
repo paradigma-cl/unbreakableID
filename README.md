@@ -1,7 +1,7 @@
 # unbreakableID
 ## Peers looking for trust in the digitalverse 
 #### prepared by Phillip Roe - Paradigma SpA - did:web:phillip.xck.app
-## Vision
+## Motivation
 In the absence of trust . . . opportunities for mutually beneficial cooperation would have to be foregone . . . norms of social behavior, including ethical and moral codes [may be] . . . reactions of society to compensate for market failures. [1] Thus, social preferences such as a concern for the well-being of others and fair procedures remain essential to sustaining society and enhancing the quality of life. 
 
 In a world increasingly connected not just by trade in goods but also by the exchange of violence, information, viruses, and emissions, the importance of social preferences in underwriting human cooperation, even survival, may now be greater even than it was among that small group of foragers that began the exodus from Africa 55,000 years ago to spread this particular cooperative species to the far corners of the world. [2]
@@ -19,7 +19,7 @@ Questions arise on how human beings can address this look for trust, worldwide, 
 ## The problem
 The world - is still- dominated by two extreme visions: one that denies the radical changes in patterns of communication that the ICT revolution entails and the other that denies the persistence of an economy based on the physical constraints imposed by location and the material nature of most goods and products.
 
-The problems and opportunities detected are the advent and use of ICT to transform patterns of communication and that businesses are not fully aware of how these technologies should be used to create appropriate communication in order to be more productive. Communication that is acceptable for people both being a customer and a human being.
+The problems and opportunities detected are the advent and use of ICT to transform patterns of communication and that businesses are not fully aware of how these technologies should be used to create appropriate communication to be more productive. Communication that is acceptable for people both a customer and a human being.
 
 ## Solution
 Victor Frankl, facing the purpose of life, is best cured by going outside, extending the self rather than contracting it, in service to others, in upholding a value, in embracing suffering positively rather than negatively. [4]
@@ -36,9 +36,9 @@ payments. While the system works well enough for most transactions, it still suf
 
 Cryptographic proof. Here is the mathematical “magic” of the initial Bitcoin Blockchain: the ability to assess the integrity of records and verify new data, instead of relying on the trust of a bank, the state, the law, or the authority of any other institution.
 
-How? Cryptographic hashing is a mathematical phenomenon whereby some data is run through a hashing algorithm, which will then output a string of characters. Only this particular data run through this particular hashing algorithm will produce that specific string of characters. What this means is that if the data is tampered with in any way, this can be proven by running it through the hashing algorithm again and checking if the output is the same.  Here is a cryptographic proof. [7]
+How? Cryptographic hashing is a mathematical phenomenon whereby some data is run through a hashing algorithm, which will then output a string of characters. Only this data run through this particular hashing algorithm will produce that specific string of characters. This means that if the data is tampered with in any way, this can be proven by running it through the hashing algorithm again and checking if the output is the same.  Here is a cryptographic proof. [7]
 
-Replacing “trust” with cryptographic proof promised to replace the uncertainty of humans and institutions with the certainty of mathematics, and yet cryptographic hashing is itself an area of human endeavour.
+Replacing “trust” with cryptographic proof promised to replace the uncertainty of humans and institutions with the certainty of mathematics, yet cryptographic hashing is an area of human endeavour.
 
 Hashing is a discovery of a universal principle that all else can be anchored to; for others, it is an area of research and invention but is also an area of creativity, knowledge sharing, and collaboration amongst peers experimenting and working with the phenomena of this curious universe we live in. [6]
 
@@ -46,10 +46,14 @@ The Double Spending Problem.  How does a decentralised network reach a consensus
 
 The blockchain and the internet could be applied to different needs of human beings. The first need is for the individual, agreement between peers, and things.
 
-## 1.	The Experience of the Internet as an Identification System
+## Available Digital Technologies to Ensure Trust, and How They Are Applied in the Stacks Blockchain - a Bitcoin L2 Blockchain
+The following parts describe available digital technologies used to ensure trust among world citizens present on the Internet, and how these technologies are applied in the Stacks Blockchain - a Bitcoin L2 Blockchain.
+
+## A. Available Digital Technologies to Ensure Trust
+### A.1.	The Experience of the Internet as an Identification System
 We must ensure that the use of digital technology maintains a secure world, peaceful, and without setbacks produced by hackers or identity theft. The evolution of digital identification has been fast progressing from traditional methods to more advanced and secure methods. [8]
 
-### 1.1 Evolution
+### A.1.1 Evolution
 
 #### Early Days
 Initial Authentication: In the early days of the Internet, identification was primarily based on username and password systems. This method was simple but had significant security vulnerabilities.
@@ -70,18 +74,18 @@ Blockchain Technology: Blockchain introduced decentralized identity solutions, g
 #### Current Trends
 Enhanced Security: Continuous improvements in security measures, including advanced encryption and continuous authentication, are being implemented to protect user identities.
 
-Seamless User Experience: Efforts are ongoing to balance security with a seamless user experience, ensuring that identity verification processes are both secure and user-friendly.
+Seamless User Experience: Efforts are ongoing to balance security with a seamless user experience, ensuring secure identity verification processes, and user-friendly at the same time.
 
 The evolution of digital identification has transformed how individuals prove their identities online, making it more secure, efficient, and convenient.
 
-### 1.2 The Internet Infrastructure Integral to the Management, Security, and Credibility of Digital Identities
+### A.1.2 The Internet Infrastructure Integral to the Management, Security, and Credibility of Digital Identities
 The Internet infrastructure is integral to the management, security, and credibility of digital identities.
 
 #### Domain Ownership
 A domain name is a critical part of an organization's digital identity. It serves as the unique address on the internet, much like a business's storefront [9]. Ensuring that the domain is properly registered and managed is essential for maintaining control over the digital identity [9].
 
 #### Authentication
-DNS plays a role in the authentication process. When a user tries to access a website, the DNS system resolves the domain name to an IP address [9]. This step is crucial for verifying that the user is connecting to the correct server, which is part of the broader digital identity verification process.
+DNS plays a role in the authentication process. When a user tries to access a website, the DNS system resolves the domain name to an IP address [9]. This step is crucial for verifying that the user connects to the correct server, which is part of the broader digital identity verification process.
 
 #### Security
 Protecting the DNS infrastructure is vital for safeguarding digital identities. DNS attacks, such as DNS spoofing or hijacking, can lead to unauthorized access to sensitive information and compromise digital identities1.
@@ -94,12 +98,12 @@ Some digital identity solutions leverage blockchain technology to create decentr
 
 In summary, DNS infrastructure is integral to the management, security, and credibility of digital identities. Properly managing DNS can help ensure that digital identities are protected and trusted by users and organizations alike.
 
-#### 1.2.1 Domain Name System (DNS)
+#### A.1.2.1 Domain Name System (DNS)
 The Domain Name System (DNS) is a hierarchical and distributed name service that provides a naming system for computers, services, and other resources on the Internet or other Internet Protocol (IP) networks. It associates various information with domain names (identification strings) assigned to each of the associated entities. Most prominently, it translates readily memorized domain names to the numerical IP addresses needed for locating and identifying computer services and devices with the underlying network protocols. [11]
 
 Names are globally unique and human-readable, but not strongly owned. The system operator has the final say as to what each name resolves to. This requires that client must trust the system, including their administrators as the only ones that can make these changes.
 
-#### 1.2.2 Domain Name System Zone File
+#### A.1.2.2 Domain Name System Zone File
 A Domain Name System (DNS) zone file serves several essential purposes within the DNS infrastructure:
 
 Mapping Domain Names to IP Addresses: The primary function of a DNS zone file is to map domain names to their corresponding IP addresses. This allows users to access websites using human-readable names instead of numeric IP addresses.
@@ -153,7 +157,7 @@ mail3         IN  A     192.0.2.5             ; IPv4 address for mail3.example.c
 ```
 The Internet Corporation for Assigned Names and Numbers (ICANN) [14] requires the registry operators to provide bulk access to the zone files of the Generic Top Level Domain (gTLD) at least daily. For gTLDs, a zone file contains information about domain names that are active in that gTLD. In general, Internet users may be able to access and download zone file data at no cost for certain purposes.[15]
 
-#### 1.2.3 Performance Issues Considered in DNS
+#### A.1.2.3 Performance Issues Considered in DNS
 The response time of a DNS (Domain Name System) query is quite relevant for several reasons:
 
 User Experience: A faster DNS response time means quicker resolution of domain names to IP addresses, leading to faster website loading times. This can significantly enhance user experience, particularly for users on slow connections or accessing content-rich websites.
@@ -170,7 +174,7 @@ Security: Faster DNS responses can also help mitigate certain types of cyber-att
 
 Overall, the response time of a DNS query is an important aspect of web performance, user experience, and network efficiency.
 
-#### 1.2.4 Recommendations and Best Practices to Ensure Effective DNS Routing
+#### A.1.2.4 Recommendations and Best Practices to Ensure Effective DNS Routing
 There are several recommendations and best practices to ensure effective DNS routing and zone file management:
 
 #### DNS Routing Policies
@@ -197,10 +201,10 @@ Access Control: Limit access to DNS zone management to authorized personnel only
 
 Backup: Regularly back up DNS zone files and store them securely.[18]
 
-## 2. The Use of Cryptographic Keys to Represent Names
+## A.2. The Use of Cryptographic Keys to Represent Names
 Several attempts to use cryptographic names have been tested, from the keys they reference. These names are difficult for most users to remember since they do not carry semantic information relating to their use in the system.
 
-### 2.1 Cryptographic Infrastructure on the Internet
+### A.2.1 Cryptographic Infrastructure on the Internet
 
 Several types of cryptographic infrastructures are operating on the internet.  
 
@@ -216,7 +220,63 @@ Solutions like SECRIN [20] are designed to protect cryptographic keys in virtual
 #### Hardware Security Modules (HSMs)
 These are physical devices that manage digital keys and provide cryptographic operations. They are often used to meet regulatory requirements and provide high levels of security.[21]
 
-### 2.2 Experience Implementing a Naming System on the Blockchain
+### A.2.2. Identity on the Blockchain
+Blockchains tend to offer specific advantages for identity systems.  Because blockchains are public databases that are accessible and verifiable by everyone, their identity is public, too.  Because
+identities on the blockchain are ultimately accounts that are manipulated by private keys, identies can be controlled by persons, companies, or objects; they can be traditional identities, simple profiles, blockchain access points, or avatars.  Starting, with the Ethereum blockchain bringing programmability. Now identities are not just passive data but more complex computer programs.  Now other solutions improve this initial start, bringing programmability to Bitcoin, like the Stacks Blockchain a Bitcoin L2 Blockchain. [22]
+
+There are also challenges to hosting identities on the blockchain. First, because blockchains are anonymous, there are issues when other systems need to recognize accounts, understand their relationships, or check attestations and claims.  [22]
+
+Second, because blockchain data is visible to everyone, careful decisions have to be made about which personal data is stored on the blockchain ("on-chain") and which is instead stored elsewhere and linked to from the blockchain ("off-chain").  They can each address the challenges of blockchain    identity and do so in ways that are complementary, not exclusive.
+
+Third, the keys for identity need to be managed carefully. They need to be backed up, and provisions must be made to avoid losing identities when keys are lost.  Methods such as multi-signatures and key-recovery schemes such as Shamir-s Secret Sharing exist to solve some key management problems.
+
+#### A.2.2.1 Challenges of a Naming System on Blockchain
+Building systems with blockchains presents challenges:
+
+• Limits on Data Storage: Individual blockchain records are typically on the order of kilobytes and cannot hold much data. Moreover, the blockchain’s log structure implies that all state changes are recorded in the blockchain. All nodes participating in the network need to maintain a full copy of the blockchain, limiting the total size of blockchains to what current commodity hardware can support. 
+
+• Slow Writes: The transaction processing rate is capped by the blockchain’s write propagation and leader election protocol, and it is pegged to the rate at which new blocks are announced by leader nodes, called miners in many blockchain networks. New transactions can take minutes to a few hours to be accepted.
+
+• Limited Bandwidth: The total number of transactions per block is limited by the block size of blockchains.
+To maintain fairness and to give all nodes a chance to become a leader in the next round, all nodes should receive a newly announced block at roughly the same time. Therefore, the block size is typically limited by an average uplink bandwidth of nodes. 
+
+• Endless Ledger: The integrity of blockchains depends on the ability of anyone to audit them back to the first block. As the system makes forward progress and issues new blocks, the cost of an audit grows linearly with time, which makes booting up new nodes progressively more time-consuming. This is an endless ledger problem. 
+
+#### A.2.2.2 Using the Immutability of the Blockchain to Build a Naming System
+
+Relying on the consensus protocol of the underlying blockchain, there is an opportunity to provide a total ordering for all operations supported by the naming system, like name registrations, updates, and transfers.
+
+This can be done with the separation of the Control and the Data.
+
+Decoupling the security of name registration and name ownership from the availability of data associated with names by separating the control and data planes.
+The control plane defines the protocol for registering human-readable names, creating (name, hash) bindings, and creating bindings to own cryptographic key pairs.
+
+
+### A.2.3 Decentralized Applications (Dapps)
+
+Today, decentralized applications (Dapps) are all built around private keys, which are used to communicate with smartcontracts and move assets like Bitcoin, Ether, Stacks, among others.   
+Decentralized Applications (Dapp’s) also called Web3 Apps [33] or Stacks applications is the New App that integrates these main functions, authentication, transaction signing, and data storage. All users can run their applications under their own private decentralized space. Web3 users own their data as they are the only ones has access to and/or share with other users their private data through the decentralized application.
+It should be considered, if the private key is lost, then all access to the contract and assets is lost.  This can be devastating because it means that the identity is effectively lost: there are no second chances in blockchain. Any good blockchain identity system thus needs a complex identity-management scheme that goes beyond the simple use of private keys.
+
+First, identity-management systems must solve the problem of updating permissions without changing the identity.  One option is to create separate key-management and identity smart contracts.  This way, the key management can be upgraded and evolve over time without needing to change the on-chain identifying addresses.  This allows attached on-chain information such as claims, reputations, and other identifying information to stay unchanged even if the whole system is replaced.  Another possibility is to integrate ownership change directly into the smart contract while ensuring that the account's identifying address does not change.
+
+Second, identity-management systems should support robust features such as these:
+- Multiple access methods
+- Different key types
+- Social recovery schemes
+
+### A.2.4 Decentralized Identifiers
+
+The World Wide Web Consortium - (W3C) recommends Decentralized identifiers (DIDs) [34], as a new type of identifier that enables verifiable, decentralized digital identity. A DID [35] refers to any subject (e.g., a person, organization, thing, data model, abstract entity, etc.) as determined by the controller of the DID. In contrast to typical, federated identifiers, DIDs have been designed so that they may be decoupled from centralized registries, identity providers, and certificate authorities. Specifically, while other parties might be used to help to discover information related to a DID, the design enables the controller of a DID to prove control over it without requiring permission from any other party. DIDs are URIs that associate a DID subject with a DID document allowing trustable interactions associated with that subject. 
+
+Each DID document can express cryptographic material, verification methods, or services, which provide a set of mechanisms enabling a DID controller to prove control of the DID. Services enable trusted interactions associated with the DID subject. A DID might provide the means to return the DID subject itself if the DID subject is an information resource such as a data model.
+
+The DIDs for a person, for example, are expressed through a name and an image, sometimes a description, background image, URL, email, password signature, etc. The visual and textual representation of an account, helps users to better recognize their accounts, from the accounts of other users. Stacks has a long history of Decentralized Identifiers (DIDs) as they introduced human-readable names for Bitcoin addresses when the project started as “One Name” back in 2014.
+
+The Stacks public DID is a profile that is registered with a username on-chain using the BNS (Blockchain Naming System) smart contract. These profiles are defined using the JSON web token, and its contents using the appropriate objects of the Schema standard [36], like the person object [37].
+
+## B How the Stacks Blockchain - a Bitcoin L2 Blockchain Technologies Ensure Trust
+### B.1 Experience Implementing a Naming System on the Blockchain
 
 The emergence of Blockchain became the candidate to implement the association between names and cryptographic keys. Blockchains provide a global append-only log that is publicly writeable. Writes to the global log, called transactions, are organized as blocks and each block packages multiple transactions into a single atomic write. Writing to the global log requires a payment in the form of a transaction fee. 
 
@@ -226,19 +286,19 @@ Users can register human meaningful names and securely associate data with them,
 
 The experience presented is the Naming System built on the Stacks and Bitcoin Blockchain [22].
 
-#### 2.2.1	Blockchain network interoperability
+#### B.1.1	Blockchain network interoperability
 A user's private and public keys are based on mathematical, and cryptographical algorithms, and they are to be used in the Stacks or Bitcoin blockchain.
 
-##### 2.2.1.1 Stacks address
+##### B.1.1.1 Stacks address
 From a private key, the user can derive a decidable public key in a Stacks address format, and in several Bitcoin address formats. Actual Stacks 2.1 have methods accepting more BTC address formats (P2PKH, P2SH, P2WPKH, P2WSH, P2TR). A Stacks address starts with an “SP”. 
 
-##### 2.2.1.2 Bitcoin address
+##### B.1.1.2 Bitcoin address
 Initially, the Bitcoin address was based on the legacy address P2PKH starting with a “1”, the actual ones are based on SegWit address P2WPKH starting with a “bc1”, and Taproot address when massively available starting with a “bc1p”. 
 
-##### 2.2.1.3 Both Stacks and Bitcoin addresses are linked together
+##### B.1.1.3 Both Stacks and Bitcoin addresses are linked together
 These addresses are mathematically or cryptographically linked together as one of the same, but they are used in the Stacks or Bitcoin blockchain ecosystem respectively.
 
-#### 2.2.2 Bitcoin Name Service (BNS)
+#### B.1.2 Bitcoin Name Service (BNS)
 
 The first name registered in a Bitcoin Blockchain transaction was in 2014, called Namecoin service on the Bitcoin Blockchain. [23]  This service evolved as the Bitcoin Name Service (BNS) on the Blockstack Blockchain. Later, Blockstack Blockchain was rebranded as the Stacks Blockchain [22], a Bitcoin L2 Blockchain [24].
 
@@ -263,7 +323,7 @@ A BNS contract version 2 was deployed on September 2024 [27].
 
 Additionally to the basic functionality, it offers features for decentralized name management, and marketplace integration supporting both open and managed namespaces [28].
 
-#### 2.2.3 Decentralized Name or ID
+#### B.1.2.1 Decentralized Name or ID
 This kind of name can be called Decentralized ID or Decentralized Name.  It uses cryptography, digital wallets, and related technologies to enable multiple entities to produce credentials and empower individuals to manage their data. 
 
 Decentralized ID systems create a trust triangle that links issuers, holders, and verifiers: 
@@ -286,28 +346,7 @@ Names in BNS have four properties:
 
 •	Names using their associated public and private keys can sign transactions. Only the owner of the name and the associated keys can sign in a verifiable way transactions, and the execution of the smart contracts in a decentralized way. This action represents the unique action of a user, that has access to those keys.
 
-#### 2.2.4 Challenges of a Naming System on Blockchain
-Building systems with blockchains presents challenges:
-
-• Limits on Data Storage: Individual blockchain records are typically on the order of kilobytes and cannot hold much data. Moreover, the blockchain’s log structure implies that all state changes are recorded in the blockchain. All nodes participating in the network need to maintain a full copy of the blockchain, limiting the total size of blockchains to what current commodity hardware can support. 
-
-• Slow Writes: The transaction processing rate is capped by the blockchain’s write propagation and leader election protocol, and it is pegged to the rate at which new blocks are announced by leader nodes, called miners in many blockchain networks. New transactions can take minutes to a few hours to be accepted.
-
-• Limited Bandwidth: The total number of transactions per block is limited by the block size of blockchains.
-To maintain fairness and to give all nodes a chance to become a leader in the next round, all nodes should receive a newly announced block at roughly the same time. Therefore, the block size is typically limited by an average uplink bandwidth of nodes. 
-
-• Endless Ledger: The integrity of blockchains depends on the ability of anyone to audit them back to the first block. As the system makes forward progress and issues new blocks, the cost of an audit grows linearly with time, which makes booting up new nodes progressively more time-consuming. This is an endless ledger problem. 
-
-#### 2.2.5 Using the Immutability of the Blockchain to Build a Naming System
-
-Relying on the consensus protocol of the underlying blockchain, there is an opportunity to provide a total ordering for all operations supported by the naming system, like name registrations, updates, and transfers.
-
-This can be done with the separation of the Control and the Data.
-
-Decoupling the security of name registration and name ownership from the availability of data associated with names by separating the control and data planes.
-The control plane defines the protocol for registering human-readable names, creating (name, hash) bindings, and creating bindings to owning cryptographic keypairs
-
-#### 2.2.6 Storing Naming Data Associated to the Blockchain
+#### B.1.2.2 Storing Naming Data Associated with the Blockchain
 
 While on-chain storage solutions and applications like IPFS and Arweave are designed for immutable, censorship-resistant permanent storage, they cannot be deemed as providing user control of the data since the user cannot modify or remove the data once it has been deployed. 
 
@@ -321,7 +360,7 @@ Whereas public transactional metadata is best stored on the Stacks blockchain, u
 
 Storing data off of the blockchain ensures that these applications (decentralized) can provide users with high performance and high availability for data reads and writes without introducing central trust parties.
 
-##### 2.2.6.1 Stacks Architecture is Based on the Digital Identity
+##### B.1.2.2.1 Stacks Architecture is Based on the Digital Identity
 
 When a digital identity is created, using a transaction, its creation is recorded in the Stacks blockchain. This is the primary data stored in the Stacks blockchain. These identities correspond to routing data in the OSI stack [31]. The routing data is stored in the Atlas Peer Network [30], the second layer. 
 
@@ -356,7 +395,7 @@ The App's objectives could suggest using an alternative solution to store data a
 
 A proposal of extending the Stacks component was proposed by @Paradigma-cl in this study [32].
 
-##### 2.2.6.2 Example of a Name Registration in the Stacks Architecture
+##### B.1.2.2.2 Example of a Name Registration in the Stacks Architecture
 
 The domain name phillip.stx was registered as primary data into the Stacks Blockchain and the BNS at the transaction last_txid":"0x102d73f2ce7906649715764a78d9b75dc3f188ff60128f61dc9d713790906f29".  The ownership of the domain name is represented with the "address":"SP17Z5ZD89DVJHDB2SBZAST41PTS3BS50YY3XBVJY", and it was executed using the BNS smart-contract function called "name-register" [25]. A hash of the routing information is included in the primary data layer.
 
@@ -368,21 +407,7 @@ Additionally, data is registered as a Secondary Data Layer associated with the "
 {"zonefile":"$ORIGIN phillip.stx.\n$TTL 3600\n_http._tcp\tIN\tURI\t10\t1\t\"https://gaia.blockstack.org/hub/17tqGoM8xDjLTpy2rFZ1yj9BPmVeC3zjDi/profile.json\"\n\n"}
 ```
 
-#### 2.2.7 Decentralized Applications (Dapp's)
-
-Decentralized Applications (Dapp’s) also called Web3 Apps [33] or Stacks applications is the New App that integrates these main functions, authentication, transaction signing, and data storage. All users can run their applications under their own private decentralized space. Web3 users own their data as they are the only ones has access to and/or share with other users their private data through the decentralized application. These domain or subdomain names can also use the decentralized names or decentralized IDs, and they are registered to the public key associated with its private key or address, and the IP address location of the Dapp.
-
-#### 2.2.8 Decentralized Identifiers
-
-The World Wide Web Consortium - (W3C) recommends Decentralized identifiers (DIDs) [34], as a new type of identifier that enables verifiable, decentralized digital identity. A DID [35] refers to any subject (e.g., a person, organization, thing, data model, abstract entity, etc.) as determined by the controller of the DID. In contrast to typical, federated identifiers, DIDs have been designed so that they may be decoupled from centralized registries, identity providers, and certificate authorities. Specifically, while other parties might be used to help to discover information related to a DID, the design enables the controller of a DID to prove control over it without requiring permission from any other party. DIDs are URIs that associate a DID subject with a DID document allowing trustable interactions associated with that subject. 
-
-Each DID document can express cryptographic material, verification methods, or services, which provide a set of mechanisms enabling a DID controller to prove control of the DID. Services enable trusted interactions associated with the DID subject. A DID might provide the means to return the DID subject itself if the DID subject is an information resource such as a data model.
-
-The DIDs for a person, for example, are expressed through a name and an image, sometimes a description, background image, URL, email, password signature, etc. The visual and textual representation of an account, helps users to better recognize their accounts, from the accounts of other users. Stacks has a long history of Decentralized Identifiers (DIDs) as they introduced human-readable names for Bitcoin addresses when the project started as “One Name” back in 2014.
-
-The Stacks public DID is a profile that is registered with a username on-chain using the BNS (Blockchain Naming System) smart contract. These profiles are defined using the JSON web token, and its contents using the appropriate objects of the Schema standard [36], like the person object [37].
-
-#### 2.2.8.1 Securing the DNS, BNS, and DID's
+#### B.1.3 Securing the DNS, BNS, and DID's
 
 BNS names can be compliant with the emerging Decentralized Identity Foundation [38] protocol specification for decentralized identifiers (DIDs), and the W3C. These initiatives define mechanisms by which an end user can leverage an open provider to release identity information (such as authentication and claims) to a Relying Party that can act on that information.
 
@@ -396,32 +421,32 @@ Where:
 
 
 
-#### 3.4 Domain and subdomain names can be associated with a Stacks and Bitcoin address
+#### B.2 Domain and subdomain names can be associated with a Stacks and Bitcoin address
 The Stacks blockchain ensures that each node's BNS view is synchronized to all the other nodes in the world, so queries on one node will be the same on other nodes. Stacks blockchain nodes allow a name's owner to bind up to 40Kb of off-chain state to their name, which will be replicated to all other Stacks blockchain nodes via a P2P network.
 
 The biggest consequence for developers is that in BNS, reading name state is fast and cheap but writing name state is slow and expensive. This is because registering and modifying names requires one or more transactions to be sent to the underlying blockchain, and BNS nodes will not process them until they are sufficiently confirmed. Users and developers need to acquire and spend the requisite cryptocurrency (STX) to send BNS transactions. At another level, the different applications could interact among them exchanging information. To use these capabilities, a set of standard verifiable digital identities should be used and integrated into the web to have a secure and private interaction.
 
-#### 3.5 To commit changes in the Blockchain requires the use of a Stacks Wallet Applications
+#### B.3 To commit changes in the Blockchain requires the use of a Stacks Wallet Applications
 A request for a transaction or change of state of the Blockchain requires the use of the private key to sign, and funds as gas to materialize the order.  To improve security, and reduce the risk of losing control of the private key of an account, different methods have been developed, trying to avoid entering it directly to the application.
 
 For the use of web applications, it requires the use of a browser wallet software plugin, that has access to the private key directly or using a hardware device.
 
 At present in the Stacks ecosystem, there are two browser wallet software available.  One is the Hiro Wallet (https://wallet.hiro.so/) for desktop PC’s, and Xverse Wallet (https://www.xverse.app/) for mobile devices.
 
-#### 4.2 Using the Internet domain names to verify decentralized domain and subdomain names
+#### B.4 Using the Internet domain names to verify decentralized domain and subdomain names
 To incentivize mass adoption of DIDs, one initial strategy is to link both Internet Domain Names to DIDs, both referring to each other, in the BNS zone file a reference to a web server, and in the Internet domain server referring to the respective DID. Mixing a centralized domain names with the decentralized domain names. For example, the Internet domain name XCK.app refers to the Stacks DID XCK.app, and both are owned by the same controller. In this case, the controller should be the dapp.
 
 This strategy is ratified by a recent proposal in using a new DID method in conjunction with blockchain-based DIDs that allows them to bootstrap trust using a web domain's existing reputation (https://w3c-ccg.github.io/did-method-web).
 
-#### 4.3 Extending the naming characters for the domain and subdomain names
+#### B.5 Extending the naming characters for the domain and subdomain names
 Typically, the domain and subdomain names have commonly used Latin characters in ascii format. Due to the convergence of the use of different languages, and character systems, the popularity in social apps, people have started to think about using emoji as names for their domains or subdomains. 
 
 The compatibility of the dapps with Punycode could be a facilitator of mass user adoption. For example: 🧑‍💼 .xck.app is represented as xn-- -zc3sr5i.xck.app
 
-#### 4.4 Extending the use the private public keys for both Stacks and Bitcoin blockchains
+#### B.6 Extending the use the private public keys for both Stacks and Bitcoin blockchains
 In order to have higher level of adoption, increases the desire to have communications, and interoperability between users cross blockchains ecosystems like Stacks, and Bitcoin. One example, is Nostr, that uses the public key as unique identifier, that is linked to the DNS.
 
-### 5.	The App Profile
+### B.7	The App Profile
 Each App (web application) should have a verified identity in order to safely reference it and be trustworthy of interaction between other applications. An app can be identified both by the Internet domain (DNS) for example 'XCK.app' and the Stacks DID 'XCK.app' In case, it is a web application, it could be accessed as https://xck.app having both definitions.  In this case, we using the trust of the Internet domains to match the Decentralized Domains (DID).
 
 The description for an App Profile document should be done using a JSON web token based on the WebApplication Schema object (https://schema.org/WebApplication). Additionally, this App Profile document must include the did-method-web. The example is represented as 'did:web:xck.app'. The target system of the Web DID method is the web host that the domain name described by the DID resolves to when queried through the Domain Name System (DNS). This did-method-web must be included in this app profile.
@@ -711,6 +736,7 @@ Instead of using the Stacks or Bitcoin addresses, the users can use the DID as t
 
 [21] (https://www.isaca.org/resources/news-and-trends/industry-news/2020/why-cryptographic-infrastructures-require-high-availability)
 
+[22] Self-Sovereign Identity - Decentralized digital identity and verifiable credentials (Alex Preukschat, Drummond Reed Alex Preukschat, Drummond Reed, Manning Publications 2021)
 
 [22] Stacks Blockchain - Bitcoin L2 (https://stacks.co)
 
