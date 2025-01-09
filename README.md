@@ -108,12 +108,17 @@ We must ensure that digital technology maintains a secure, peaceful world withou
 #### Early Days with the centralized and federated identity models
 Initial Authentication: In the early days of the Internet, identification was primarily an account-based identity on username and password systems. This method was simple but had significant security vulnerabilities.
 
-##### Advancements in Security to complement account-based identity
+#### Advancements in Security to complement account-based identity
+##### Authenticator assurance levels (AALs)
 Since identity fraud grows yearly, organizations and providers have developed additional security measures to prevent it.
 Three authenticator assurance levels (AALs) were defined by the National Institute of Standards and Technology of the U.S. Department of Commerce (NIST) [9]
 Authenticator assurance levels (AAL) are associated with interactive sessions and not with the authenticators themselves. This is because combinations of authenticators, used together, can achieve a higher AAL than individually. To satisfy the requirements of a given AAL, a claimant SHALL be authenticated with at least a given level of strength to be recognized as a subscriber. 
+
+AAL1 provides some assurance that the claimant controls an authenticator bound to the subscriber’s account. AAL1 requires either single-factor or multi-factor authentication using a wide range of available authentication technologies. Successful authentication requires that the claimant prove possession and control of the authenticator through a secure authentication protocol.
 By far the most common authenticator at AAL1 is the memorized secret.
+
 AAL2 requires the use of two authentication factors, either (1) a physical authenticator and a memorized secret, or (2) a physical authenticator and a biometric that has been associated with it. Multi-factor authentication can be performed using either a multi-factor authenticator or through the use of two independent authenticators.
+
 AAL3 introduces several new requirements beyond AAL2, the most significant being the use of a hardware-based authenticator. There are several additional authentication characteristics that are required:
 - verifier impersonation resistance,
 - verifier compromise resistance, and
@@ -129,7 +134,7 @@ There might be additional combinations that work, such as combinations of four o
 Blockchain Technology: Blockchain introduced decentralized identity solutions, giving individuals control over their digital identities and leveraging the distributed nature of blockchain for security.
 
 ### A.1.2 The Internet Infrastructure Integral to the Management, Security, and Credibility of Digital Identities
-The Internet infrastructure is integral to the management, security, and credibility of digital identities.
+The Internet infrastructure is integral for digital identity management, security, and credibility.
 
 #### Domain Ownership
 A domain name is a critical part of an organization's digital identity. It serves as the unique address on the internet, much like a business's storefront [9]. Ensuring that the domain is properly registered and managed is essential for maintaining control over the digital identity [9].
@@ -146,7 +151,7 @@ A well-maintained DNS infrastructure enhances the trustworthiness and credibilit
 #### Decentralized Identity Solutions
 Some digital identity solutions leverage blockchain technology to create decentralized identities [10]. These solutions often use DNS-like systems to manage and verify digital identities securely and transparently.
 
-In summary, DNS infrastructure is integral to the management, security, and credibility of digital identities. Properly managing DNS can help ensure that digital identities are protected and trusted by users and organizations alike.
+In summary, DNS infrastructure is integral to digital identity management, security, and credibility. Properly managing DNS can help ensure that digital identities are protected and trusted by users and organizations alike.
 
 #### A.1.2.1 Domain Name System (DNS)
 The Domain Name System (DNS) is a hierarchical and distributed name service that provides a naming system for computers, services, and other resources on the Internet or other Internet Protocol (IP) networks. It associates various information with domain names (identification strings) assigned to each of the associated entities. Most prominently, it translates readily memorized domain names to the numerical IP addresses needed for locating and identifying computer services and devices with the underlying network protocols. [11]
@@ -326,6 +331,9 @@ The DIDs for a person, for example, are expressed through a name and an image, s
 The Stacks public DID is a profile that is registered with a username on-chain using the BNS (Blockchain Naming System) smart contract. These profiles are defined using the JSON web token, and its contents using the appropriate objects of the Schema standard [36], like the person object [37].
 
 ## B How the Stacks Blockchain - a Bitcoin L2 Blockchain Technologies Ensure Trust
+
+The following part describes the digital identity technologies applied in the Stacks Blockchain - a Bitcoin L2 Blockchain.
+
 ### B.1 Experience Implementing a Naming System on the Blockchain
 
 The emergence of Blockchain became the candidate to implement the association between names and cryptographic keys. Blockchains provide a global append-only log that is publicly writeable. Writes to the global log, called transactions, are organized as blocks and each block packages multiple transactions into a single atomic write. Writing to the global log requires a payment in the form of a transaction fee. 
