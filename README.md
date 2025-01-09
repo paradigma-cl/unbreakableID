@@ -101,32 +101,32 @@ The following parts describe available digital technologies used to ensure trust
 
 ## A. Available Digital Technologies to Ensure Trust
 ### A.1.	The Experience of the Internet as an Identification System
-We must ensure that the use of digital technology maintains a secure world, peaceful, and without setbacks produced by hackers or identity theft. The evolution of digital identification has been fast progressing from traditional methods to more advanced and secure methods. [8]
+We must ensure that digital technology maintains a secure, peaceful world without setbacks produced by hackers or identity theft. The evolution of digital identification has been fast progressing from traditional methods to more advanced and secure methods. [8]
 
 ### A.1.1 Evolution
 
-#### Early Days
-Initial Authentication: In the early days of the Internet, identification was primarily based on username and password systems. This method was simple but had significant security vulnerabilities.
+#### Early Days with the centralized and federated identity models
+Initial Authentication: In the early days of the Internet, identification was primarily an account-based identity on username and password systems. This method was simple but had significant security vulnerabilities.
 
-#### Advancements in Security
-Two-Factor Authentication (2FA): To address security concerns, two-factor authentication emerged, requiring users to provide a second form of verification, such as a code sent to their mobile phone.
+##### Advancements in Security to complement account-based identity
+Since identity fraud grows yearly, organizations and providers have developed additional security measures to prevent it.
+Three authenticator assurance levels (AALs) were defined by the National Institute of Standards and Technology of the U.S. Department of Commerce (NIST) [9]
+Authenticator assurance levels (AAL) are associated with interactive sessions and not with the authenticators themselves. This is because combinations of authenticators, used together, can achieve a higher AAL than individually. To satisfy the requirements of a given AAL, a claimant SHALL be authenticated with at least a given level of strength to be recognized as a subscriber. 
+By far the most common authenticator at AAL1 is the memorized secret.
+AAL2 requires the use of two authentication factors, either (1) a physical authenticator and a memorized secret, or (2) a physical authenticator and a biometric that has been associated with it. Multi-factor authentication can be performed using either a multi-factor authenticator or through the use of two independent authenticators.
+AAL3 introduces several new requirements beyond AAL2, the most significant being the use of a hardware-based authenticator. There are several additional authentication characteristics that are required:
+- verifier impersonation resistance,
+- verifier compromise resistance, and
+- authentication intent.
 
-Biometric Authentication: The introduction of biometric authentication (e.g., fingerprint, facial recognition) provided a more secure and convenient way to verify identities.
+If a hardware-based authenticator that is not verifier impersonation resistant is used, a software-based authenticator that provides verifier impersonation resistance will satisfy that requirement.
 
-#### Mobile and Digital Identity Platforms
-Mobile Authentication: With the rise of smartphones, mobile-based authentication methods became prevalent, allowing users to authenticate themselves using mobile apps and push notifications.
+Even though two authentication factors are required at AAL3, one combination of authenticators (Hardware Single-Factor OTP Device plus a Single-Factor Cryptographic Software Authenticator plus a Memorized Secret) consists of three authenticators. This combination stems from the fact that the hardware-based Single-Factor OTP Devices do not provide verifier impersonation resistance, so a Single-Factor Cryptographic Software Authenticator can satisfy that requirement. But since both of those authenticators are something you have, a Memorized Secret is required to satisfy the requirement for two different authentication factors.
 
-Digital Identity Platforms: These platforms centralized identity verification processes, streamlining identity checks across multiple online services.
+There might be additional combinations that work, such as combinations of four or more authenticators to meet all of the AAL3 requirements, but these are unlikely to be used because of the complexity of the user experience.
 
 #### Decentralized Identity Solutions
 Blockchain Technology: Blockchain introduced decentralized identity solutions, giving individuals control over their digital identities and leveraging the distributed nature of blockchain for security.
-
-#### Current Trends
-Enhanced Security: Continuous improvements in security measures, including advanced encryption and continuous authentication, are being implemented to protect user identities.
-
-Seamless User Experience: Efforts are ongoing to balance security with a seamless user experience, ensuring secure identity verification processes, and user-friendly at the same time.
-
-The evolution of digital identification has transformed how individuals prove their identities online, making it more secure, efficient, and convenient.
 
 ### A.1.2 The Internet Infrastructure Integral to the Management, Security, and Credibility of Digital Identities
 The Internet infrastructure is integral to the management, security, and credibility of digital identities.
