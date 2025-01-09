@@ -6,7 +6,7 @@ In the absence of trust . . . opportunities for mutually beneficial cooperation 
 
 In a world increasingly connected not just by trade in goods but also by the exchange of violence, information, viruses, and emissions, the importance of social preferences in underwriting human cooperation, even survival, may now be greater even than it was among that small group of foragers that began the exodus from Africa 55,000 years ago to spread this particular cooperative species to the far corners of the world. [2]
 
-Human beings have become more conscious of a growing interdependence between all parts of the world. The growth of the world economy followed the Great Transformation, the Services Transformation, the ICT revolution, and the adoption of free trade policies, which most countries have named the New Globalization.
+Humans have become more conscious of a growing interdependence between all parts of the world. The growth of the world economy followed the Great Transformation, the Services Transformation, the ICT revolution, and the adoption of free trade policies, which most countries have named the New Globalization.
 
 A beginning to understand, though dimly, that no country is an island unto itself, but as Bahá’u’lláh said: “The earth is but one country, and mankind its citizens.” [3]
 
@@ -17,7 +17,7 @@ The world is nowadays dominated by a growing divide, a term that reflects the av
 Questions arise on how human beings can address this look for trust, worldwide, increasing digital inclusion.
 
 ## The problem
-The world - is still- dominated by two extreme visions: one that denies the radical changes in patterns of communication that the ICT revolution entails and the other that denies the persistence of an economy based on the physical constraints imposed by location and the material nature of most goods and products.
+The world is still dominated by two extreme visions: one that denies the radical changes in communication patterns that the ICT revolution entails and the other that denies the persistence of an economy based on the physical constraints imposed by location and the material nature of most goods and products.
 
 The problems and opportunities detected are the advent and use of ICT to transform patterns of communication and that businesses are not fully aware of how these technologies should be used to create appropriate communication to be more productive. Communication that is acceptable for people both a customer and a human being.
 
@@ -45,6 +45,56 @@ Hashing is a discovery of a universal principle that all else can be anchored to
 The Double Spending Problem.  How does a decentralised network reach a consensus on which transactions are true? The solution to the double spending problem using a peer-to-peer distributed timestamp server to generate computational proof of the chronological order of transactions.   [7]
 
 The blockchain and the internet could be applied to different needs of human beings. The first need is for the individual, agreement between peers, and things.
+## Digital Identity
+A person as a subject represents himself/herself in various ways in computer networks. The individual may have one digital identity with one identifier, such as a 
+domain name or subdomain, or their email address, and use another for their finances.
+
+Digital identity is considered a challenge and difficult to verify. Proving that someone is who they say they are, especially remotely, through a digital service, is fraught with opportunities for an attacker to successfully impersonate someone. The level of risk of negative impact depends primarily on the type of digital service the person requires, and is higher for financial services, healthcare, insurance, and systems administration, among others.
+
+For example, scenarios that allow interactions through pseudonyms, even using strong authenticators, such as multiple authentication factors, must be supported.
+
+At the same time, the dissemination of identifying information should be minimized, requiring the identity provider (IdP) to support a range of operations to query data, such as ensuring that an individual is older than a certain age instead of querying the full date of birth.
+
+In other cases, some institutions require individuals to be fully identified, even considering cases such as government digital services, where full identification is required. However, they also seek to limit the amount of personal information collected as much as possible.
+
+### The three models of digital identity
+Ruff in 2018 [8] described the evolution of internet identity.
+#### 1. The centralized identity model
+Well-known and long used with almost all identifiers and credentials such as government ID numbers, passports, identity cards, driving licenses, social network logins, bank and telecommunications services, and many more.  All of these are issued by centralized governments or service providers like banks or telecom companies.  This centralized model is so prevalent that it can be divided into two types:
+- Private companies (financial and telecom firms) provide centralized digital identity services to interact with the government.
+- Continental model as in Europe. Governments provide digital identity services to companies allowing interaction with their citizens.
+
+The centralized model is also the original form of internet identity - and the one that, in most cases, we still use today. You establish an identity by registering an account (typically a username and password) with a website, service, or application.  This model is called account-based identity.  
+
+The main problem is that real You doesn't exist without an account in some centralized system.  The real You is permitted to plug into a website, service, or application because the Organization is lending you the credentials that represent you with limited controls and permissions. Those credentials belong to the Organization. If you delete all your accounts at all these providers, your access to services will be revoked.  This representation of You will disappear from the Internet.  Yet all the data about you will still belong to the Organization, outside of your control.
+Other problems include the following:
+- The burden of remembering and managing all the usernames and passwords.
+- Every site enforces its own security and privacy policies.
+- None of your identity data is portable or reusable anywhere.
+- These centralized databases of personal data have led to some of the biggest breaches in history.
+
+#### 2. The federated identity model
+The industry developed a new model called federated identity, to alleviate the pain points of the centralized model.  It is based on an identity provider (IDP) between the user and the Organization.
+You can just have one identity account with the IDP, and it, in turn, can log you in and share some basic identity data with any site, service, or app that uses that IDP. The collection of all sites that use the same IDP (or group of IDPs) is called a federation.  Within a federation, each Organization is often called a relying party (RP).
+
+Federated identity management (FIM) also started to catch on in the consumer internet, where it began to be called user-centric identity.  Using protocols like OpenID Connect, social login buttons from social networks, and applications are now a common feature on many consumer-facing websites.
+
+The problem with this federated identity is that it has failed to provide an internet identity layer.  There are numerous reasons:
+- There isn't one IDP that works with all sites, services, and apps.  So users need accounts with multiple IDPs.  They can forget which IDP they used with each site, service, or app.
+- IDPs must have minimum common denominator security and privacy policies to serve so many sites.
+- Many users and sites can be uncomfortable with having an IDP for all their relationships that can surveil a user's login activity across multiple sites.
+- Large IDPs are some of the targets of cybercrime.
+- IDP accounts are no more portable than centralized identity accounts.
+- Due to security and privacy concerns, IDPs are not in a position to help users securely share some of their most valuable personal data: passports, government identifiers, health data, financial data, etc.
+
+#### 3. The decentralized identity model
+A new model, inspired by blockchain technology, first surfaced in 2014.  This model no longer relied on either centralized or federated identity providers but was fundamentally decentralized.  It accelerated rapidly, assimilating new developments in cryptography, distributed databases, and decentralized networks.  It began spawning new decentralized identity standards such as verifiable credentials (VCs) and decentralized identifiers (DIDs).
+
+The most important difference in this model is that it is no longer account-based. Instead, it works like identity in the real world; i.e., it is based on a direct relationship between you and another party as peers.  Neither of you "provides", "controls", or "owns" the relationship with the other.  This is true whether the other party is a person, an organization, or a thing.
+
+In a peer-to-peer relationship, neither peer has an "account" with the other. Rather, you share a connection.  Neither of you fully "owns" this connection.
+
+Peer-to-peer connections are inherently decentralized because any peer can connect to any other peer anywhere -- exactly how the internet works.
 
 ## Available Digital Technologies to Ensure Trust, and How They Are Applied in the Stacks Blockchain - a Bitcoin L2 Blockchain
 The following parts describe available digital technologies used to ensure trust among world citizens present on the Internet, and how these technologies are applied in the Stacks Blockchain - a Bitcoin L2 Blockchain.
