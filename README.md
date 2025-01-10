@@ -10,7 +10,7 @@ Humans have become more conscious of a growing interdependence between all parts
 
 A beginning to understand, though dimly, that no country is an island unto itself, but as Bahá’u’lláh said: “The earth is but one country, and mankind its citizens.” [3]
 
-Without a strong guiding moral philosophy, men struggled on as best they could to respond to the world's new needs.  It is accepted that the times called for a more just and dignified station for a much wider spectrum of society.
+Without a strong guiding moral philosophy, men struggled to respond to the world's new needs as best as they could.  It is accepted that the times called for a more just and dignified station for a much wider spectrum of society.
 
 The world is nowadays dominated by a growing divide, a term that reflects the availability or unavailability of Information Technology and Communications (ICT) resources, analysed in terms of economic accessibility. This is called the digital divide.
 
@@ -44,12 +44,13 @@ Hashing is a discovery of a universal principle that all else can be anchored to
 
 The Double Spending Problem.  How does a decentralised network reach a consensus on which transactions are true? The solution to the double spending problem using a peer-to-peer distributed timestamp server to generate computational proof of the chronological order of transactions.   [7]
 
-The blockchain and the internet could be applied to different needs of human beings. The first need is for the individual, agreement between peers, and things.
+The blockchain and the internet could be applied to different needs of human beings. The first need is for the individual to have agreement with peers and things.
+
 ## Digital Identity
 A person as a subject represents himself/herself in various ways in computer networks. The individual may have one digital identity with one identifier, such as a 
 domain name or subdomain, or their email address, and use another for their finances.
 
-Digital identity is considered a challenge and difficult to verify. Proving that someone is who they say they are, especially remotely, through a digital service, is fraught with opportunities for an attacker to successfully impersonate someone. The level of risk of negative impact depends primarily on the type of digital service the person requires, and is higher for financial services, healthcare, insurance, and systems administration, among others.
+Digital identity is considered a challenge and difficult to verify. Proving that someone is who they say they are, especially remotely, through a digital service, is fraught with opportunities for an attacker to impersonate someone successfully. The level of risk of negative impact depends primarily on the type of digital service the person requires, and is higher for financial services, healthcare, insurance, and systems administration, among others.
 
 For example, scenarios that allow interactions through pseudonyms, even using strong authenticators, such as multiple authentication factors, must be supported.
 
@@ -101,7 +102,7 @@ The following parts describe available digital technologies used to ensure trust
 
 ## A. Available Digital Technologies to Ensure Trust
 ### A.1.	The Experience of the Internet as an Identification System
-We must ensure that digital technology maintains a secure, peaceful world without setbacks produced by hackers or identity theft. The evolution of digital identification has been fast progressing from traditional methods to more advanced and secure methods. [8]
+We must ensure that digital technology maintains a secure, peaceful world without setbacks produced by hackers or identity theft. The evolution of digital identification has been fast progressing from traditional methods to more advanced and secure methods. [9]
 
 ### A.1.1 Evolution
 
@@ -111,15 +112,15 @@ Initial Authentication: In the early days of the Internet, identification was pr
 #### Advancements in Security to complement account-based identity
 ##### Authenticator assurance levels (AALs)
 Since identity fraud grows yearly, organizations and providers have developed additional security measures to prevent it.
-Three authenticator assurance levels (AALs) were defined by the National Institute of Standards and Technology of the U.S. Department of Commerce (NIST) [9]
-Authenticator assurance levels (AAL) are associated with interactive sessions and not with the authenticators themselves. This is because combinations of authenticators, used together, can achieve a higher AAL than individually. To satisfy the requirements of a given AAL, a claimant SHALL be authenticated with at least a given level of strength to be recognized as a subscriber. 
+Three authenticator assurance levels (AALs) were defined by the National Institute of Standards and Technology of the U.S. Department of Commerce (NIST) [10]
+Authenticator assurance levels (AAL) are associated with interactive sessions and not with the authenticators themselves. This is because combinations of authenticators, used together, can achieve a higher AAL than individually. To satisfy the requirements of a given AAL, a claimant SHALL be authenticated with at least a given level of strength to be recognized as a subscriber. [11]
 
 AAL1 provides some assurance that the claimant controls an authenticator bound to the subscriber’s account. AAL1 requires either single-factor or multi-factor authentication using a wide range of available authentication technologies. Successful authentication requires that the claimant prove possession and control of the authenticator through a secure authentication protocol.
 By far the most common authenticator at AAL1 is the memorized secret.
 
 AAL2 requires the use of two authentication factors, either (1) a physical authenticator and a memorized secret, or (2) a physical authenticator and a biometric that has been associated with it. Multi-factor authentication can be performed using either a multi-factor authenticator or through the use of two independent authenticators.
 
-AAL3 introduces several new requirements beyond AAL2, the most significant being the use of a hardware-based authenticator. There are several additional authentication characteristics that are required:
+AAL3 introduces several new requirements beyond AAL2, the most significant being the use of a hardware-based authenticator. Several additional authentication characteristics are required:
 - verifier impersonation resistance,
 - verifier compromise resistance, and
 - authentication intent.
@@ -154,7 +155,7 @@ Some digital identity solutions leverage blockchain technology to create decentr
 In summary, DNS infrastructure is integral to digital identity management, security, and credibility. Properly managing DNS can help ensure that digital identities are protected and trusted by users and organizations alike.
 
 #### A.1.2.1 Domain Name System (DNS)
-The Domain Name System (DNS) is a hierarchical and distributed name service that provides a naming system for computers, services, and other resources on the Internet or other Internet Protocol (IP) networks. It associates various information with domain names (identification strings) assigned to each of the associated entities. Most prominently, it translates readily memorized domain names to the numerical IP addresses needed for locating and identifying computer services and devices with the underlying network protocols. [11]
+The Domain Name System (DNS) is a hierarchical and distributed name service that provides a naming system for computers, services, and other resources on the Internet or other Internet Protocol (IP) networks. It associates various information with domain names (identification strings) assigned to each of the associated entities. Most prominently, the DNS translates readily memorized domain names to the numerical IP addresses needed for locating and identifying computer services and devices with the underlying network protocols. [11]
 
 Names are globally unique and human-readable, but not strongly owned. The system operator has the final say as to what each name resolves to. This requires that client must trust the system, including their administrators as the only ones that can make these changes.
 
@@ -277,7 +278,7 @@ These are physical devices that manage digital keys and provide cryptographic op
 
 ### A.2.2. Identity on the Blockchain
 Blockchains tend to offer specific advantages for identity systems.  Because blockchains are public databases that are accessible and verifiable by everyone, their identity is public, too.  Because
-identities on the blockchain are ultimately accounts that are manipulated by private keys, identies can be controlled by persons, companies, or objects; they can be traditional identities, simple profiles, blockchain access points, or avatars.  Starting, with the Ethereum blockchain bringing programmability. Now identities are not just passive data but more complex computer programs.  Now other solutions improve this initial start, bringing programmability to Bitcoin, like the Stacks Blockchain a Bitcoin L2 Blockchain. [22]
+identities on the blockchain are ultimately accounts that are manipulated by private keys, identities can be controlled by persons, companies, or objects; they can be traditional identities, simple profiles, blockchain access points, or avatars.  Starting, with the Ethereum blockchain bringing programmability. Now identities are not just passive data but more complex computer programs.  Now other solutions improve this initial start, bringing programmability to Bitcoin, like the Stacks Blockchain a Bitcoin L2 Blockchain. [22]
 
 There are also challenges to hosting identities on the blockchain. First, because blockchains are anonymous, there are issues when other systems need to recognize accounts, understand their relationships, or check attestations and claims.  [22]
 
@@ -313,7 +314,7 @@ Today, decentralized applications (Dapps) are all built around private keys, whi
 Decentralized Applications (Dapp’s) also called Web3 Apps [33] or Stacks applications is the New App that integrates these main functions, authentication, transaction signing, and data storage. All users can run their applications under their own private decentralized space. Web3 users own their data as they are the only ones has access to and/or share with other users their private data through the decentralized application.
 It should be considered, if the private key is lost, then all access to the contract and assets is lost.  This can be devastating because it means that the identity is effectively lost: there are no second chances in blockchain. Any good blockchain identity system thus needs a complex identity-management scheme that goes beyond the simple use of private keys.
 
-First, identity-management systems must solve the problem of updating permissions without changing the identity.  One option is to create separate key-management and identity smart contracts.  This way, the key management can be upgraded and evolve over time without needing to change the on-chain identifying addresses.  This allows attached on-chain information such as claims, reputations, and other identifying information to stay unchanged even if the whole system is replaced.  Another possibility is to integrate ownership change directly into the smart contract while ensuring that the account's identifying address does not change.
+First, identity-management systems must solve the problem of updating permissions without changing the identity.  One option is to create separate key-management and identity smart contracts.  This way, the key management can be upgraded and evolve without the need to change the on-chain identifying addresses.  This allows attached on-chain information such as claims, reputations, and other identifying information to stay unchanged even if the whole system is replaced.  Another possibility is to integrate ownership change directly into the smart contract while ensuring that the account's identifying address does not change.
 
 Second, identity-management systems should support robust features such as these:
 - Multiple access methods
@@ -322,13 +323,37 @@ Second, identity-management systems should support robust features such as these
 
 ### A.2.4 Decentralized Identifiers
 
-The World Wide Web Consortium - (W3C) recommends Decentralized identifiers (DIDs) [34], as a new type of identifier that enables verifiable, decentralized digital identity. A DID [35] refers to any subject (e.g., a person, organization, thing, data model, abstract entity, etc.) as determined by the controller of the DID. In contrast to typical, federated identifiers, DIDs have been designed so that they may be decoupled from centralized registries, identity providers, and certificate authorities. Specifically, while other parties might be used to help to discover information related to a DID, the design enables the controller of a DID to prove control over it without requiring permission from any other party. DIDs are URIs that associate a DID subject with a DID document allowing trustable interactions associated with that subject. 
+The World Wide Web Consortium - (W3C) recommends Decentralized identifiers (DIDs) [34], as a new type of identifier that enables verifiable, decentralized digital identity. A DID [35] refers to any subject (e.g., a person, organization, thing, data model, abstract entity, etc.) as determined by the controller of the DID. In contrast to typical, federated identifiers, DIDs have been designed so that they may be decoupled from centralized registries, identity providers, and certificate authorities. Specifically, while other parties might be used to help discover information related to a DID, the design enables the controller of a DID to prove control over it without requiring permission from any other party. DIDs are URIs that associate a DID subject with a DID document allowing trustable interactions associated with that subject. 
 
 Each DID document can express cryptographic material, verification methods, or services, which provide a set of mechanisms enabling a DID controller to prove control of the DID. Services enable trusted interactions associated with the DID subject. A DID might provide the means to return the DID subject itself if the DID subject is an information resource such as a data model.
 
-The DIDs for a person, for example, are expressed through a name and an image, sometimes a description, background image, URL, email, password signature, etc. The visual and textual representation of an account, helps users to better recognize their accounts, from the accounts of other users. Stacks has a long history of Decentralized Identifiers (DIDs) as they introduced human-readable names for Bitcoin addresses when the project started as “One Name” back in 2014.
+The DIDs for a person, for example, are expressed through a name and an image, sometimes a description, background image, URL, email, password signature, etc. The visual and textual representation of an account, helps users to better recognize their accounts, from the accounts of other users. 
 
-The Stacks public DID is a profile that is registered with a username on-chain using the BNS (Blockchain Naming System) smart contract. These profiles are defined using the JSON web token, and its contents using the appropriate objects of the Schema standard [36], like the person object [37].
+The essence of decentralized digital identity: turning physical wallets into digital credentials in digital wallets.
+
+### A.2.5 Self Sovereign Identities (SSI)
+As the decentralized digital identity model started to catch on, it quickly developed the term self-sovereign identity and then the acronym SSI.
+
+The term self-sovereign identity applied to a person, translates to
+
+A person's identity that is neither dependent on nor subjected to any power or state.
+This type of identity does not compete with government-issued identity.  The two are highly complementary.  [SSI]
+- Self-sovereign identity is self-asserted identity.  That is, you are the only one who can make identity assertions about yourself. Nowadays, most of the information about your identity comes from other trusted sources -- that's the reason other parties are willing to rely on it.
+- Self-sovereign is very much informed  by individuals' needs for security, privacy, and personal data control, the SSI model applies equally for organizations and things.  Anything that needs identity on the internet.
+
+The fundamental reason the term self-sovereign identity is grounded: it represents a shift in control.
+
+In the centralized and federated identity models, the locus of control is with the issuers and verifiers in the network.  In the decentralized SSI identity model, the locus of control shifts to the individual user, who can now interact with everyone else as a full peer.
+
+SSI is relatively new.  At one level, SSI is a set of principles about how identity and personal data control should work across digital networks.  At another level, SSI is a set of technologies that build on core concepts in identity management, distributed computing, blockchain, and cryptography.
+What's new is how these sets of technologies are put together to create a new model for digital identity management.  Seven basic building blocks have been identified for SSI as follows:
+- Verifiable credentials (digital credentials)
+- The trust triangle: issuers, holders, and verifiers.
+- Digital wallets.
+- Digital agents.
+- Decentralized identifiers (DIDs).
+- Blockchains and other verifiable data registries.
+- Governance frameworks.
 
 ## B How the Stacks Blockchain - a Bitcoin L2 Blockchain Technologies Ensure Trust
 
@@ -468,6 +493,10 @@ Additionally, data is registered as a Secondary Data Layer associated with the "
 #### B.1.3 Securing the DNS, BNS, and DID's
 
 BNS names can be compliant with the emerging Decentralized Identity Foundation [38] protocol specification for decentralized identifiers (DIDs), and the W3C. These initiatives define mechanisms by which an end user can leverage an open provider to release identity information (such as authentication and claims) to a Relying Party that can act on that information.
+
+Stacks has a long history of Decentralized Identifiers (DIDs) as they introduced human-readable names for Bitcoin addresses when the project started as “One Name” back in 2014.
+
+The Stacks public DID is a profile that is registered with a username on-chain using the BNS (Blockchain Naming System) smart contract. These profiles are defined using the JSON web token, and its contents using the appropriate objects of the Schema standard [36], like the person object [37].
 
 Each name in BNS has an associated DID. The DID format for BNS is:
 •	did:stack:v2:{address}-{index}
@@ -744,7 +773,7 @@ Nevertheless, the use of decentralized ID (DIDs) has not been understood well, a
 Instead of using the Stacks or Bitcoin addresses, the users can use the DID as the address to execute transactions.
 2.	The use of domain or subdomain names can facilitate the easiness to make inter used non fungible token exchange or transfer. Instead of using the Stacks or Bitcoin addresses, the users can use the DID as the address to execute transactions.
 3.	Users can use their DID to login into hundreds of available compatible Dapps, like for example in chat boxes, sharing of information, publications, etc. As a Single Sign On method, easier to use.
-4.	Users can use their DIDs to login, create and share business process agreements, and deliverables, sign them, and inscribe them in the blockchain using the smart contracts.
+4.	Users can use their DIDs to login, create and share business process agreements, and deliverables, sign them, and inscribe them in the blockchain using smart contracts.
 5.	Probably, some business process agreements and deliverables, require that the participant users be identified by legal national IDs. Then a national attribution identity technology can be used by each one of the users, authorizing and linking it to the DID, as a proof of identity. This utility of proof of identity conforms to the requirement of KYC (Know Your Customer) imposed by some country governments. In this case, regulation, executed in a decentralized way, controlled by each user.
 6.	Users could own a Single Sign On (SSO) technology to access any application.
 7.	Users can use their did:web definitions as a web presentation landing page presenting their profile information.  Individual web presence.
@@ -766,9 +795,15 @@ Instead of using the Stacks or Bitcoin addresses, the users can use the DID as t
 
 [7] Nakamoto, Satoshi (https://bitcoin.org/bitcoin.pdf)
 
-[8] (https://identitymanagementinstitute.org/evolution-of-digital-identification/)
+[8] Ruff, Timothy,  "The Three Models of Digital Identity Relationships", (https://medium.com/evernym/the-three-models-of-digital-identity-relationships-ca0727cb5186) 
 
-[9] (https://joinclicki.com/blog-full/understanding-dns-and-domain-key-to-digital-identity-and-trust)
+[9] (https://identitymanagementinstitute.org/evolution-of-digital-identification/)
+
+[10] Digital Identity Guidelines (https://pages.nist.gov/800-63-3/sp800-63b.html#sec4)
+
+[11] Authenticator Assurance Levels (https://pages.nist.gov/800-63-3-Implementation-Resources/63B/AAL/)
+
+[12] (https://joinclicki.com/blog-full/understanding-dns-and-domain-key-to-digital-identity-and-trust)
 
 [10] (https://link.springer.com/article/10.1007/s44206-023-00049-z)
 
