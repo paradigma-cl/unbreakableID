@@ -355,6 +355,40 @@ What's new is how these sets of technologies are put together to create a new mo
 - Blockchains and other verifiable data registries.
 - Governance frameworks.
 
+#### A.2.5.1 SSI Stack
+
+The SSI stack was defined as a four-layer model, where the bottom layers are primarily about achieving trust and the two top layers are about achieving human trust.
+
+Layer 1. Identifiers and public keys
+
+Layer 1 is the bottom of the stack, where identifiers and public keys are defined and managed.  It is based on a DID Registry and DID method.
+
+Layer 2 is the secure communications, interfaces between agents, wallets and hubs.
+
+Layer 3 is the sharing of credentials between the issuer, holder and verifier.
+
+Layer 4 is the governance of the SSI.
+
+#### A.2.5.2 Blockchains and DID registries
+SSI was born because blockchain technology introduced an exciting new option for implementing a decentralized public key infrastructure (DPKI), as explained previously. Having a DPKI implemented could unlock the power of verifiable credentials (VCs).  Most of the DID methods in the W3C DID specification registry are based on blockchains.
+
+#### A.2.5.3 Special-purpose blockchains designed for SSI
+Several initiatives like Hyperledger, the Sovrin Foundation, and the Veres One have been developed.
+
+The experience showed that no private data should go into the chain or ledger. Even there are some privacy implications regarding encrypted data just by watching who writes and reads it. Additionally, some other issues with the EU General Data Protection Regulation (GDPR) and other data protection regulations worldwide provide a "right of erasure" to data subjects.
+
+#### A.2.5.4 Conventional databases as DID registries
+The user databases of internet giants have shown that modern web-ready database technologies can achieve the robustness, global scale, and geographical dispersion needed by a DID registry. Such centralization undermines one of the most important design goals of SSI (and the internet): eliminating single points of control and failure.  Traditional databases are discounted as a viable implementation path for Layer 1.
+
+#### A.2.5.5 Peer-to-peer as DID registries
+DIDs and DID documents can be generated and exchanged directly between peers that need them to identify and authenticate each other.
+
+The "DID registry" in this case is the digital wallet of each of the peers--each is the "root of trust" for the other--along with trust in the protocol used to exchange these peer DIDs.  The DIDs, public keys, and service endpoints are completely private--they never need to be shared with any external party, let alone on a public blockchain. Situations where one or both of the peers move to new service endpoints and lose touch with one another.  Some of these require clever triangulation against a public blockchain at Layer 1.
+
+Key Event Receipt Infrastructure (KERI) is a complete architecture for portable DIDs developed around the concept of self-certifying identifiers at the heart of peer DIDs.
+
+
+
 ## B How the Stacks Blockchain - a Bitcoin L2 Blockchain Technologies Ensure Trust
 
 The following part describes the digital identity technologies applied in the Stacks Blockchain - a Bitcoin L2 Blockchain.
