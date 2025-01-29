@@ -413,11 +413,23 @@ Much like presenting two pieces of ID to provide a higher level of assurance whe
    |                |     |                |
    +----------------+     +----------------+
 
-The diagram above illustrates how a web server storing the DID document, and the DNS server storing the URI and TLSA records shares and links the key information about the DID across two independent sets of infrastructure.
+The diagram above illustrates how a web server storing the DID document, and the DNS server storing the URI and TLSA records shares and links the key information about the DID across two independent sets of infrastructure. [25]
 
 ##### Specifically for did:web
 
 With did:web, there’s an inherent link between the DNS needed to resolve the associated DID document and the domain where the relevant supporting DNS records are located.  This means that the domain specified by the did:web identifier (for example, did:web:*example.ca*) is also the location where you can find the supporting DNS records.
+
+##### Mapping DIDs to Domains with URI records
+
+The association to a domain stemming only from the did is unidirectional.  By leveraging URI records as outlined in [DID-in-the-DNS], we can create a bidirectional relationship, allowing a domain to publish its associated DID in the DNS.
+
+   *_Ex: _did.example-issuer.ca IN URI 1 0 “did:web:example-issuer.ca”_*
+
+This relationship enhances security, as an entity would require control over both the DID and the domain’s DNS server to create this bidirectional association, reducing the likelihood of malicious impersonation.
+
+#### URI record scoping
+
+   *  The records MUST be scoped by setting the global underscore name of the URI RRset to __did_ (0x5F 0x64 0x69 0x64).
 
 ## B How the Stacks Blockchain - a Bitcoin L2 Blockchain Technologies Ensure Trust
 
@@ -899,6 +911,8 @@ Instead of using the Stacks or Bitcoin addresses, the users can use the DID as t
 [23] A Proposal of Change of the Components for the Stacks Decentralized Application Development Architecture, Roe Phillip (https://github.com/paradigma-cl/stackscomponents/blob/main/report_stacks_architecture_change_proposal_rev2.pdf)
 
 [24]  (https://datatracker.ietf.org/doc/draft-carter-high-assurance-dids-with-dns/06/)
+
+[25] (https://www.ietf.org/archive/id/draft-carter-high-assurance-dids-with-dns-04.html)
 
 [22] Stacks Blockchain - Bitcoin L2 (https://stacks.co)
 
