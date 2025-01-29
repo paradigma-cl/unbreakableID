@@ -363,9 +363,9 @@ Layer 1. Identifiers and public keys
 
 Layer 1 is the bottom of the stack, where identifiers and public keys are defined and managed.  It is based on a DID Registry and DID method.
 
-Layer 2 is the secure communications, interfaces between agents, wallets and hubs.
+Layer 2 is the secure communications, and interfaces between agents, wallets, and hubs.
 
-Layer 3 is the sharing of credentials between the issuer, holder and verifier.
+Layer 3 is sharing credentials between the issuer, holder, and verifier.
 
 Layer 4 is the governance of the SSI.
 
@@ -378,16 +378,46 @@ Several initiatives like Hyperledger, the Sovrin Foundation, and the Veres One h
 The experience showed that no private data should go into the chain or ledger. Even there are some privacy implications regarding encrypted data just by watching who writes and reads it. Additionally, some other issues with the EU General Data Protection Regulation (GDPR) and other data protection regulations worldwide provide a "right of erasure" to data subjects.
 
 #### A.2.5.4 Conventional databases as DID registries
-The user databases of internet giants have shown that modern web-ready database technologies can achieve the robustness, global scale, and geographical dispersion needed by a DID registry. Such centralization undermines one of the most important design goals of SSI (and the internet): eliminating single points of control and failure.  Traditional databases are discounted as a viable implementation path for Layer 1.
+The user databases of internet giants have shown that modern web-ready database technologies can achieve the robustness, global scale, and geographical dispersion needed by a DID registry. Such centralization undermines SSI's most important design goal (and the internet): eliminating single points of control and failure.  Traditional databases are discounted as a viable implementation path for Layer 1.
 
-#### A.2.5.5 Peer-to-peer as DID registries
+#### A.2.5.5 Distributed databases as DID registries and as an infrastructure for decentralized applications
+We did a study to add a messaging component to the actual decentralized application architecture, as some decentralized applications require interaction (exchange of information) between other users of the same application or other applications. The conclusion showed that we needed a broader scope than the messaging aspect of an application.  We extended the scope of the study starting from the Distributed Database Management Systems and their components and functionalities.  It became clear during this study the usefulness of creating the prototype of an Evaluation 
+Framework of Decentralized Database Management Systems. This is still an area for future research and development. [23]
+
+#### A.2.5.6 Peer-to-peer as DID registries
 DIDs and DID documents can be generated and exchanged directly between peers that need them to identify and authenticate each other.
 
-The "DID registry" in this case is the digital wallet of each of the peers--each is the "root of trust" for the other--along with trust in the protocol used to exchange these peer DIDs.  The DIDs, public keys, and service endpoints are completely private--they never need to be shared with any external party, let alone on a public blockchain. Situations where one or both of the peers move to new service endpoints and lose touch with one another.  Some of these require clever triangulation against a public blockchain at Layer 1.
+In this case, the "DID registry" is the digital wallet of each of the peers--each is the "root of trust" for the other--along with trust in the protocol used to exchange these peer DIDs.  The DIDs, public keys, and service endpoints are completely private--they never need to be shared with any external party, let alone on a public blockchain. Situations where one or both of the peers move to new service endpoints and lose touch with one another.  Some of these require clever triangulation against a public blockchain at Layer 1.
 
 Key Event Receipt Infrastructure (KERI) is a complete architecture for portable DIDs developed around the concept of self-certifying identifiers at the heart of peer DIDs.
 
+#### A.2.5.7 High Assurance DIDs with DNS
+In the ever-evolving digital world, the need for secure and verifiable identities is paramount.  DIDs have emerged as a promising solution, providing a globally unique, persistent identifier that does not require a centralized registration authority.  However, like any technology, DIDs face challenges in terms of authenticity, discoverability, and portability.
 
+This is where the Domain Name System (DNS), a well-established and globally distributed internet directory service, comes into play.  By leveraging the existing DNS infrastructure, we can enhance the verification process of DIDs.  Specifically, we can use Transport Layer Security Authentication (TLSA) and Uniform Resource Identifier (URI) DNS records to add a layer of verification and authenticity to DIDs. [24]
+
+##### Securing a DID using the DNS
+
+Much like presenting two pieces of ID to provide a higher level of assurance when proving your identity or age, replicating important information about a DID into a different domain (like the DNS) enables a similar form of cross-validation.  This enhances the initial trust establishment between the user and the DID document, as the key information can be compared and verified across two segregated sets of infrastructure.  This also acts as a form of ownership verification similar to 2FA, as the implementer must have control over both the DNS zone and the DID document to properly duplicate the relevant information.
+
+   +----------------+     +----------------+
+   |                |     |                |
+   |   DNS Server   |     |   Web Server   |
+   |                |     |                |
+   |   +-------+    |     |   +-------+    |
+   |   |  DID  |<---+-----+-->|  DID  |    |
+   |   +-------+    |     |   +-------+    |
+   |   +-------+    |     |   +-------+    |
+   |   |  PKI  |<---+-----+-->|  PKI  |    |
+   |   +-------+    |     |   +-------+    |
+   |                |     |                |
+   +----------------+     +----------------+
+
+The diagram above illustrates how a web server storing the DID document, and the DNS server storing the URI and TLSA records shares and links the key information about the DID across two independent sets of infrastructure.
+
+##### Specifically for did:web
+
+With did:web, there’s an inherent link between the DNS needed to resolve the associated DID document and the domain where the relevant supporting DNS records are located.  This means that the domain specified by the did:web identifier (for example, did:web:*example.ca*) is also the location where you can find the supporting DNS records.
 
 ## B How the Stacks Blockchain - a Bitcoin L2 Blockchain Technologies Ensure Trust
 
@@ -864,6 +894,11 @@ Instead of using the Stacks or Bitcoin addresses, the users can use the DID as t
 [21] (https://www.isaca.org/resources/news-and-trends/industry-news/2020/why-cryptographic-infrastructures-require-high-availability)
 
 [22] Self-Sovereign Identity - Decentralized digital identity and verifiable credentials (Alex Preukschat, Drummond Reed Alex Preukschat, Drummond Reed, Manning Publications 2021)
+
+
+[23] A Proposal of Change of the Components for the Stacks Decentralized Application Development Architecture, Roe Phillip (https://github.com/paradigma-cl/stackscomponents/blob/main/report_stacks_architecture_change_proposal_rev2.pdf)
+
+[24]  (https://datatracker.ietf.org/doc/draft-carter-high-assurance-dids-with-dns/06/)
 
 [22] Stacks Blockchain - Bitcoin L2 (https://stacks.co)
 
